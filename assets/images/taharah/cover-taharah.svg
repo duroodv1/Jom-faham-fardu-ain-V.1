@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" role="img" aria-label="Taharah dan Bersuci">
+<defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+<stop offset="0" stop-color="#039BE5"/><stop offset="1" stop-color="#26C6DA"/></linearGradient></defs>
+<rect width="800" height="500" rx="36" fill="url(#g)"/>
+<circle cx="680" cy="80" r="90" fill="#ffffff" opacity=".14"/><circle cx="90" cy="430" r="110" fill="#ffffff" opacity=".12"/>
+<path d="M400 70 L470 150 V210 H330 V150 Z" fill="#ffffff" opacity=".9"/>
+<circle cx="400" cy="128" r="20" fill="#FFC93C"/>
+<text x="400" y="330" font-size="130" text-anchor="middle">💧</text>
+<text x="400" y="405" font-size="40" font-weight="bold" text-anchor="middle" fill="#ffffff" font-family="Arial,sans-serif">TAHARAH</text>
+<text x="400" y="450" font-size="24" text-anchor="middle" fill="#ffffff" opacity=".92" font-family="Arial,sans-serif">Wuduk • Kebersihan Diri</text>
+</svg>
