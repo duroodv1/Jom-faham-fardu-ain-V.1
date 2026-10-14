@@ -583,12 +583,12 @@
   },
   {
    "kunci": "instr-batal-solat",
-   "fail": "assets/audio/instructions/batal-solat.mp3",
+   "fail": "assets/audio/instructions/batal-solat-penuh.mp3",
    "bahasa": "ms",
    "suara": "Sintesis suara gTTS (ar/ms) — BUKAN rakaman manusia",
    "tempoh_saat": 101.1,
    "saiz_kb": 790,
-   "teks": "Perkara yang Membatalkan Solat. 1. Bercakap atau Ketawa dengan Sengaja. Bercakap perkara lain selain bacaan solat dengan"
+   "teks": "Perkara yang Membatalkan Solat. 1. Bercakap atau Ketawa dengan Sengaja. Bercakap perkara lain selain bacaan solat dengan sengaja membatalkan solat. Ketawa terbahak-bahak juga membatalkan solat. Semasa solat, diam dan fokus kepada Allah. 2. Makan atau Minum. Makan atau minum semasa solat membatalkan solat. Jauhkan makanan dan minuman daripada tempat solat. 3. Bergerak Banyak atau Bermain. Pergerakan yang banyak dan berturut-turut di luar pergerakan solat, seperti bermain dan melompat, membatalkan solat. Berdiri, rukuk dan sujudlah dengan tenang serta tuma'ninah. 4. Berhadas atau Wuduk Terbatal. Jika wuduk terbatal semasa solat, contohnya keluar angin atau buang air, solat terbatal. Keluar daripada solat, bersihkan diri dan ambil wuduk semula. 5. Terbuka Aurat. Jika aurat terbuka semasa solat, solat boleh terbatal mengikut keadaan dan tempohnya. Pastikan pakaian solat kemas dan menutup aurat sebelum memulakan solat; perincian dipelajari bersama guru. 6. Meninggalkan Rukun Solat. Jika meninggalkan rukun solat seperti tidak membaca al-Fatihah atau tidak rukuk, solat tidak sah. Pelajari urutan dan rukun solat bersama guru atau ibu bapa."
   },
   {
    "kunci": "instr-batal-wuduk",
