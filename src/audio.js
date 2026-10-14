@@ -107,7 +107,7 @@ const AUDIO_FILES = {
   "instr-najis": "assets/audio/instructions/najis.mp3",
   "instr-batal-wuduk": "assets/audio/instructions/batal-wuduk.mp3",
   "instr-solat-waktu": "assets/audio/instructions/solat-waktu.mp3",
-  "instr-batal-solat": "assets/audio/instructions/batal-solat.mp3",
+  "instr-batal-solat": "assets/audio/instructions/batal-solat-penuh.mp3",
   "instr-jemaah": "assets/audio/instructions/solat-jemaah.mp3",
   "instr-akhlak": "assets/audio/instructions/akhlak.mp3",
   "instr-batal-puasa-rukhsah": "assets/audio/instructions/batal-puasa-rukhsah.mp3",

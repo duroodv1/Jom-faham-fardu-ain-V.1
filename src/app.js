@@ -53,6 +53,9 @@ function completeLesson(modId, lessonId) {
 }
 function addReview(tajuk) { if (!STATE.reviewList.includes(tajuk)) STATE.reviewList.push(tajuk); save(); }
 function speak(text, lang, key) { audioPlay(text, { lang: lang || "ms-MY", key: key }); }
+function jsArg(value) {
+  return JSON.stringify(value == null ? "" : String(value)).replace(/'/g, "\\u0027").replace(/</g, "\\u003c").replace(/>/g, "\\u003e").replace(/&/g, "\\u0026");
+}
 function watakSVG() {
   return `<figure style="margin:0 auto;max-width:360px">
   <img src="assets/images/characters/watak-utama.jpg" alt="Ilustrasi Ahmad bersongkok dan berbaju biru bersama Aisyah bertudung merah jambu, kawan belajar kamu" style="width:100%;border-radius:18px;display:block">
@@ -61,14 +64,14 @@ function watakSVG() {
 }
 function headerStars() { return `<span class="bintang" aria-label="Jumlah bintang">⭐ ${totalStarsDisplay()} bintang</span> <span class="pill pill-gold">🏅 ${STATE.badges.length} lencana</span>`; }
 function audioBar(text, arabText, arabKey, msKey) {
-  const msOpts = `{lang:"ms-MY"${msKey ? `, key:${JSON.stringify(msKey)}` : ""}}`;
-  const arOpts = `{lang:"ar-SA"${arabKey ? `, key:${JSON.stringify(arabKey)}` : ""}}`;
+  const msOpts = `{lang:"ms-MY"${msKey ? `, key:${jsArg(msKey)}` : ""}}`;
+  const arOpts = `{lang:"ar-SA"${arabKey ? `, key:${jsArg(arabKey)}` : ""}}`;
   return `<div class="aksi-row no-print" role="group" aria-label="Kawalan audio">
-    <button class="btn btn-teal btn-dengar" onclick='audioPlay(${JSON.stringify(text)}, ${msOpts})'>🔊 Dengar</button>
-    ${arabText ? `<button class="btn btn-blue btn-dengar" onclick='audioPlay(${JSON.stringify(arabText)}, ${arOpts})'>🔊 Dengar Arab (MP3)</button>` : ""}
+    <button class="btn btn-teal btn-dengar" onclick='audioPlay(${jsArg(text)}, ${msOpts})'>🔊 Dengar</button>
+    ${arabText ? `<button class="btn btn-blue btn-dengar" onclick='audioPlay(${jsArg(arabText)}, ${arOpts})'>🔊 Dengar Arab (MP3)</button>` : ""}
     <button class="btn btn-gold" onclick="audioTogglePause()">⏸️ Jeda / Sambung</button>
     <button class="btn btn-kelabu" onclick="audioStop()">⏹️ Henti</button>
-    <button class="btn btn-putih" style="background:#fff;border:2px solid #00a99d;color:#00796b" onclick='audioPlay(${JSON.stringify(arabText || text)}, ${arabText ? arOpts : msOpts})'>🔁 Ulang</button>
+    <button class="btn btn-putih" style="background:#fff;border:2px solid #00a99d;color:#00796b" onclick='audioPlay(${jsArg(arabText || text)}, ${arabText ? arOpts : msOpts})'>🔁 Ulang</button>
   </div>`;
 }
 const ARAB_KEY_BY_LESSON = { "akidah-a1": "akidah-syahadah", "akidah-a2": "akidah-selawat", "akidah-a4": "akidah-syahadah", "taharah-t3": "doa-doa12", "solat-s3": "solat-takbir" };
@@ -181,7 +184,7 @@ function viewModule(id) {
   $app.innerHTML = `<button class="btn btn-kelabu" onclick="location.hash='#/modul'">⬅️ Semua Modul</button>
   <div class="kad" style="padding:0;overflow:hidden"><img src="${m.cover}" onerror="this.onerror=null;this.src='assets/images/logo/logo-app.png'" alt="Gambar muka depan modul ${esc(m.tajuk)}" style="width:100%;height:220px;object-fit:cover;display:block"><div style="padding:18px"><h1 style="margin:4px 0">${m.emoji} ${esc(m.tajuk)}</h1><p>${esc(m.ringkas)}</p>
   <div class="bar-kemajuan"><div style="width:${p.pct}%"></div></div><p><strong>Status kemajuan: ${p.pct}%</strong> (${p.done}/${p.total} pelajaran) • Kuiz terbaik: ${STATE.quizScores[m.id] || 0}% • Lencana: ${esc(m.lencana.emoji)} ${esc(m.lencana.nama)} ${STATE.badges.includes(m.lencana.id) ? "✅ Sudah diperoleh" : "(siapkan semua pelajaran + kuiz ≥70%)"}</p>
-  <div class="aksi-row"><a class="btn btn-teal" href="#/belajar/${m.id}/${m.pelajaran[0].id}">📖 Mula Belajar</a><button class="btn btn-blue" onclick='speak(${JSON.stringify(m.tajuk + ". " + m.ringkas)}, "ms-MY", "modul-" + m.id)'>🎧 Dengar Penerangan</button><a class="btn btn-pink" href="#/permainan/${MOD_GAME[m.id]}">🎮 Main</a><a class="btn btn-gold" href="#/kuiz/${m.id}">📝 Kuiz Modul</a></div></div></div>
+  <div class="aksi-row"><a class="btn btn-teal" href="#/belajar/${m.id}/${m.pelajaran[0].id}">📖 Mula Belajar</a><button class="btn btn-blue" onclick='speak(${jsArg(m.tajuk + ". " + m.ringkas)}, "ms-MY", "modul-" + m.id)'>🎧 Dengar Penerangan</button><a class="btn btn-pink" href="#/permainan/${MOD_GAME[m.id]}">🎮 Main</a><a class="btn btn-gold" href="#/kuiz/${m.id}">📝 Kuiz Modul</a></div></div></div>
   <h2>📖 Senarai Pelajaran</h2>
   ${m.pelajaran.map((l, i) => `<a class="pelajaran-item" href="#/belajar/${m.id}/${l.id}"><span class="emo" aria-hidden="true">${l.emoji}</span><span style="flex:1"><strong>${i + 1}. ${esc(l.tajuk)}</strong><br><small>${esc(l.intro.slice(0, 90))}…</small></span><span>${(STATE.completedLessons[m.id] || []).includes(l.id) ? "✅ Siap" : "▶️ Belajar"}</span></a>`).join("")}
   ${jenisKad}${najisKad}${extra}${batalKad}${waktuSolatKad}${extraSolat}${aturanKad}${bacaRingkasKad}${surahPendekKad}${bacaSolatKad}${batalSolatKad}${akhlakKadSection}${ibadahKadSection}`;
@@ -226,7 +229,7 @@ function renderQuizSoalan() {
   <div class="bar-kemajuan"><div style="width:${Math.round(quizState.idx / quizState.soalan.length * 100)}%"></div></div>
   ${q.emo ? `<div style="text-align:center;font-size:2.6rem" aria-hidden="true">${q.emo}</div>` : ""}
   <h2>${esc(q.q || q.s || q.tanya)}</h2>
-  ${q.perluDengar ? `<button class="btn btn-blue btn-besar" style="width:100%" onclick='audioPlay(${JSON.stringify(q.perluDengar)},{lang:"ar-SA", key:${JSON.stringify(q.perluKey || "")}})'>🔊 Tekan untuk Dengar Lafaz (MP3)</button>` : ""}
+  ${q.perluDengar ? `<button class="btn btn-blue btn-besar" style="width:100%" onclick='audioPlay(${jsArg(q.perluDengar)},{lang:"ar-SA", key:${jsArg(q.perluKey || "")}})'>🔊 Tekan untuk Dengar Lafaz (MP3)</button>` : ""}
   <div id="pilihanBox">${q.pilihAcak.map((p, i) => `<button class="pilihan" onclick="jawabQuiz(${i}, this)">${esc(p.t)}</button>`).join("")}</div><div id="maklumBox"></div></div>`;
   window.scrollTo(0, 0);
 }
@@ -391,7 +394,7 @@ function viewAudio(tab) {
   if (!tabs.some(t => t[0] === tab)) tab = "arahan";
   let body = "";
   if (tab === "arahan") body = `<div class="kad"><h2>🔊 Arahan Permainan & Maklum Balas</h2><p>Tekan untuk mendengar contoh arahan:</p>
-  ${[["Selamat datang ke Jom Faham Fardu Ain. Pilih modul dan tekan Mula Belajar.", "instr-salam"], ["Tekan jawapan yang betul. Tiada had masa, fikir perlahan-lahan.", "instr-arahan"], ["Betul! Tahniah, kamu hebat!", "feedback-betul"], ["Belum tepat, tidak mengapa. Kita belajar bersama dan cuba lagi!", "feedback-belum-tepat"], ["Tahniah! Kamu mendapat bintang dan lencana baru!", "feedback-tahniah"]].map(x => `<button class="pilihan" onclick='speak(${JSON.stringify(x[0])}, "ms-MY", ${JSON.stringify(x[1])})'>🔊 ${esc(x[0])}</button>`).join("")}
+  ${[["Selamat datang ke Jom Faham Fardu Ain. Pilih modul dan tekan Mula Belajar.", "instr-salam"], ["Tekan jawapan yang betul. Tiada had masa, fikir perlahan-lahan.", "instr-arahan"], ["Betul! Tahniah, kamu hebat!", "feedback-betul"], ["Belum tepat, tidak mengapa. Kita belajar bersama dan cuba lagi!", "feedback-belum-tepat"], ["Tahniah! Kamu mendapat bintang dan lencana baru!", "feedback-tahniah"]].map(x => `<button class="pilihan" onclick='speak(${jsArg(x[0])}, "ms-MY", ${jsArg(x[1])})'>🔊 ${esc(x[0])}</button>`).join("")}
   <div class="aksi-row"><button class="btn btn-gold" onclick="audioTogglePause()">⏸️ Jeda / Sambung</button><button class="btn btn-kelabu" onclick="audioStop()">⏹️ Hentikan Audio</button></div>
   <p><small>Nota audio (1.4.0): Butang berlabel MP3 memainkan fail sintesis suara yang disimpan dalam peranti (luar talian). Ia BUKAN rakaman qari/guru sebenar — wajib disemak guru berkelayakan dan sebaiknya diganti rakaman sebenar. Jika fail tiada, app menggunakan suara peranti. Senarai penuh: <code>docs/SENARAI-AUDIO.md</code>.</small></p></div>`;
   $app.innerHTML = `<button class="btn btn-kelabu" onclick="location.hash='#/'">⬅️ Kembali</button><h1>🎧 Pusat Audio</h1><div class="aksi-row">${tabs.map(t => `<a class="btn ${tab === t[0] ? "btn-teal" : "btn-kelabu"}" href="#/audio/${t[0]}">${t[1]}</a>`).join("")}</div>${body}`;
