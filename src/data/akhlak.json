@@ -1,0 +1,130 @@
+{
+  "modul": {
+    "id": "akhlak",
+    "tajuk": "Akhlak dan Adab Islam",
+    "emoji": "💛",
+    "warna": "#ec407a",
+    "cover": "assets/images/akhlak/cover-akhlak.svg",
+    "ringkas": "Adab dengan ibu bapa, guru, rakan, makan, tidur, masjid, keselamatan dan internet.",
+    "lencana": {
+      "id": "akhlak-mulia",
+      "nama": "Anak Berakhlak Mulia",
+      "emoji": "💛"
+    },
+    "pelajaran": [
+      {
+        "id": "k1",
+        "tajuk": "Adab dengan Ibu Bapa & Guru",
+        "emoji": "👨‍👩‍👧",
+        "intro": "Ibu bapa dan guru banyak berjasa kepada kita. Kita menghormati dan menyayangi mereka.",
+        "isi": [
+          "Bercakap dengan lembut dan tidak meninggikan suara.",
+          "Membantu ibu bapa di rumah mengikut kemampuan.",
+          "Mendengar penerangan guru, menyiapkan tugasan dan mengucapkan terima kasih.",
+          "Mendoakan ibu bapa dan guru setiap hari."
+        ],
+        "tip": "Ayat ajaib: “Terima kasih”, “Maafkan saya”, “Tolong”."
+      },
+      {
+        "id": "k2",
+        "tajuk": "Adab Makan, Tidur & Berpakaian",
+        "emoji": "🍽️",
+        "intro": "Islam mengajar adab dalam aktiviti harian supaya hidup kita bersih dan teratur.",
+        "isi": [
+          "Makan: basuh tangan, baca doa, tangan kanan, duduk, tidak membazir dan tidak bercakap dengan mulut penuh.",
+          "Tidur: berwuduk, baca doa, tidur mengiring ke kanan (sunat) dan kemas tempat tidur pada waktu pagi.",
+          "Berpakaian: menutup aurat, bersih, kemas dan tidak sombong dengan pakaian."
+        ],
+        "tip": "Pilih tindakan terbaik dalam permainan “Pilih Tindakan Terbaik”."
+      },
+      {
+        "id": "k3",
+        "tajuk": "Berkata Benar, Amanah & Urus Marah",
+        "emoji": "🤝",
+        "intro": "Muslim yang baik berkata benar, amanah dan sabar apabila marah.",
+        "isi": [
+          "Bercakap benar walaupun susah — berbohong merosakkan kepercayaan.",
+          "Amanah: menjaga barang orang lain dan menepati janji.",
+          "Apabila marah: diam, tarik nafas, berwuduk atau duduk. Jangan memukul atau berkata kasar.",
+          "Jika bersalah, berani meminta maaf dan membetulkan kesilapan."
+        ],
+        "tip": "Marah? Berhenti – Tarik nafas – Berwuduk – Bertenang."
+      },
+      {
+        "id": "k4",
+        "tajuk": "Keselamatan Diri, Telefon & Internet",
+        "emoji": "📱",
+        "intro": "Kita menjaga keselamatan diri di rumah, di sekolah dan ketika menggunakan telefon atau internet.",
+        "isi": [
+          "Jangan berkongsi nama penuh, alamat, gambar atau kata laluan dengan orang tidak dikenali.",
+          "Jika ada mesej atau gambar yang membuatkan kita tidak selesa, berhenti dan beritahu ibu bapa/guru dengan segera.",
+          "Gunakan telefon untuk belajar dan berhubung secara baik. Hadkan masa skrin dan utamakan solat, tidur dan bermain di luar.",
+          "Adab dengan rakan: tidak mengejek, tidak membuli, membantu rakan yang kesusahan dan berkongsi dengan ikhlas."
+        ],
+        "tip": "Peraturan internet keluarga: Tanya dahulu, jangan kongsi maklumat peribadi, beritahu orang dewasa jika tidak selesa."
+      }
+    ],
+    "kuiz": [
+      {
+        "q": "Rakan terjatuh di padang. Apakah tindakan terbaik?",
+        "pilih": [
+          "Ketawa",
+          "Membantu dan memanggil guru jika perlu",
+          "Berlalu pergi"
+        ],
+        "j": 1,
+        "terang": "Kita membantu rakan dan memaklumkan guru jika ada kecederaan.",
+        "tahap": 3,
+        "emo": "🏃"
+      },
+      {
+        "q": "Apakah adab makan yang betul?",
+        "pilih": [
+          "Makan sambil berlari",
+          "Basuh tangan, baca doa, makan tangan kanan",
+          "Membazir makanan"
+        ],
+        "j": 1,
+        "terang": "Basuh tangan, baca doa dan makan dengan tangan kanan sambil duduk.",
+        "tahap": 1,
+        "emo": "🍽️"
+      },
+      {
+        "q": "Orang tidak dikenali meminta alamat rumah melalui internet. Kamu patut…",
+        "pilih": [
+          "Berikan alamat",
+          "Tidak berkongsi dan beritahu ibu bapa/guru",
+          "Ajak berjumpa"
+        ],
+        "j": 1,
+        "terang": "Jangan kongsi maklumat peribadi. Beritahu orang dewasa yang dipercayai.",
+        "tahap": 3,
+        "emo": "📱"
+      },
+      {
+        "q": "Apabila berasa sangat marah, apakah langkah yang baik?",
+        "pilih": [
+          "Menjerit dan memukul",
+          "Diam, tarik nafas dan berwuduk",
+          "Merajuk berhari-hari"
+        ],
+        "j": 1,
+        "terang": "Kawal marah dengan diam, bernafas dan berwuduk.",
+        "tahap": 2,
+        "emo": "😤"
+      },
+      {
+        "q": "Amanah bermaksud…",
+        "pilih": [
+          "Menyimpan rahsia jahat",
+          "Menjaga tanggungjawab dan menepati janji",
+          "Mengambil barang orang"
+        ],
+        "j": 1,
+        "terang": "Amanah ialah menjaga tanggungjawab dan menepati janji.",
+        "tahap": 1,
+        "emo": "🤝"
+      }
+    ]
+  }
+}

@@ -1,0 +1,117 @@
+{
+  "modul": {
+    "id": "ibadah",
+    "tajuk": "Puasa dan Ibadah",
+    "emoji": "🕋",
+    "warna": "#fb8c00",
+    "cover": "assets/images/ibadah/cover-ibadah.svg",
+    "ringkas": "Puasa Ramadan, sahur dan berbuka, perkara membatalkan puasa, zakat fitrah, korban, haji dan umrah.",
+    "lencana": {
+      "id": "juara-ibadah",
+      "nama": "Sahabat Ramadan",
+      "emoji": "🌙"
+    },
+    "pelajaran": [
+      {
+        "id": "i1",
+        "tajuk": "Maksud Puasa & Niat",
+        "emoji": "🌙",
+        "intro": "Puasa ialah menahan diri daripada makan, minum dan perkara yang membatalkan puasa dari terbit fajar (Subuh) hingga terbenam matahari (Maghrib) kerana Allah.",
+        "isi": [
+          "Puasa Ramadan wajib ke atas Muslim yang baligh, berakal dan mampu (kanak-kanak berlatih mengikut kemampuan dan bimbingan ibu bapa).",
+          "Niat puasa Ramadan dilakukan pada waktu malam sebelum fajar (mengikut perincian mazhab — belajar lafaz niat yang disemak bersama guru).",
+          "Latihan untuk kanak-kanak: berpuasa penuh atau berperingkat mengikut kesihatan dan nasihat ibu bapa. Utamakan kesihatan."
+        ],
+        "tip": "Niat ialah keazaman dalam hati untuk berpuasa kerana Allah."
+      },
+      {
+        "id": "i2",
+        "tajuk": "Sahur, Berbuka & Pembatal Puasa",
+        "emoji": "🍲",
+        "intro": "Bersahur ialah makan sebelum fajar (sunat yang digalakkan). Berbuka ialah makan apabila masuk waktu Maghrib.",
+        "isi": [
+          "Perkara membatalkan puasa (ringkas): makan dan minum dengan sengaja, muntah dengan sengaja, datang haid/nifas dan hilang akal (perincian bersama guru).",
+          "Terlupa makan/minum ketika berpuasa tidak membatalkan puasa (mengikut panduan yang diajar guru) — teruskan berpuasa.",
+          "Orang sakit, musafir, perempuan haid/nifas dan yang tidak mampu diberi kelonggaran (rukhsah) mengganti atau mengikut hukum yang ditetapkan — rujuk guru/pihak berautoriti.",
+          "Adab berbuka: segera berbuka apabila masuk waktu, membaca doa berbuka dan tidak membazir."
+        ],
+        "tip": "Jika tidak sihat, beritahu ibu bapa. Kesihatan amat penting."
+      },
+      {
+        "id": "i3",
+        "tajuk": "Zakat Fitrah, Korban, Haji & Umrah",
+        "emoji": "🕋",
+        "intro": "Zakat, korban, haji dan umrah ialah ibadah yang mengajar kita berkongsi rezeki dan mengingati Allah.",
+        "isi": [
+          "Zakat fitrah: dikeluarkan pada bulan Ramadan untuk menyucikan puasa dan membantu golongan memerlukan (kadar dan masa mengikut ketetapan pihak berkuasa negeri).",
+          "Korban: menyembelih haiwan korban pada Hari Raya Aidiladha dan hari tasyrik, mengingati ketaatan Nabi Ibrahim a.s. dan Nabi Ismail a.s.",
+          "Haji: ibadah ke Makkah pada bulan Zulhijah bagi yang mampu. Umrah: ziarah dan ibadah di Makkah pada bila-bila masa mengikut syarat.",
+          "Tempat penting: Kaabah di Masjidil Haram (Makkah) dan Masjid Nabawi (Madinah)."
+        ],
+        "tip": "Amalan sunat untuk kanak-kanak: bersedekah, membaca al-Quran, berzikir dan membantu orang lain."
+      }
+    ],
+    "kuiz": [
+      {
+        "q": "Puasa bermula dari… hingga…",
+        "pilih": [
+          "Zuhur hingga Asar",
+          "Terbit fajar hingga terbenam matahari",
+          "Isyak hingga Subuh"
+        ],
+        "j": 1,
+        "terang": "Puasa dari terbit fajar (Subuh) hingga terbenam matahari (Maghrib).",
+        "tahap": 1,
+        "emo": "🌅"
+      },
+      {
+        "q": "Yang membatalkan puasa ialah…",
+        "pilih": [
+          "Tidur siang",
+          "Makan dengan sengaja",
+          "Membaca buku"
+        ],
+        "j": 1,
+        "terang": "Makan atau minum dengan sengaja membatalkan puasa.",
+        "tahap": 2,
+        "emo": "🍽️"
+      },
+      {
+        "q": "Zakat fitrah dikeluarkan pada bulan…",
+        "pilih": [
+          "Zulhijah",
+          "Ramadan",
+          "Muharram"
+        ],
+        "j": 1,
+        "terang": "Zakat fitrah dikeluarkan dalam bulan Ramadan (mengikut ketetapan semasa).",
+        "tahap": 1,
+        "emo": "🤲"
+      },
+      {
+        "q": "Kaabah terletak di…",
+        "pilih": [
+          "Masjid Nabawi, Madinah",
+          "Masjidil Haram, Makkah",
+          "Masjid al-Aqsa"
+        ],
+        "j": 1,
+        "terang": "Kaabah berada di Masjidil Haram, Makkah dan menjadi kiblat solat.",
+        "tahap": 2,
+        "emo": "🕋"
+      },
+      {
+        "q": "Sahur ialah…",
+        "pilih": [
+          "Makan pada waktu malam raya",
+          "Makan sebelum fajar untuk berpuasa",
+          "Makan selepas Maghrib"
+        ],
+        "j": 1,
+        "terang": "Sahur ialah makan sebelum fajar, sunat yang digalakkan.",
+        "tahap": 1,
+        "emo": "🍲"
+      }
+    ]
+  }
+}

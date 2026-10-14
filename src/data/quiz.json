@@ -1,0 +1,738 @@
+{
+  "kuizSemuaModul": {
+    "akidah": [
+      {
+        "q": "Siapakah Tuhan yang Maha Esa dan Pencipta alam?",
+        "pilih": [
+          "Allah SWT",
+          "Matahari",
+          "Manusia"
+        ],
+        "j": 0,
+        "terang": "Allah SWT ialah Tuhan yang Maha Esa dan Pencipta segala-galanya.",
+        "tahap": 1,
+        "emo": "🌍"
+      },
+      {
+        "q": "Berapakah bilangan Rukun Iman?",
+        "pilih": [
+          "Lima",
+          "Enam",
+          "Tujuh"
+        ],
+        "j": 1,
+        "terang": "Rukun Iman ada ENAM perkara.",
+        "tahap": 1,
+        "emo": "💛"
+      },
+      {
+        "q": "Yang manakah Rukun Islam yang pertama?",
+        "pilih": [
+          "Berpuasa",
+          "Mengucap dua kalimah syahadah",
+          "Menunaikan zakat"
+        ],
+        "j": 1,
+        "terang": "Rukun Islam pertama ialah mengucap dua kalimah syahadah.",
+        "tahap": 1,
+        "emo": "🏮"
+      },
+      {
+        "q": "Malaikat Jibril bertugas untuk…",
+        "pilih": [
+          "Menyampaikan wahyu",
+          "Meniup sangkakala",
+          "Mencatat cuaca"
+        ],
+        "j": 0,
+        "terang": "Malaikat Jibril menyampaikan wahyu Allah kepada para nabi.",
+        "tahap": 2,
+        "emo": "📖"
+      },
+      {
+        "q": "Ali terjumpa dompet di sekolah. Apakah tindakan beriman yang betul?",
+        "pilih": [
+          "Simpan untuk diri sendiri",
+          "Serahkan kepada guru",
+          "Sembunyikan"
+        ],
+        "j": 1,
+        "terang": "Amanah ialah tanda iman. Serahkan barang yang dijumpai kepada guru.",
+        "tahap": 3,
+        "emo": "🎒"
+      }
+    ],
+    "taharah": [
+      {
+        "q": "Yang manakah RUKUN wuduk?",
+        "pilih": [
+          "Berkumur-kumur",
+          "Basuh muka",
+          "Sapu telinga"
+        ],
+        "j": 1,
+        "terang": "Basuh muka ialah rukun wuduk. Berkumur dan sapu telinga ialah sunat.",
+        "tahap": 2,
+        "emo": "😊"
+      },
+      {
+        "q": "Selepas membasuh muka, apakah rukun seterusnya?",
+        "pilih": [
+          "Basuh tangan hingga siku",
+          "Basuh kaki",
+          "Sapu telinga sahaja"
+        ],
+        "j": 0,
+        "terang": "Urutan rukun: muka → tangan hingga siku → sapu sebahagian kepala → kaki hingga buku lali (tertib).",
+        "tahap": 2,
+        "emo": "💪"
+      },
+      {
+        "q": "Wuduk terbatal apabila…",
+        "pilih": [
+          "Minum air",
+          "Kentut / buang air",
+          "Membaca buku"
+        ],
+        "j": 1,
+        "terang": "Keluar angin (kentut) atau buang air membatalkan wuduk.",
+        "tahap": 1,
+        "emo": "💧"
+      },
+      {
+        "q": "Tayamum dilakukan apabila…",
+        "pilih": [
+          "Malas mengambil air",
+          "Tiada air atau tidak boleh guna air",
+          "Hendak cepat"
+        ],
+        "j": 1,
+        "terang": "Tayamum hanya apabila tiada air atau uzur (sakit) menggunakan air.",
+        "tahap": 2,
+        "emo": "🏜️"
+      },
+      {
+        "q": "Air yang sesuai untuk berwuduk ialah…",
+        "pilih": [
+          "Air mutlak yang suci",
+          "Air berperisa",
+          "Air kotor"
+        ],
+        "j": 0,
+        "terang": "Gunakan air mutlak yang suci seperti air paip yang bersih.",
+        "tahap": 1,
+        "emo": "🚰"
+      }
+    ],
+    "solat": [
+      {
+        "q": "Berapakah rakaat solat Maghrib?",
+        "pilih": [
+          "2 rakaat",
+          "3 rakaat",
+          "4 rakaat"
+        ],
+        "j": 1,
+        "terang": "Solat Maghrib ialah 3 rakaat.",
+        "tahap": 1,
+        "emo": "🌇"
+      },
+      {
+        "q": "Pergerakan selepas rukuk ialah…",
+        "pilih": [
+          "Sujud",
+          "Iktidal",
+          "Salam"
+        ],
+        "j": 1,
+        "terang": "Selepas rukuk kita iktidal (berdiri semula) dengan tuma‘ninah.",
+        "tahap": 2,
+        "emo": "🧍"
+      },
+      {
+        "q": "Surah yang wajib dibaca pada setiap rakaat ialah…",
+        "pilih": [
+          "Al-Ikhlas",
+          "Al-Fatihah",
+          "An-Nas"
+        ],
+        "j": 1,
+        "terang": "Al-Fatihah ialah rukun qauli dan wajib dibaca setiap rakaat.",
+        "tahap": 2,
+        "emo": "📖"
+      },
+      {
+        "q": "Sebelum solat kita mesti pastikan…",
+        "pilih": [
+          "Ada telefon",
+          "Suci, tutup aurat, menghadap kiblat",
+          "Ada kawan"
+        ],
+        "j": 1,
+        "terang": "Syarat sah: suci, menutup aurat, menghadap kiblat dan masuk waktu.",
+        "tahap": 1,
+        "emo": "✅"
+      },
+      {
+        "q": "Di masjid, apakah adab yang betul?",
+        "pilih": [
+          "Berlari dan menjerit",
+          "Bercakap kuat",
+          "Menjaga kebersihan dan tidak bising"
+        ],
+        "j": 2,
+        "terang": "Masjid tempat ibadat — jaga adab, kebersihan dan ketenangan.",
+        "tahap": 3,
+        "emo": "🕌"
+      }
+    ],
+    "akhlak": [
+      {
+        "q": "Rakan terjatuh di padang. Apakah tindakan terbaik?",
+        "pilih": [
+          "Ketawa",
+          "Membantu dan memanggil guru jika perlu",
+          "Berlalu pergi"
+        ],
+        "j": 1,
+        "terang": "Kita membantu rakan dan memaklumkan guru jika ada kecederaan.",
+        "tahap": 3,
+        "emo": "🏃"
+      },
+      {
+        "q": "Apakah adab makan yang betul?",
+        "pilih": [
+          "Makan sambil berlari",
+          "Basuh tangan, baca doa, makan tangan kanan",
+          "Membazir makanan"
+        ],
+        "j": 1,
+        "terang": "Basuh tangan, baca doa dan makan dengan tangan kanan sambil duduk.",
+        "tahap": 1,
+        "emo": "🍽️"
+      },
+      {
+        "q": "Orang tidak dikenali meminta alamat rumah melalui internet. Kamu patut…",
+        "pilih": [
+          "Berikan alamat",
+          "Tidak berkongsi dan beritahu ibu bapa/guru",
+          "Ajak berjumpa"
+        ],
+        "j": 1,
+        "terang": "Jangan kongsi maklumat peribadi. Beritahu orang dewasa yang dipercayai.",
+        "tahap": 3,
+        "emo": "📱"
+      },
+      {
+        "q": "Apabila berasa sangat marah, apakah langkah yang baik?",
+        "pilih": [
+          "Menjerit dan memukul",
+          "Diam, tarik nafas dan berwuduk",
+          "Merajuk berhari-hari"
+        ],
+        "j": 1,
+        "terang": "Kawal marah dengan diam, bernafas dan berwuduk.",
+        "tahap": 2,
+        "emo": "😤"
+      },
+      {
+        "q": "Amanah bermaksud…",
+        "pilih": [
+          "Menyimpan rahsia jahat",
+          "Menjaga tanggungjawab dan menepati janji",
+          "Mengambil barang orang"
+        ],
+        "j": 1,
+        "terang": "Amanah ialah menjaga tanggungjawab dan menepati janji.",
+        "tahap": 1,
+        "emo": "🤝"
+      }
+    ],
+    "ibadah": [
+      {
+        "q": "Puasa bermula dari… hingga…",
+        "pilih": [
+          "Zuhur hingga Asar",
+          "Terbit fajar hingga terbenam matahari",
+          "Isyak hingga Subuh"
+        ],
+        "j": 1,
+        "terang": "Puasa dari terbit fajar (Subuh) hingga terbenam matahari (Maghrib).",
+        "tahap": 1,
+        "emo": "🌅"
+      },
+      {
+        "q": "Yang membatalkan puasa ialah…",
+        "pilih": [
+          "Tidur siang",
+          "Makan dengan sengaja",
+          "Membaca buku"
+        ],
+        "j": 1,
+        "terang": "Makan atau minum dengan sengaja membatalkan puasa.",
+        "tahap": 2,
+        "emo": "🍽️"
+      },
+      {
+        "q": "Zakat fitrah dikeluarkan pada bulan…",
+        "pilih": [
+          "Zulhijah",
+          "Ramadan",
+          "Muharram"
+        ],
+        "j": 1,
+        "terang": "Zakat fitrah dikeluarkan dalam bulan Ramadan (mengikut ketetapan semasa).",
+        "tahap": 1,
+        "emo": "🤲"
+      },
+      {
+        "q": "Kaabah terletak di…",
+        "pilih": [
+          "Masjid Nabawi, Madinah",
+          "Masjidil Haram, Makkah",
+          "Masjid al-Aqsa"
+        ],
+        "j": 1,
+        "terang": "Kaabah berada di Masjidil Haram, Makkah dan menjadi kiblat solat.",
+        "tahap": 2,
+        "emo": "🕋"
+      },
+      {
+        "q": "Sahur ialah…",
+        "pilih": [
+          "Makan pada waktu malam raya",
+          "Makan sebelum fajar untuk berpuasa",
+          "Makan selepas Maghrib"
+        ],
+        "j": 1,
+        "terang": "Sahur ialah makan sebelum fajar, sunat yang digalakkan.",
+        "tahap": 1,
+        "emo": "🍲"
+      }
+    ],
+    "sirah": [
+      {
+        "q": "Di manakah Nabi Muhammad SAW dilahirkan?",
+        "pilih": [
+          "Madinah",
+          "Makkah",
+          "Taif"
+        ],
+        "j": 1,
+        "terang": "Baginda dilahirkan di Makkah pada Tahun Gajah.",
+        "tahap": 1,
+        "emo": "⭐"
+      },
+      {
+        "q": "Wahyu pertama diterima di…",
+        "pilih": [
+          "Gua Hira",
+          "Masjid Nabawi",
+          "Kaabah"
+        ],
+        "j": 0,
+        "terang": "Wahyu pertama di Gua Hira dengan perkataan “Iqra’”.",
+        "tahap": 2,
+        "emo": "⛰️"
+      },
+      {
+        "q": "Hijrah ialah perpindahan dari…",
+        "pilih": [
+          "Madinah ke Makkah",
+          "Makkah ke Madinah",
+          "Makkah ke Mesir"
+        ],
+        "j": 1,
+        "terang": "Hijrah ialah perpindahan dari Makkah ke Madinah.",
+        "tahap": 1,
+        "emo": "🐪"
+      },
+      {
+        "q": "Gelaran Nabi SAW kerana kejujuran Baginda ialah…",
+        "pilih": [
+          "Al-Amin",
+          "Al-Faruq",
+          "As-Siddiq"
+        ],
+        "j": 0,
+        "terang": "Baginda digelar al-Amin (yang dipercayai).",
+        "tahap": 2,
+        "emo": "💛"
+      },
+      {
+        "q": "Pengajaran utama daripada sirah untuk kanak-kanak ialah…",
+        "pilih": [
+          "Menjadi terkenal",
+          "Berakhlak mulia, jujur dan sabar",
+          "Mengumpul harta"
+        ],
+        "j": 1,
+        "terang": "Sirah mengajar kita berakhlak mulia, jujur, sabar dan penyayang.",
+        "tahap": 3,
+        "emo": "🌟"
+      }
+    ]
+  },
+  "betulSalah": [
+    {
+      "s": "Rukun Iman ada lima perkara.",
+      "j": false,
+      "terang": "Rukun Iman ada ENAM. Rukun Islam yang ada lima."
+    },
+    {
+      "s": "Berkumur-kumur ketika berwuduk ialah rukun wuduk.",
+      "j": false,
+      "terang": "Berkumur ialah sunat. Rukun termasuk basuh muka dan basuh tangan hingga siku."
+    },
+    {
+      "s": "Solat Maghrib mempunyai 3 rakaat.",
+      "j": true,
+      "terang": "Betul! Maghrib ialah 3 rakaat."
+    },
+    {
+      "s": "Kita boleh berkongsi kata laluan dengan kawan internet.",
+      "j": false,
+      "terang": "Jangan sekali-kali berkongsi kata laluan atau maklumat peribadi."
+    },
+    {
+      "s": "Tayamum dilakukan apabila tiada air atau tidak boleh menggunakan air.",
+      "j": true,
+      "terang": "Betul! Tayamum ada syaratnya, bukan kerana malas."
+    },
+    {
+      "s": "Nabi Muhammad SAW ialah nabi yang terakhir.",
+      "j": true,
+      "terang": "Betul! Baginda ialah Khatam an-Nabiyyin (penutup para nabi)."
+    },
+    {
+      "s": "Makan dengan sengaja tidak membatalkan puasa.",
+      "j": false,
+      "terang": "Makan atau minum dengan sengaja membatalkan puasa."
+    },
+    {
+      "s": "Al-Quran ialah kitab Allah yang terakhir.",
+      "j": true,
+      "terang": "Betul! Al-Quran diturunkan kepada Nabi Muhammad SAW."
+    }
+  ],
+  "isiTempatKosong": [
+    {
+      "s": "Rukun Iman ada ___ perkara.",
+      "pilih": [
+        "lima",
+        "enam",
+        "tujuh"
+      ],
+      "j": 1
+    },
+    {
+      "s": "Solat Subuh mempunyai ___ rakaat.",
+      "pilih": [
+        "2",
+        "3",
+        "4"
+      ],
+      "j": 0
+    },
+    {
+      "s": "Wahyu pertama diterima di Gua ___.",
+      "pilih": [
+        "Thur",
+        "Hira",
+        "Nur"
+      ],
+      "j": 1
+    },
+    {
+      "s": "Doa keluar tandas ialah “___”.",
+      "pilih": [
+        "Ghufaranaka",
+        "Alhamdulillah",
+        "Bismillah"
+      ],
+      "j": 0
+    },
+    {
+      "s": "Kita menghadap ___ ketika solat.",
+      "pilih": [
+        "Matahari",
+        "Kiblat (Kaabah)",
+        "Bulan"
+      ],
+      "j": 1
+    },
+    {
+      "s": "Makan sebelum fajar untuk berpuasa disebut ___.",
+      "pilih": [
+        "Berbuka",
+        "Sahur",
+        "Tarawih"
+      ],
+      "j": 1
+    }
+  ],
+  "DengarDanPilih": [
+    {
+      "bunyi": "Allahu Akbar",
+      "fail": "solat-takbir",
+      "tanya": "Apakah maksud lafaz yang kamu dengar?",
+      "pilih": [
+        "Allah Maha Besar",
+        "Segala puji bagi Allah",
+        "Maha Suci Allah"
+      ],
+      "j": 0
+    },
+    {
+      "bunyi": "Alhamdulillah",
+      "fail": "lafaz-alhamdulillah",
+      "tanya": "Apakah maksud lafaz yang kamu dengar?",
+      "pilih": [
+        "Allah Maha Besar",
+        "Segala puji bagi Allah",
+        "Maha Suci Allah"
+      ],
+      "j": 1
+    },
+    {
+      "bunyi": "Subhanallah",
+      "fail": "lafaz-subhanallah",
+      "tanya": "Apakah maksud lafaz yang kamu dengar?",
+      "pilih": [
+        "Allah Maha Besar",
+        "Segala puji bagi Allah",
+        "Maha Suci Allah"
+      ],
+      "j": 2
+    },
+    {
+      "bunyi": "Assalamualaikum",
+      "fail": "lafaz-assalamualaikum",
+      "tanya": "Bilakah ucapan ini sesuai diberikan?",
+      "pilih": [
+        "Ketika berjumpa / masuk rumah",
+        "Ketika keluar tandas sahaja",
+        "Ketika marah"
+      ],
+      "j": 0
+    }
+  ],
+  "gambar": [
+    {
+      "emo": "💧🙌😊💪🦶",
+      "q": "Gambar ikon ini berkaitan dengan ibadat apa?",
+      "pilih": [
+        "Berwuduk",
+        "Berpuasa",
+        "Membaca al-Quran"
+      ],
+      "j": 0,
+      "terang": "Ikon tangan, muka dan kaki ialah langkah berwuduk."
+    },
+    {
+      "emo": "🕋🧎🤲",
+      "q": "Apakah ibadat yang ditunjukkan?",
+      "pilih": [
+        "Solat menghadap kiblat",
+        "Bersukan",
+        "Bermain"
+      ],
+      "j": 0,
+      "terang": "Kita solat menghadap Kaabah sebagai kiblat."
+    },
+    {
+      "emo": "🌙🍲🌅",
+      "q": "Aktiviti apakah ini dalam bulan Ramadan?",
+      "pilih": [
+        "Bersahur sebelum fajar",
+        "Berbuka tengah hari",
+        "Tidur sepanjang hari"
+      ],
+      "j": 0,
+      "terang": "Bersahur ialah makan sebelum fajar untuk berpuasa."
+    },
+    {
+      "emo": "📖🔤 ب ت ث",
+      "q": "Apakah yang sedang dipelajari?",
+      "pilih": [
+        "Huruf hijaiyah",
+        "Nombor",
+        "Warna"
+      ],
+      "j": 0,
+      "terang": "Huruf ب ت ث ialah huruf hijaiyah."
+    },
+    {
+      "emo": "📱🙂❓",
+      "q": "Orang asing meminta gambar kamu melalui internet. Apakah tindakan yang selamat?",
+      "pilih": [
+        "Hantar gambar",
+        "Jangan hantar dan beritahu ibu bapa/guru",
+        "Berikan alamat rumah"
+      ],
+      "j": 1,
+      "terang": "Jangan kongsi gambar atau maklumat peribadi. Beritahu orang dewasa."
+    }
+  ],
+  "padanan": [
+    {
+      "a": "Rukun Iman",
+      "b": "6 perkara"
+    },
+    {
+      "a": "Rukun Islam",
+      "b": "5 perkara"
+    },
+    {
+      "a": "Taharah",
+      "b": "Bersuci"
+    },
+    {
+      "a": "Tayamum",
+      "b": "Bersuci dengan debu tanah yang suci"
+    },
+    {
+      "a": "Al-Amin",
+      "b": "Gelaran Nabi SAW yang dipercayai"
+    },
+    {
+      "a": "Gua Hira",
+      "b": "Tempat wahyu pertama"
+    },
+    {
+      "a": "Kaabah",
+      "b": "Kiblat di Makkah"
+    },
+    {
+      "a": "Sahur",
+      "b": "Makan sebelum fajar"
+    },
+    {
+      "a": "Ghufaranaka",
+      "b": "Doa keluar tandas"
+    },
+    {
+      "a": "Tuma‘ninah",
+      "b": "Berhenti sebentar dengan tenang dalam solat"
+    }
+  ],
+  "susunan": {
+    "wuduk": {
+      "tajuk": "Susun Langkah Wuduk",
+      "arahan": "Tekan langkah mengikut urutan yang betul.",
+      "items": [
+        "Niat & Basmalah",
+        "Basuh Tangan",
+        "Berkumur & Bersihkan Hidung",
+        "Basuh Muka",
+        "Basuh Tangan ke Siku",
+        "Sapu Kepala & Telinga",
+        "Basuh Kaki",
+        "Doa Selepas Wuduk"
+      ]
+    },
+    "solat": {
+      "tajuk": "Susun Pergerakan Solat",
+      "arahan": "Susun pergerakan solat mengikut urutan satu rakaat ringkas.",
+      "items": [
+        "Berdiri & Takbir",
+        "Baca al-Fatihah",
+        "Rukuk",
+        "Iktidal",
+        "Sujud Pertama",
+        "Duduk Antara Dua Sujud",
+        "Sujud Kedua"
+      ]
+    },
+    "rukunIslam": {
+      "tajuk": "Susun Rukun Islam",
+      "arahan": "Susun Lima Rukun Islam mengikut urutan.",
+      "items": [
+        "Syahadah",
+        "Solat",
+        "Puasa",
+        "Zakat",
+        "Haji"
+      ]
+    },
+    "ramadan": {
+      "tajuk": "Susun Aktiviti Hari Ramadan",
+      "arahan": "Susun aktiviti sehari dalam bulan Ramadan.",
+      "items": [
+        "Bersahur",
+        "Solat Subuh & Berpuasa",
+        "Belajar / Beribadat Siang Hari",
+        "Berbuka Puasa (Maghrib)",
+        "Solat Tarawih"
+      ]
+    },
+    "sirah": {
+      "tajuk": "Garis Masa Sirah",
+      "arahan": "Susun peristiwa sirah mengikut urutan masa.",
+      "items": [
+        "Kelahiran Nabi SAW di Makkah",
+        "Baginda digelar al-Amin",
+        "Wahyu Pertama di Gua Hira",
+        "Dakwah di Makkah",
+        "Hijrah ke Madinah",
+        "Membina Masyarakat Madinah"
+      ]
+    }
+  },
+  "bacaanSolat": [
+    {
+      "id": "rukuk",
+      "tajuk": "Bacaan Rukuk",
+      "emo": "🙇",
+      "arab": "سُبْحَانَ رَبِّيَ الْعَظِيمِ وَبِحَمْدِهِ",
+      "audioArab": "سُبْحَانَ رَبِّيَ الْعَظِيمِ وَبِحَمْدِهِ، سُبْحَانَ رَبِّيَ الْعَظِيمِ وَبِحَمْدِهِ، سُبْحَانَ رَبِّيَ الْعَظِيمِ وَبِحَمْدِهِ",
+      "rumi": "Subhana rabbiyal-‘azimi wa bihamdih (dibaca 3 kali ketika rukuk)",
+      "maksud": "Maha Suci Tuhanku Yang Maha Agung dan dengan memuji-Nya."
+    },
+    {
+      "id": "iktidal",
+      "tajuk": "Bacaan Iktidal",
+      "emo": "🧍",
+      "arab": "سَمِعَ اللَّهُ لِمَنْ حَمِدَهُ، رَبَّنَا لَكَ الْحَمْدُ",
+      "audioArab": "سَمِعَ اللَّهُ لِمَنْ حَمِدَهُ، رَبَّنَا لَكَ الْحَمْدُ",
+      "rumi": "Sami‘allahu liman hamidah. Rabbana lakal-hamd.",
+      "maksud": "Allah mendengar orang yang memuji-Nya. Wahai Tuhan kami, bagi-Mulah segala pujian."
+    },
+    {
+      "id": "sujud",
+      "tajuk": "Bacaan Sujud",
+      "emo": "🙏",
+      "arab": "سُبْحَانَ رَبِّيَ الْأَعْلَى وَبِحَمْدِهِ",
+      "audioArab": "سُبْحَانَ رَبِّيَ الْأَعْلَى وَبِحَمْدِهِ، سُبْحَانَ رَبِّيَ الْأَعْلَى وَبِحَمْدِهِ، سُبْحَانَ رَبِّيَ الْأَعْلَى وَبِحَمْدِهِ",
+      "rumi": "Subhana rabbiyal-a‘la wa bihamdih (dibaca 3 kali ketika sujud)",
+      "maksud": "Maha Suci Tuhanku Yang Maha Tinggi dan dengan memuji-Nya."
+    },
+    {
+      "id": "duduk-dua-sujud",
+      "tajuk": "Doa Duduk Antara Dua Sujud",
+      "emo": "🧎",
+      "arab": "رَبِّ اغْفِرْ لِي وَارْحَمْنِي وَاجْبُرْنِي وَارْفَعْنِي وَارْزُقْنِي وَاهْدِنِي وَعَافِنِي وَاعْفُ عَنِّي",
+      "audioArab": "رَبِّ اغْفِرْ لِي، وَارْحَمْنِي، وَاجْبُرْنِي، وَارْفَعْنِي، وَارْزُقْنِي، وَاهْدِنِي، وَعَافِنِي، وَاعْفُ عَنِّي",
+      "rumi": "Rabbighfir li, warhamni, wajburni, warfa‘ni, warzuqni, wahdini, wa ‘afini, wa‘fu ‘anni.",
+      "maksud": "Wahai Tuhanku, ampunilah aku, rahmatilah aku, cukupkanlah kekuranganku, angkatlah darjatku, kurniakanlah rezeki kepadaku, berilah petunjuk kepadaku, sihatkanlah aku dan maafkanlah aku."
+    },
+    {
+      "id": "tahiyat",
+      "tajuk": "Bacaan Tahiyat & Selawat",
+      "emo": "☝️",
+      "arab": "التَّحِيَّاتُ الْمُبَارَكَاتُ الصَّلَوَاتُ الطَّيِّبَاتُ لِلَّهِ، السَّلَامُ عَلَيْكَ أَيُّهَا النَّبِيُّ وَرَحْمَةُ اللَّهِ وَبَرَكَاتُهُ، السَّلَامُ عَلَيْنَا وَعَلَىٰ عِبَادِ اللَّهِ الصَّالِحِينَ، أَشْهَدُ أَنْ لَا إِلَٰهَ إِلَّا اللَّهُ وَأَشْهَدُ أَنَّ مُحَمَّدًا رَسُولُ اللَّهِ، اللَّهُمَّ صَلِّ عَلَى مُحَمَّدٍ وَعَلَىٰ آلِ مُحَمَّدٍ، كَمَا صَلَّيْتَ عَلَىٰ إِبْرَاهِيمَ وَعَلَىٰ آلِ إِبْرَاهِيمَ، إِنَّكَ حَمِيدٌ مَجِيدٌ",
+      "audioArab": "التَّحِيَّاتُ الْمُبَارَكَاتُ الصَّلَوَاتُ الطَّيِّبَاتُ لِلَّهِ، السَّلَامُ عَلَيْكَ أَيُّهَا النَّبِيُّ وَرَحْمَةُ اللَّهِ وَبَرَكَاتُهُ، السَّلَامُ عَلَيْنَا وَعَلَىٰ عِبَادِ اللَّهِ الصَّالِحِينَ، أَشْهَدُ أَنْ لَا إِلَٰهَ إِلَّا اللَّهُ وَأَشْهَدُ أَنَّ مُحَمَّدًا رَسُولُ اللَّهِ، اللَّهُمَّ صَلِّ عَلَى مُحَمَّدٍ وَعَلَىٰ آلِ مُحَمَّدٍ، كَمَا صَلَّيْتَ عَلَىٰ إِبْرَاهِيمَ وَعَلَىٰ آلِ إِبْرَاهِيمَ، إِنَّكَ حَمِيدٌ مَجِيدٌ",
+      "rumi": "At-tahiyyatul-mubarakatus-salawatut-tayyibatu lillah. As-salamu ‘alayka ayyuhan-nabiyyu wa rahmatullahi wa barakatuh. As-salamu ‘alayna wa ‘ala ‘ibadillahis-salihin. Asyhadu alla ilaha illallah wa asyhadu anna Muhammadar rasulullah. Allahumma salli ‘ala Muhammad wa ‘ala ali Muhammad, kama sallayta ‘ala Ibrahim wa ‘ala ali Ibrahim, innaka hamidum majid.",
+      "maksud": "Segala penghormatan yang berkat, selawat dan kebaikan adalah bagi Allah. Salam sejahtera ke atasmu wahai Nabi, serta rahmat Allah dan berkat-Nya. Salam sejahtera ke atas kami dan ke atas hamba-hamba Allah yang soleh. Aku bersaksi tiada Tuhan melainkan Allah dan aku bersaksi bahawa Muhammad ialah pesuruh Allah. Ya Allah, kurniakanlah selawat ke atas Muhammad dan keluarga Muhammad sebagaimana Engkau kurniakan selawat ke atas Ibrahim dan keluarga Ibrahim. Sesungguhnya Engkau Maha Terpuji lagi Maha Mulia. (Terdapat variasi lafaz yang diajar mengikut guru — ikut versi guru sekolah kamu.)"
+    },
+    {
+      "id": "salam",
+      "tajuk": "Bacaan Salam",
+      "emo": "👋",
+      "arab": "السَّلَامُ عَلَيْكُمْ وَرَحْمَةُ اللَّهِ",
+      "audioArab": "السَّلَامُ عَلَيْكُمْ وَرَحْمَةُ اللَّهِ",
+      "rumi": "As-salamu ‘alaykum wa rahmatullah.",
+      "maksud": "Salam sejahtera ke atas kamu dan rahmat Allah."
+    }
+  ]
+}

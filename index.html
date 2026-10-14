@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ms">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>JOM FAHAM FARDU AIN V.1 — Belajar, Faham dan Amalkan</title>
+<meta name="description" content="Aplikasi pendidikan Islam luar talian untuk kanak-kanak 8–11 tahun: 6 modul Fardu Ain, kuiz, 10 permainan, audio dan kad doa.">
+<meta name="theme-color" content="#009688">
+<link rel="icon" href="assets/icons/favicon-32.png" sizes="32x32">
+<link rel="apple-touch-icon" href="assets/icons/icon-180.png">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="stylesheet" href="src/styles/main.css">
+<link rel="stylesheet" href="src/styles/responsive.css">
+</head>
+<body>
+<a class="skip" href="#app">Langkau ke kandungan</a>
+<header class="topbar">
+  <img src="assets/images/logo/logo-app.png" alt="Logo Jom Faham Fardu Ain V.1">
+  <div><div class="tajuk">JOM FAHAM FARDU AIN V.1</div><div class="tag">Belajar, Faham dan Amalkan</div></div>
+  <nav aria-label="Navigasi utama">
+    <button class="navbtn" onclick="location.hash='#/'">🏠 Utama</button>
+    <button class="navbtn" onclick="location.hash='#/modul'">📚 Modul</button>
+    <button class="navbtn" onclick="location.hash='#/permainan'">🎮 Permainan</button>
+    <button class="navbtn" onclick="location.hash='#/audio/arahan'">🎧 Audio</button>
+    <button class="navbtn" onclick="location.hash='#/kemajuan'">⭐ Kemajuan</button>
+    <button class="navbtn" onclick="location.hash='#/tetapan'">⚙️ Tetapan</button>
+  </nav>
+</header>
+<div id="netStatus" class="status-dalam" role="status">Menyemak status sambungan…</div>
+<main class="wrap" id="app" tabindex="-1"><p style="text-align:center;font-size:1.2rem">⏳ Memuatkan Jom Faham Fardu Ain…</p></main>
+<footer class="footer-nav" aria-label="Navigasi telefon">
+  <a href="#/">🏠<br>Utama</a><a href="#/modul">📚<br>Modul</a><a href="#/permainan">🎮<br>Main</a><a href="#/audio/arahan">🎧<br>Audio</a><a href="#/kemajuan">⭐<br>Maju</a>
+</footer>
+<script src="src/data.js"></script>
+<script src="src/database.js"></script>
+<script src="src/audio.js"></script>
+<script src="src/app.js"></script>
+<script>
+if ("serviceWorker" in navigator && location.protocol.startsWith("http")) {
+  var swSudahReload = false;
+  navigator.serviceWorker.addEventListener("controllerchange", function () {
+    if (!swSudahReload) { swSudahReload = true; location.reload(); }
+  });
+  window.addEventListener("load", function () {
+    navigator.serviceWorker.register("service-worker.js", { updateViaCache: "none" }).then(function (r) { r.update(); console.log("SW berdaftar:", r.scope); }).catch(function (e) { console.warn("SW gagal (app tetap berfungsi dalam talian):", e); });
+  });
+}
+let deferredPrompt = null;
+window.addEventListener("beforeinstallprompt", function (e) { e.preventDefault(); deferredPrompt = e; const b = document.createElement("button"); b.className = "btn btn-gold"; b.textContent = "📲 Pasang Aplikasi pada Peranti Ini"; b.style.cssText = "position:fixed;right:14px;bottom:76px;z-index:80"; b.onclick = async function () { b.remove(); if (deferredPrompt) { deferredPrompt.prompt(); await deferredPrompt.userChoice; deferredPrompt = null; } }; document.body.appendChild(b); setTimeout(function(){ if (b.parentNode) b.remove(); }, 20000); });
+</script>
+</body>
+</html>

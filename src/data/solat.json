@@ -1,0 +1,141 @@
+{
+  "modul": {
+    "id": "solat",
+    "tajuk": "Solat",
+    "emoji": "🤲",
+    "warna": "#5e35b1",
+    "cover": "assets/images/solat/cover-solat.svg",
+    "ringkas": "Solat lima waktu, syarat, rukun solat, pergerakan dan bacaan asas solat.",
+    "lencana": {
+      "id": "hebat-solat",
+      "nama": "Hebat Solat",
+      "emoji": "🤲"
+    },
+    "pelajaran": [
+      {
+        "id": "s1",
+        "tajuk": "Maksud Solat & Lima Waktu",
+        "emoji": "🕐",
+        "intro": "Solat ialah ibadat menghubungkan kita dengan Allah melalui bacaan dan pergerakan tertentu, bermula dengan takbiratul ihram dan berakhir dengan salam.",
+        "isi": [
+          "Subuh: 2 rakaat.",
+          "Zuhur: 4 rakaat.",
+          "Asar: 4 rakaat.",
+          "Maghrib: 3 rakaat.",
+          "Isyak: 4 rakaat."
+        ],
+        "tip": "Ingat bilangan rakaat: 2 – 4 – 4 – 3 – 4."
+      },
+      {
+        "id": "s2",
+        "tajuk": "Persediaan, Syarat & Pakaian Solat",
+        "emoji": "👕",
+        "intro": "Sebelum solat, pastikan badan, pakaian dan tempat solat suci, menutup aurat dan menghadap kiblat.",
+        "isi": [
+          "Syarat wajib solat (ringkas): Islam, baligh, berakal, suci daripada haid/nifas (perempuan), telah masuk waktu dan dakwah Islam telah sampai.",
+          "Syarat sah solat (ringkas): suci daripada hadas dan najis, menutup aurat, menghadap kiblat, masuk waktu, mengetahui kefarduan solat.",
+          "Aurat lelaki ketika solat: antara pusat hingga lutut (lutut mengikut perincian mazhab — diajar menutup dengan sempurna bersama guru). Aurat perempuan: seluruh badan kecuali muka dan tapak tangan.",
+          "Pakai pakaian bersih dan sopan. Sediakan sejadah di tempat yang bersih."
+        ],
+        "tip": "Semak sebelum solat: SUCI – AURAT – KIBLAT – WAKTU."
+      },
+      {
+        "id": "s3",
+        "tajuk": "Rukun & Pergerakan Solat",
+        "emoji": "🧎",
+        "intro": "Rukun solat ialah pergerakan dan bacaan wajib dalam solat. Antara rukun: niat, berdiri bagi yang mampu, takbiratul ihram, membaca al-Fatihah, rukuk dengan tuma‘ninah, iktidal, sujud, duduk antara dua sujud, duduk tahiyat akhir, bacaan tahiyat akhir, selawat, salam pertama dan tertib (ringkasan untuk kanak-kanak — perincian 13 rukun dipelajari bersama guru).",
+        "isi": [
+          "1. Berdiri tegak (bagi yang mampu) dan berniat.",
+          "2. Takbiratul ihram: ucapkan “Allahu Akbar” sambil mengangkat tangan.",
+          "3. Membaca surah al-Fatihah.",
+          "4. Rukuk dengan tuma‘ninah (berhenti sebentar dengan tenang).",
+          "5. Iktidal (berdiri semula) dengan tuma‘ninah.",
+          "6. Sujud (7 anggota sujud, dengan tuma‘ninah) — dilakukan dua kali.",
+          "7. Duduk antara dua sujud dengan tuma‘ninah.",
+          "8. Duduk tahiyat (awal/akhir mengikut rakaat) dan membaca tahiyat.",
+          "9. Memberi salam pertama ke kanan (salam kedua adalah sunat yang digalakkan)."
+        ],
+        "arab": "ٱللَّٰهُ أَكْبَرُ",
+        "rumi": "Allahu Akbar",
+        "maksud": "Allah Maha Besar."
+      },
+      {
+        "id": "s4",
+        "tajuk": "Bacaan al-Fatihah & Adab Masjid",
+        "emoji": "📖",
+        "intro": "Surah al-Fatihah wajib dibaca dalam setiap rakaat. Masjid ialah rumah Allah — kita menjaga adab dan kebersihan di dalamnya.",
+        "isi": [
+          "Berlatih membaca al-Fatihah dengan guru atau ibu bapa supaya makhraj dan tajwid betul.",
+          "Solat berjemaah di masjid/surau memberi pahala yang besar (mengikut hadis — belajar dengan guru).",
+          "Adab di masjid: masuk dengan kaki kanan dan berdoa, solat tahiyatul masjid (sunat), tidak bising, tidak melangkah bahu orang, menjaga kebersihan.",
+          "Perkara membatalkan solat (ringkas): bercakap dengan sengaja selain bacaan solat, makan/minum, bergerak banyak berturut-turut, berhadas, terbuka aurat, ketawa terbahak-bahak dan sebagainya — perincian bersama guru."
+        ],
+        "arab": "بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ ﴿١﴾ الْحَمْدُ لِلَّهِ رَبِّ الْعَالَمِينَ ﴿٢﴾ الرَّحْمَٰنِ الرَّحِيمِ ﴿٣﴾ مَالِكِ يَوْمِ الدِّينِ ﴿٤﴾ إِيَّاكَ نَعْبُدُ وَإِيَّاكَ نَسْتَعِينُ ﴿٥﴾ اهْدِنَا الصِّرَاطَ الْمُسْتَقِيمَ ﴿٦﴾ صِرَاطَ الَّذِينَ أَنْعَمْتَ عَلَيْهِمْ غَيْرِ الْمَغْضُوبِ عَلَيْهِمْ وَلَا الضَّالِّينَ ﴿٧﴾",
+        "rumi": "Bismillahir-rahmanir-rahim. Alhamdu lillahi rabbil-‘alamin. Ar-rahmanir-rahim. Maliki yawmid-din. Iyyaka na‘budu wa iyyaka nasta‘in. Ihdinas-siratal-mustaqim. Siratal-lazina an‘amta ‘alayhim, ghayril-maghdubi ‘alayhim wa lad-dallin.",
+        "maksud": "Dengan nama Allah Yang Maha Pengasih lagi Maha Penyayang. Segala puji bagi Allah, Tuhan sekalian alam. Yang Maha Pengasih lagi Maha Penyayang. Yang menguasai hari pembalasan. Hanya Engkaulah yang kami sembah dan hanya kepada Engkaulah kami memohon pertolongan. Tunjukilah kami jalan yang lurus. Iaitu jalan orang yang Engkau kurniakan nikmat kepada mereka, bukan jalan orang yang dimurkai dan bukan orang yang sesat."
+      }
+    ],
+    "kuiz": [
+      {
+        "q": "Berapakah rakaat solat Maghrib?",
+        "pilih": [
+          "2 rakaat",
+          "3 rakaat",
+          "4 rakaat"
+        ],
+        "j": 1,
+        "terang": "Solat Maghrib ialah 3 rakaat.",
+        "tahap": 1,
+        "emo": "🌇"
+      },
+      {
+        "q": "Pergerakan selepas rukuk ialah…",
+        "pilih": [
+          "Sujud",
+          "Iktidal",
+          "Salam"
+        ],
+        "j": 1,
+        "terang": "Selepas rukuk kita iktidal (berdiri semula) dengan tuma‘ninah.",
+        "tahap": 2,
+        "emo": "🧍"
+      },
+      {
+        "q": "Surah yang wajib dibaca pada setiap rakaat ialah…",
+        "pilih": [
+          "Al-Ikhlas",
+          "Al-Fatihah",
+          "An-Nas"
+        ],
+        "j": 1,
+        "terang": "Al-Fatihah ialah rukun qauli dan wajib dibaca setiap rakaat.",
+        "tahap": 2,
+        "emo": "📖"
+      },
+      {
+        "q": "Sebelum solat kita mesti pastikan…",
+        "pilih": [
+          "Ada telefon",
+          "Suci, tutup aurat, menghadap kiblat",
+          "Ada kawan"
+        ],
+        "j": 1,
+        "terang": "Syarat sah: suci, menutup aurat, menghadap kiblat dan masuk waktu.",
+        "tahap": 1,
+        "emo": "✅"
+      },
+      {
+        "q": "Di masjid, apakah adab yang betul?",
+        "pilih": [
+          "Berlari dan menjerit",
+          "Bercakap kuat",
+          "Menjaga kebersihan dan tidak bising"
+        ],
+        "j": 2,
+        "terang": "Masjid tempat ibadat — jaga adab, kebersihan dan ketenangan.",
+        "tahap": 3,
+        "emo": "🕌"
+      }
+    ]
+  }
+}

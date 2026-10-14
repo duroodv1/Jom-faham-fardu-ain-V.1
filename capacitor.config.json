@@ -1,0 +1,7 @@
+{
+  "appId": "com.jomfaham.farduain",
+  "appName": "Jom Faham Fardu Ain V.1",
+  "webDir": ".",
+  "backgroundColor": "#eaf7f5",
+  "server": { "androidScheme": "https" }
+}

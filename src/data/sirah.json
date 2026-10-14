@@ -1,0 +1,118 @@
+{
+  "modul": {
+    "id": "sirah",
+    "tajuk": "Sirah Nabi dan Kisah Islam",
+    "emoji": "🐪",
+    "warna": "#3949ab",
+    "cover": "assets/images/sirah/cover-sirah.svg",
+    "ringkas": "Kelahiran Nabi Muhammad SAW, wahyu pertama, hijrah, Madinah dan akhlak Rasulullah SAW. (Tiada gambaran wajah nabi.)",
+    "lencana": {
+      "id": "pencinta-sirah",
+      "nama": "Pencinta Sirah",
+      "emoji": "⭐"
+    },
+    "pelajaran": [
+      {
+        "id": "h1",
+        "tajuk": "Kelahiran & Zaman Kanak-kanak Nabi SAW",
+        "emoji": "⭐",
+        "intro": "Nabi Muhammad SAW dilahirkan di Makkah pada Tahun Gajah. Sejak kecil Baginda dikenali jujur dan amanah.",
+        "isi": [
+          "Ayah Baginda, Abdullah, wafat sebelum Baginda dilahirkan. Ibu Baginda ialah Aminah binti Wahab.",
+          "Baginda disusui oleh Halimah as-Sa‘diah dan membesar dengan akhlak mulia.",
+          "Apabila dewasa, Baginda digelar al-Amin (yang dipercayai) kerana kejujuran Baginda.",
+          "Pengajaran: berkata benar dan amanah sejak kecil."
+        ],
+        "tip": "Nota visual: App ini TIDAK menggambarkan wajah para nabi. Kita menggunakan pemandangan, objek dan tempat sejarah."
+      },
+      {
+        "id": "h2",
+        "tajuk": "Wahyu Pertama & Dakwah",
+        "emoji": "⛰️",
+        "intro": "Pada usia 40 tahun, Baginda menerima wahyu pertama di Gua Hira melalui Malaikat Jibril.",
+        "isi": [
+          "Perkataan pertama wahyu ialah “Iqra’” (Bacalah) — permulaan surah al-‘Alaq.",
+          "Khadijah r.a., isteri Baginda, ialah orang pertama beriman dan banyak membantu dakwah.",
+          "Baginda berdakwah dengan hikmah dan sabar walaupun menghadapi cabaran di Makkah.",
+          "Pengajaran: cintai ilmu dan membaca."
+        ],
+        "tip": "Gua Hira terletak di Jabal Nur, Makkah."
+      },
+      {
+        "id": "h3",
+        "tajuk": "Hijrah & Masyarakat Madinah",
+        "emoji": "🗺️",
+        "intro": "Hijrah ialah perpindahan Nabi SAW dan umat Islam dari Makkah ke Madinah untuk menyebarkan Islam dengan aman.",
+        "isi": [
+          "Di Madinah, Baginda membina Masjid Nabawi dan mempersaudarakan Muhajirin (dari Makkah) dan Ansar (penduduk Madinah).",
+          "Piagam Madinah menjaga keadilan dan keamanan masyarakat berbilang kaum/agama (pada tahap pengenalan kanak-kanak).",
+          "Akhlak Baginda: penyayang, pemaaf, suka membantu, jujur dan merendah diri.",
+          "Pengajaran: bekerjasama, berlaku adil dan menyayangi sesama manusia."
+        ],
+        "tip": "Gunakan permainan Susun Langkah untuk menyusun garis masa sirah."
+      }
+    ],
+    "kuiz": [
+      {
+        "q": "Di manakah Nabi Muhammad SAW dilahirkan?",
+        "pilih": [
+          "Madinah",
+          "Makkah",
+          "Taif"
+        ],
+        "j": 1,
+        "terang": "Baginda dilahirkan di Makkah pada Tahun Gajah.",
+        "tahap": 1,
+        "emo": "⭐"
+      },
+      {
+        "q": "Wahyu pertama diterima di…",
+        "pilih": [
+          "Gua Hira",
+          "Masjid Nabawi",
+          "Kaabah"
+        ],
+        "j": 0,
+        "terang": "Wahyu pertama di Gua Hira dengan perkataan “Iqra’”.",
+        "tahap": 2,
+        "emo": "⛰️"
+      },
+      {
+        "q": "Hijrah ialah perpindahan dari…",
+        "pilih": [
+          "Madinah ke Makkah",
+          "Makkah ke Madinah",
+          "Makkah ke Mesir"
+        ],
+        "j": 1,
+        "terang": "Hijrah ialah perpindahan dari Makkah ke Madinah.",
+        "tahap": 1,
+        "emo": "🐪"
+      },
+      {
+        "q": "Gelaran Nabi SAW kerana kejujuran Baginda ialah…",
+        "pilih": [
+          "Al-Amin",
+          "Al-Faruq",
+          "As-Siddiq"
+        ],
+        "j": 0,
+        "terang": "Baginda digelar al-Amin (yang dipercayai).",
+        "tahap": 2,
+        "emo": "💛"
+      },
+      {
+        "q": "Pengajaran utama daripada sirah untuk kanak-kanak ialah…",
+        "pilih": [
+          "Menjadi terkenal",
+          "Berakhlak mulia, jujur dan sabar",
+          "Mengumpul harta"
+        ],
+        "j": 1,
+        "terang": "Sirah mengajar kita berakhlak mulia, jujur, sabar dan penyayang.",
+        "tahap": 3,
+        "emo": "🌟"
+      }
+    ]
+  }
+}

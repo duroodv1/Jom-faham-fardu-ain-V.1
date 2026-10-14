@@ -1,0 +1,138 @@
+{
+  "modul": {
+    "id": "taharah",
+    "tajuk": "Taharah dan Bersuci",
+    "emoji": "💧",
+    "warna": "#039be5",
+    "cover": "assets/images/taharah/cover-taharah.svg",
+    "ringkas": "Maksud taharah, jenis air, langkah wuduk, perkara membatalkan wuduk, mandi wajib dan tayamum.",
+    "lencana": {
+      "id": "pakar-wuduk",
+      "nama": "Pakar Wuduk",
+      "emoji": "💧"
+    },
+    "pelajaran": [
+      {
+        "id": "t1",
+        "tajuk": "Maksud Taharah & Kebersihan",
+        "emoji": "🧼",
+        "intro": "Taharah bermaksud bersuci daripada hadas dan najis. Islam sangat menyayangi kebersihan.",
+        "isi": [
+          "Kita wajib suci badan, pakaian dan tempat sebelum solat.",
+          "Kebersihan menjaga kesihatan dan disukai Allah serta manusia.",
+          "Amalan: basuh tangan sebelum makan, gosok gigi, mandi setiap hari, potong kuku."
+        ],
+        "tip": "Ingat: Bersih badan, bersih pakaian, bersih tempat solat."
+      },
+      {
+        "id": "t2",
+        "tajuk": "Jenis Air & Najis",
+        "emoji": "🚰",
+        "intro": "Air mutlak seperti air paip, air hujan, air sungai dan air telaga boleh digunakan untuk bersuci jika suci dan tidak berubah sifatnya.",
+        "isi": [
+          "Air untuk wuduk mestilah suci dan menyucikan (air mutlak).",
+          "Najis ialah kekotoran yang perlu disucikan seperti air kencing dan najis haiwan (mengikut jenisnya — dapatkan bimbingan guru untuk perincian).",
+          "Cara asas menyucikan najis: buang najis, basuh dengan air hingga hilang bau, warna dan rasa kekotoran (jika ada).",
+          "Istinjak ialah membersihkan tempat keluar najis dengan air atau bahan kesat yang dibenarkan (seperti tisu) mengikut adab — gunakan air jika ada."
+        ],
+        "tip": "Jika tidak pasti jenis najis atau cara menyucikannya, tanya guru atau ibu bapa."
+      },
+      {
+        "id": "t3",
+        "tajuk": "Langkah Berwuduk (Rukun & Sunat)",
+        "emoji": "💦",
+        "intro": "Wuduk menyucikan kita daripada hadas kecil sebelum solat. Rukun wuduk (wajib dalam mazhab Syafi‘i) ada ENAM: niat, basuh muka, basuh tangan hingga siku, sapu sebahagian kepala, basuh kaki hingga buku lali, dan tertib.",
+        "isi": [
+          "1. Niat & baca Basmalah — RUKUN: niat (sunat membaca basmalah di permulaan).",
+          "2. Basuh kedua-dua tangan hingga pergelangan — SUNAT (3 kali).",
+          "3. Berkumur-kumur — SUNAT (3 kali).",
+          "4. Memasukkan air ke hidung & menghembusnya (istinsyaq/istintsar) — SUNAT (3 kali).",
+          "5. Basuh muka — RUKUN (sempadan: tempat tumbuh rambut hingga dagu, telinga ke telinga; sunat 3 kali).",
+          "6. Basuh kedua-dua tangan hingga siku — RUKUN (sunat 3 kali, mulakan kanan).",
+          "7. Sapu sebahagian kepala — RUKUN (sunat sapu seluruh kepala).",
+          "8. Sapu kedua-dua telinga — SUNAT.",
+          "9. Basuh kedua-dua kaki hingga buku lali — RUKUN (sunat 3 kali, mulakan kanan).",
+          "10. Tertib & doa selepas wuduk — RUKUN: tertib (ikut urutan). Doa selepas wuduk adalah sunat yang digalakkan."
+        ],
+        "arab": "أَشْهَدُ أَنْ لَا إِلَٰهَ إِلَّا ٱللَّٰهُ وَحْدَهُ لَا شَرِيكَ لَهُ وَأَشْهَدُ أَنَّ مُحَمَّدًا عَبْدُهُ وَرَسُولُهُ",
+        "rumi": "Asyhadu alla ilaha illallah wahdahu la syarikalah, wa asyhadu anna Muhammadan ‘abduhu wa rasuluh",
+        "maksud": "Aku bersaksi tiada Tuhan melainkan Allah Yang Esa, tiada sekutu bagi-Nya, dan aku bersaksi bahawa Muhammad ialah hamba dan pesuruh-Nya. (Doa selepas wuduk — untuk latihan bersama guru/ibu bapa)"
+      },
+      {
+        "id": "t4",
+        "tajuk": "Perkara Membatalkan Wuduk, Mandi Wajib & Tayamum",
+        "emoji": "⚠️",
+        "intro": "Wuduk terbatal apabila berlaku perkara tertentu. Tayamum ialah bersuci dengan debu tanah yang suci apabila tiada air atau tidak boleh menggunakan air.",
+        "isi": [
+          "Wuduk terbatal jika: keluar sesuatu dari qubul/dubur (kencing, najis, kentut), tidur yang tidak tetap duduknya/hilang kesedaran, bersentuhan kulit lelaki-perempuan bukan mahram (mengikut perincian mazhab — belajar dengan guru), menyentuh kemaluan dengan tapak tangan tanpa alas (mengikut perincian mazhab).",
+          "Mandi wajib ialah mandi meratakan air ke seluruh badan dengan niat untuk mengangkat hadas besar (contoh: selepas haid bagi perempuan, ihtilam/mimpi basah — mengikut keadaan dan bimbingan ibu bapa/guru).",
+          "Tayamum: niat, sapu muka dan kedua-dua tangan dengan debu tanah yang suci apabila tiada air atau uzur menggunakan air.",
+          "Perkara wajib dan sunat hendaklah dibezakan — rujuk guru Pendidikan Islam untuk situasi khusus."
+        ],
+        "tip": "Jika ragu-ragu sama ada wuduk terbatal atau tidak, tanya guru. Jangan was-was berterusan."
+      }
+    ],
+    "kuiz": [
+      {
+        "q": "Yang manakah RUKUN wuduk?",
+        "pilih": [
+          "Berkumur-kumur",
+          "Basuh muka",
+          "Sapu telinga"
+        ],
+        "j": 1,
+        "terang": "Basuh muka ialah rukun wuduk. Berkumur dan sapu telinga ialah sunat.",
+        "tahap": 2,
+        "emo": "😊"
+      },
+      {
+        "q": "Selepas membasuh muka, apakah rukun seterusnya?",
+        "pilih": [
+          "Basuh tangan hingga siku",
+          "Basuh kaki",
+          "Sapu telinga sahaja"
+        ],
+        "j": 0,
+        "terang": "Urutan rukun: muka → tangan hingga siku → sapu sebahagian kepala → kaki hingga buku lali (tertib).",
+        "tahap": 2,
+        "emo": "💪"
+      },
+      {
+        "q": "Wuduk terbatal apabila…",
+        "pilih": [
+          "Minum air",
+          "Kentut / buang air",
+          "Membaca buku"
+        ],
+        "j": 1,
+        "terang": "Keluar angin (kentut) atau buang air membatalkan wuduk.",
+        "tahap": 1,
+        "emo": "💧"
+      },
+      {
+        "q": "Tayamum dilakukan apabila…",
+        "pilih": [
+          "Malas mengambil air",
+          "Tiada air atau tidak boleh guna air",
+          "Hendak cepat"
+        ],
+        "j": 1,
+        "terang": "Tayamum hanya apabila tiada air atau uzur (sakit) menggunakan air.",
+        "tahap": 2,
+        "emo": "🏜️"
+      },
+      {
+        "q": "Air yang sesuai untuk berwuduk ialah…",
+        "pilih": [
+          "Air mutlak yang suci",
+          "Air berperisa",
+          "Air kotor"
+        ],
+        "j": 0,
+        "terang": "Gunakan air mutlak yang suci seperti air paip yang bersih.",
+        "tahap": 1,
+        "emo": "🚰"
+      }
+    ]
+  }
+}

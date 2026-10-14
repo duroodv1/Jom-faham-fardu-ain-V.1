@@ -1,0 +1,151 @@
+{
+  "modul": {
+    "id": "akidah",
+    "tajuk": "Asas Akidah",
+    "emoji": "🕌",
+    "warna": "#1e88e5",
+    "cover": "assets/images/akidah/cover-akidah.svg",
+    "ringkas": "Mengenal Allah SWT, Nabi Muhammad SAW, Rukun Iman dan Rukun Islam.",
+    "lencana": {
+      "id": "juara-akidah",
+      "nama": "Juara Akidah",
+      "emoji": "🏆"
+    },
+    "pelajaran": [
+      {
+        "id": "a1",
+        "tajuk": "Mengenal Allah SWT",
+        "emoji": "☪️",
+        "intro": "Allah SWT ialah Tuhan kita yang Maha Esa. Allah mencipta langit, bumi, manusia, haiwan dan tumbuhan.",
+        "isi": [
+          "Allah Maha Esa — tiada Tuhan selain Allah.",
+          "Allah Maha Pencipta (al-Khaliq), Maha Pengasih (ar-Rahman) dan Maha Penyayang (ar-Rahim).",
+          "Kita menyembah Allah sahaja dan memohon pertolongan kepada-Nya.",
+          "Kita bersyukur atas nikmat Allah seperti kesihatan, keluarga dan makanan."
+        ],
+        "tip": "Amalan baik: apabila melihat keindahan alam, ucapkan “Subhanallah” dan bersyukur."
+      },
+      {
+        "id": "a2",
+        "tajuk": "Nabi Muhammad SAW Rasul Terakhir",
+        "emoji": "🌙",
+        "intro": "Nabi Muhammad SAW ialah utusan Allah yang terakhir. Baginda membawa ajaran Islam untuk seluruh manusia.",
+        "isi": [
+          "Baginda dilahirkan di Makkah.",
+          "Baginda bersifat benar (Siddiq), dipercayai (Amanah), menyampaikan (Tabligh) dan bijaksana (Fatonah).",
+          "Kita mengasihi Baginda dengan mengikut sunnah dan berselawat.",
+          "Selawat ringkas: اللَّهُمَّ صَلِّ عَلَى مُحَمَّدٍ — Maksudnya: Ya Allah, kurniakanlah kesejahteraan ke atas Nabi Muhammad."
+        ],
+        "arab": "اللَّهُمَّ صَلِّ عَلَى مُحَمَّدٍ",
+        "rumi": "Allahumma salli ‘ala Muhammad",
+        "maksud": "Ya Allah, kurniakanlah kesejahteraan ke atas Nabi Muhammad SAW."
+      },
+      {
+        "id": "a3",
+        "tajuk": "Enam Rukun Iman",
+        "emoji": "💛",
+        "intro": "Rukun Iman ialah enam perkara yang wajib diyakini oleh setiap Muslim.",
+        "isi": [
+          "1. Beriman kepada Allah SWT.",
+          "2. Beriman kepada malaikat-malaikat Allah.",
+          "3. Beriman kepada kitab-kitab Allah.",
+          "4. Beriman kepada nabi dan rasul Allah.",
+          "5. Beriman kepada hari akhirat.",
+          "6. Beriman kepada qada dan qadar Allah."
+        ],
+        "tip": "Cara ingat: Allah – Malaikat – Kitab – Rasul – Hari Akhirat – Qada & Qadar."
+      },
+      {
+        "id": "a4",
+        "tajuk": "Lima Rukun Islam",
+        "emoji": "🏮",
+        "intro": "Rukun Islam ialah lima amalan asas yang membina kehidupan seorang Muslim.",
+        "isi": [
+          "1. Mengucap dua kalimah syahadah.",
+          "2. Mendirikan solat lima waktu.",
+          "3. Berpuasa pada bulan Ramadan.",
+          "4. Menunaikan zakat bagi yang layak dan cukup syarat.",
+          "5. Mengerjakan haji bagi yang mampu."
+        ],
+        "arab": "أَشْهَدُ أَنْ لَا إِلَٰهَ إِلَّا ٱللَّٰهُ وَأَشْهَدُ أَنَّ مُحَمَّدًا رَسُولُ ٱللَّٰهِ",
+        "rumi": "Asyhadu alla ilaha illallah, wa asyhadu anna Muhammadar Rasulullah",
+        "maksud": "Aku bersaksi bahawa tiada Tuhan melainkan Allah, dan aku bersaksi bahawa Nabi Muhammad ialah pesuruh Allah."
+      },
+      {
+        "id": "a5",
+        "tajuk": "Malaikat, Kitab, Nabi & Hari Akhirat",
+        "emoji": "📚",
+        "intro": "Allah mengutus malaikat, menurunkan kitab dan mengutus nabi untuk membimbing manusia ke jalan yang benar.",
+        "isi": [
+          "Malaikat dicipta daripada cahaya dan sentiasa taat kepada Allah. Contoh: Jibril menyampaikan wahyu, Mikail mengurus rezeki, Izrail mencabut nyawa, Israfil meniup sangkakala (dengan izin Allah).",
+          "Kitab Allah: Taurat (Nabi Musa), Zabur (Nabi Daud), Injil (Nabi Isa) dan al-Quran (Nabi Muhammad SAW). Al-Quran ialah kitab terakhir dan panduan kita.",
+          "Nabi dan rasul ialah manusia pilihan yang menyampaikan ajaran Allah. Nabi Muhammad SAW ialah nabi terakhir.",
+          "Hari akhirat ialah hari pembalasan di akhirat. Qada dan qadar ialah ketentuan Allah — kita berusaha bersungguh-sungguh dan bertawakal."
+        ],
+        "tip": "Amalan harian yang menunjukkan iman: berkata benar, menepati janji, membantu ibu bapa dan menjaga solat."
+      }
+    ],
+    "kuiz": [
+      {
+        "q": "Siapakah Tuhan yang Maha Esa dan Pencipta alam?",
+        "pilih": [
+          "Allah SWT",
+          "Matahari",
+          "Manusia"
+        ],
+        "j": 0,
+        "terang": "Allah SWT ialah Tuhan yang Maha Esa dan Pencipta segala-galanya.",
+        "tahap": 1,
+        "emo": "🌍"
+      },
+      {
+        "q": "Berapakah bilangan Rukun Iman?",
+        "pilih": [
+          "Lima",
+          "Enam",
+          "Tujuh"
+        ],
+        "j": 1,
+        "terang": "Rukun Iman ada ENAM perkara.",
+        "tahap": 1,
+        "emo": "💛"
+      },
+      {
+        "q": "Yang manakah Rukun Islam yang pertama?",
+        "pilih": [
+          "Berpuasa",
+          "Mengucap dua kalimah syahadah",
+          "Menunaikan zakat"
+        ],
+        "j": 1,
+        "terang": "Rukun Islam pertama ialah mengucap dua kalimah syahadah.",
+        "tahap": 1,
+        "emo": "🏮"
+      },
+      {
+        "q": "Malaikat Jibril bertugas untuk…",
+        "pilih": [
+          "Menyampaikan wahyu",
+          "Meniup sangkakala",
+          "Mencatat cuaca"
+        ],
+        "j": 0,
+        "terang": "Malaikat Jibril menyampaikan wahyu Allah kepada para nabi.",
+        "tahap": 2,
+        "emo": "📖"
+      },
+      {
+        "q": "Ali terjumpa dompet di sekolah. Apakah tindakan beriman yang betul?",
+        "pilih": [
+          "Simpan untuk diri sendiri",
+          "Serahkan kepada guru",
+          "Sembunyikan"
+        ],
+        "j": 1,
+        "terang": "Amanah ialah tanda iman. Serahkan barang yang dijumpai kepada guru.",
+        "tahap": 3,
+        "emo": "🎒"
+      }
+    ]
+  }
+}
