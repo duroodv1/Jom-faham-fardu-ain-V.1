@@ -154,7 +154,7 @@ const AUDIO_FILES = {
   "pelajaran-ibadah-i2": "assets/audio/instructions/pelajaran-ibadah-i2.mp3",
   "pelajaran-ibadah-i3": "assets/audio/instructions/pelajaran-ibadah-i3.mp3",
   "modul-sirah": "assets/audio/instructions/modul-sirah.mp3",
-  "pelajaran-sirah-h1": "assets/audio/instructions/pelajaran-sirah-h1.mp3",
+  "pelajaran-sirah-h1": "assets/audio/instructions/pelajaran-sirah-h1-penuh.mp3",
   "pelajaran-sirah-h2": "assets/audio/instructions/pelajaran-sirah-h2.mp3",
   "pelajaran-sirah-h3": "assets/audio/instructions/pelajaran-sirah-h3.mp3",
 };
