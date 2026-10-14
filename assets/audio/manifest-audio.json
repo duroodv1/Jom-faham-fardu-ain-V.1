@@ -712,9 +712,10 @@
    "fail": "assets/audio/instructions/modul-akidah.mp3",
    "bahasa": "ms",
    "suara": "Sintesis suara gTTS (ar/ms) — BUKAN rakaman manusia",
-   "tempoh_saat": 8.8,
-   "saiz_kb": 69,
-   "teks": "Asas Akidah. Mengenal Allah SWT, Nabi Muhammad SAW, Rukun Iman dan Rukun Islam."
+   "tempoh_saat": 10.9,
+   "saiz_kb": 85,
+   "teks": "Asas Akidah. Mengenal Allah SWT, Nabi Muhammad Sallallahu Alaihi Wasallam, Rukun Iman dan Rukun Islam.",
+   "saiz": 87360
   },
   {
    "kunci": "modul-alquran",
@@ -748,9 +749,10 @@
    "fail": "assets/audio/instructions/modul-sirah.mp3",
    "bahasa": "ms",
    "suara": "Sintesis suara gTTS (ar/ms) — BUKAN rakaman manusia",
-   "tempoh_saat": 13.4,
-   "saiz_kb": 105,
-   "teks": "Sirah Nabi dan Kisah Islam. Kelahiran Nabi Muhammad SAW, wahyu pertama, hijrah, Madinah dan akhlak Rasulullah SAW. (Tiad"
+   "tempoh_saat": 15.3,
+   "saiz_kb": 119,
+   "teks": "Sirah Nabi dan Kisah Islam. Kelahiran Nabi Muhammad Sallallahu Alaihi Wasallam, wahyu pertama, hijrah, Madinah dan akhlak Rasulullah Sallallahu Alaihi Wasallam. (Tiad",
+   "saiz": 122112
   },
   {
    "kunci": "modul-solat",
@@ -820,9 +822,10 @@
    "fail": "assets/audio/instructions/pelajaran-akidah-a2.mp3",
    "bahasa": "ms",
    "suara": "Sintesis suara gTTS (ar/ms) — BUKAN rakaman manusia",
-   "tempoh_saat": 38.6,
-   "saiz_kb": 302,
-   "teks": "Nabi Muhammad SAW Rasul Terakhir. Nabi Muhammad SAW ialah utusan Allah yang terakhir. Baginda membawa ajaran Islam untuk"
+   "tempoh_saat": 13.7,
+   "saiz_kb": 106,
+   "teks": "Nabi Muhammad Sallallahu Alaihi Wasallam Rasul Terakhir. Nabi Muhammad Sallallahu Alaihi Wasallam ialah utusan Allah yang terakhir. Baginda membawa ajaran Islam untuk",
+   "saiz": 109248
   },
   {
    "kunci": "pelajaran-akidah-a3",
@@ -955,9 +958,10 @@
    "fail": "assets/audio/instructions/pelajaran-sirah-h1.mp3",
    "bahasa": "ms",
    "suara": "Sintesis suara gTTS (ar/ms) — BUKAN rakaman manusia",
-   "tempoh_saat": 49.6,
-   "saiz_kb": 388,
-   "teks": "Kelahiran & Zaman Kanak-kanak Nabi SAW. Nabi Muhammad SAW dilahirkan di Makkah pada Tahun Gajah. Sejak kecil Baginda dik"
+   "tempoh_saat": 13.9,
+   "saiz_kb": 108,
+   "teks": "Kelahiran & Zaman Kanak-kanak Nabi Muhammad Sallallahu Alaihi Wasallam. Nabi Muhammad Sallallahu Alaihi Wasallam dilahirkan di Makkah pada Tahun Gajah. Sejak kecil Baginda dik",
+   "saiz": 111552
   },
   {
    "kunci": "pelajaran-sirah-h2",
@@ -973,9 +977,10 @@
    "fail": "assets/audio/instructions/pelajaran-sirah-h3.mp3",
    "bahasa": "ms",
    "suara": "Sintesis suara gTTS (ar/ms) — BUKAN rakaman manusia",
-   "tempoh_saat": 51.9,
-   "saiz_kb": 406,
-   "teks": "Hijrah & Masyarakat Madinah. Hijrah ialah perpindahan Nabi SAW dan umat Islam dari Makkah ke Madinah untuk menyebarkan I"
+   "tempoh_saat": 13.2,
+   "saiz_kb": 103,
+   "teks": "Hijrah & Masyarakat Madinah. Hijrah ialah perpindahan Nabi Muhammad Sallallahu Alaihi Wasallam dan umat Islam dari Makkah ke Madinah untuk menyebarkan I",
+   "saiz": 105984
   },
   {
    "kunci": "pelajaran-solat-s1",
