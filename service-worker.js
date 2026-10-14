@@ -1,5 +1,5 @@
 /* Service Worker - JOM FAHAM FARDU AIN V.1 (cache-first, luar talian selepas caching) */
-const CACHE = "jffa-v1.4.0-v42";
+const CACHE = "jffa-v1.4.0-v43";
 const ASSETS = [
  "./",
  "./assets/audio/akidah/selawat.mp3",
@@ -69,6 +69,7 @@ const ASSETS = [
  "./assets/audio/instructions/akhlak.mp3",
  "./assets/audio/instructions/arahan-permainan.mp3",
  "./assets/audio/instructions/batal-puasa-rukhsah.mp3",
+ "./assets/audio/instructions/batal-solat-penuh.mp3",
  "./assets/audio/instructions/batal-solat.mp3",
  "./assets/audio/instructions/batal-wuduk.mp3",
  "./assets/audio/instructions/carta-solat.mp3",
@@ -103,7 +104,6 @@ const ASSETS = [
  "./assets/audio/instructions/pelajaran-ibadah-i1.mp3",
  "./assets/audio/instructions/pelajaran-ibadah-i2.mp3",
  "./assets/audio/instructions/pelajaran-ibadah-i3.mp3",
- "./assets/audio/instructions/pelajaran-sirah-h1-penuh.mp3",
  "./assets/audio/instructions/pelajaran-sirah-h1.mp3",
  "./assets/audio/instructions/pelajaran-sirah-h2.mp3",
  "./assets/audio/instructions/pelajaran-sirah-h3.mp3",
