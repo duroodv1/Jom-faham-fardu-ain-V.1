@@ -1,0 +1,1376 @@
+{
+ "dijana": "Skrip scripts/generate_audio.py (gTTS)",
+ "status": "Sintesis suara bantuan latihan — perlu semakan guru/qari berkelayakan",
+ "bilangan": 130,
+ "fail": [
+  {
+   "kunci": "akidah-selawat",
+   "fail": "assets/audio/akidah/selawat.mp3",
+   "bahasa": "ar",
+   "suara": "Rakaman disediakan pengguna melalui Google Drive (diganti 13 Okt 2026)",
+   "tempoh_saat": 2.9,
+   "saiz_kb": 23,
+   "teks": "اللَّهُمَّ صَلِّ عَلَى مُحَمَّدٍ",
+   "saiz": 16704
+  },
+  {
+   "kunci": "akidah-syahadah",
+   "fail": "assets/audio/akidah/syahadah.mp3",
+   "bahasa": "ar",
+   "suara": "Rakaman disediakan pengguna melalui Google Drive (diganti 13 Okt 2026)",
+   "tempoh_saat": 6.1,
+   "saiz_kb": 48,
+   "teks": "أَشْهَدُ أَنْ لَا إِلَٰهَ إِلَّا ٱللَّٰهُ وَأَشْهَدُ أَنَّ مُحَمَّدًا رَسُولُ ٱللَّٰهِ",
+   "saiz": 31824
+  },
+  {
+   "kunci": "alquran-alikhlas",
+   "fail": "assets/audio/al-quran/al-ikhlas.mp3",
+   "bahasa": "ar",
+   "suara": "Sintesis suara gTTS (ar/ms) — BUKAN rakaman manusia",
+   "tempoh_saat": 8.2,
+   "saiz_kb": 64,
+   "teks": "قُلْ هُوَ اللَّهُ أَحَدٌ اللَّهُ الصَّمَدُ لَمْ يَلِدْ وَلَمْ يُولَدْ وَلَمْ يَكُن لَّهُ كُفُوًا أَحَدٌ"
+  },
+  {
+   "kunci": "doa-doa1",
+   "fail": "assets/audio/doa/doa1.mp3",
+   "bahasa": "ar",
+   "suara": "Sintesis suara gTTS (ar/ms) — BUKAN rakaman manusia",
+   "tempoh_saat": 7.8,
+   "saiz_kb": 61,
+   "teks": "بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ، اللَّهُمَّ بَارِكْ لَنَا فِيمَا رَزَقْتَنَا وَقِنَا عَذَابَ النَّارِ"
+  },
+  {
+   "kunci": "doa-doa10",
+   "fail": "assets/audio/doa/doa10.mp3",
+   "bahasa": "ar",
+   "suara": "Sintesis suara gTTS (ar/ms) — BUKAN rakaman manusia",
+   "tempoh_saat": 5.7,
+   "saiz_kb": 45,
+   "teks": "رَّبِّ اغْفِرْ لِي وَلِوَالِدَيَّ وَارْحَمْهُمَا كَمَا رَبَّيَانِي صَغِيرًا"
+  },
+  {
+   "kunci": "doa-doa11",
+   "fail": "assets/audio/doa/doa11.mp3",
+   "bahasa": "ar",
+   "suara": "Sintesis suara gTTS (ar/ms) — BUKAN rakaman manusia",
+   "tempoh_saat": 8.5,
+   "saiz_kb": 66,
+   "teks": "سُبْحَانَ الَّذِي سَخَّرَ لَنَا هَٰذَا وَمَا كُنَّا لَهُ مُقْرِنِينَ وَإِنَّا إِلَىٰ رَبِّنَا لَمُنقَلِبُونَ"
+  },
+  {
+   "kunci": "doa-doa12",
+   "fail": "assets/audio/doa/doa12.mp3",
+   "bahasa": "ar",
+   "suara": "Sintesis suara gTTS (ar/ms) — BUKAN rakaman manusia",
+   "tempoh_saat": 9.3,
+   "saiz_kb": 73,
+   "teks": "أَشْهَدُ أَنْ لَا إِلَٰهَ إِلَّا ٱللَّٰهُ وَحْدَهُ لَا شَرِيكَ لَهُ وَأَشْهَدُ أَنَّ مُحَمَّدًا عَبْدُهُ وَرَسُولُهُ"
+  },
+  {
+   "kunci": "doa-doa13",
+   "fail": "assets/audio/doa/doa13.mp3",
+   "bahasa": "ar",
+   "suara": "Sintesis suara gTTS (ar/ms) — BUKAN rakaman manusia",
+   "tempoh_saat": 5.2,
+   "saiz_kb": 41,
+   "teks": "سُبْحَانَ اللَّهِ ، وَالْحَمْدُ لِلَّهِ ، وَاللَّهُ أَكْبَرُ"
+  },
+  {
+   "kunci": "doa-doa2",
+   "fail": "assets/audio/doa/doa2.mp3",
+   "bahasa": "ar",
+   "suara": "Sintesis suara gTTS (ar/ms) — BUKAN rakaman manusia",
+   "tempoh_saat": 5.8,
+   "saiz_kb": 45,
+   "teks": "الْحَمْدُ لِلَّهِ الَّذِي أَطْعَمَنَا وَسَقَانَا وَجَعَلَنَا مِنَ الْمُسْلِمِينَ"
+  },
+  {
+   "kunci": "doa-doa3",
+   "fail": "assets/audio/doa/doa3.mp3",
+   "bahasa": "ar",
+   "suara": "Sintesis suara gTTS (ar/ms) — BUKAN rakaman manusia",
+   "tempoh_saat": 3.0,
+   "saiz_kb": 23,
+   "teks": "بِسْمِكَ اللَّهُمَّ أَمُوتُ وَأَحْيَا"
+  },
+  {
+   "kunci": "doa-doa4",
+   "fail": "assets/audio/doa/doa4.mp3",
+   "bahasa": "ar",
+   "suara": "Sintesis suara gTTS (ar/ms) — BUKAN rakaman manusia",
+   "tempoh_saat": 5.5,
+   "saiz_kb": 43,
+   "teks": "الْحَمْدُ لِلَّهِ الَّذِي أَحْيَانَا بَعْدَ مَا أَمَاتَنَا وَإِلَيْهِ النُّشُورُ"
+  },
+  {
+   "kunci": "doa-doa5",
+   "fail": "assets/audio/doa/doa5.mp3",
+   "bahasa": "ar",
+   "suara": "Sintesis suara gTTS (ar/ms) — BUKAN rakaman manusia",
+   "tempoh_saat": 4.8,
+   "saiz_kb": 38,
+   "teks": "اللَّهُمَّ إِنِّي أَعُوذُ بِكَ مِنَ الْخُبُثِ وَالْخَبَائِثِ"
+  },
+  {
+   "kunci": "doa-doa6",
+   "fail": "assets/audio/doa/doa6.mp3",
+   "bahasa": "ar",
+   "suara": "Sintesis suara gTTS (ar/ms) — BUKAN rakaman manusia",
+   "tempoh_saat": 1.3,
+   "saiz_kb": 10,
+   "teks": "غُفْرَانَكَ"
+  },
+  {
+   "kunci": "doa-doa7",
+   "fail": "assets/audio/doa/doa7.mp3",
+   "bahasa": "ar",
+   "suara": "Sintesis suara gTTS (ar/ms) — BUKAN rakaman manusia",
+   "tempoh_saat": 6.7,
+   "saiz_kb": 52,
+   "teks": "بِسْمِ اللَّهِ وَلَجْنَا وَبِسْمِ اللَّهِ خَرَجْنَا وَعَلَى اللَّهِ رَبِّنَا تَوَكَّلْنَا"
+  },
+  {
+   "kunci": "doa-doa8",
+   "fail": "assets/audio/doa/doa8.mp3",
+   "bahasa": "ar",
+   "suara": "Sintesis suara gTTS (ar/ms) — BUKAN rakaman manusia",
+   "tempoh_saat": 6.1,
+   "saiz_kb": 48,
+   "teks": "بِسْمِ اللَّهِ تَوَكَّلْتُ عَلَى اللَّهِ وَلَا حَوْلَ وَلَا قُوَّةَ إِلَّا بِاللَّهِ"
+  },
+  {
+   "kunci": "doa-doa9",
+   "fail": "assets/audio/doa/doa9.mp3",
+   "bahasa": "ar",
+   "suara": "Sintesis suara gTTS (ar/ms) — BUKAN rakaman manusia",
+   "tempoh_saat": 2.1,
+   "saiz_kb": 16,
+   "teks": "رَّبِّ زِدْنِي عِلْمًا"
+  },
+  {
+   "kunci": "doa-maksud-doa1",
+   "fail": "assets/audio/doa/maksud-doa1.mp3",
+   "bahasa": "ms",
+   "suara": "Sintesis suara gTTS (ar/ms) — BUKAN rakaman manusia",
+   "tempoh_saat": 15.6,
+   "saiz_kb": 122,
+   "teks": "Doa Sebelum Makan. Dengan nama Allah Yang Maha Pengasih lagi Maha Penyayang. Ya Allah, berkatilah rezeki yang Engkau kur"
+  },
+  {
+   "kunci": "doa-maksud-doa10",
+   "fail": "assets/audio/doa/maksud-doa10.mp3",
+   "bahasa": "ms",
+   "suara": "Sintesis suara gTTS (ar/ms) — BUKAN rakaman manusia",
+   "tempoh_saat": 12.4,
+   "saiz_kb": 97,
+   "teks": "Doa Untuk Ibu Bapa. Wahai Tuhanku, ampunilah aku dan ibu bapaku, dan kasihanilah mereka sebagaimana mereka mendidikku se"
+  },
+  {
+   "kunci": "doa-maksud-doa11",
+   "fail": "assets/audio/doa/maksud-doa11.mp3",
+   "bahasa": "ms",
+   "suara": "Sintesis suara gTTS (ar/ms) — BUKAN rakaman manusia",
+   "tempoh_saat": 15.6,
+   "saiz_kb": 122,
+   "teks": "Doa Menaiki Kenderaan. Maha Suci Tuhan yang menundukkan kenderaan ini untuk kami, sedangkan kami tidak mampu menguasainy"
+  },
+  {
+   "kunci": "doa-maksud-doa12",
+   "fail": "assets/audio/doa/maksud-doa12.mp3",
+   "bahasa": "ms",
+   "suara": "Sintesis suara gTTS (ar/ms) — BUKAN rakaman manusia",
+   "tempoh_saat": 14.0,
+   "saiz_kb": 109,
+   "teks": "Doa Selepas Wuduk. Aku bersaksi tiada Tuhan melainkan Allah Yang Esa, tiada sekutu bagi-Nya, dan aku bersaksi bahawa Muh"
+  },
+  {
+   "kunci": "doa-maksud-doa13",
+   "fail": "assets/audio/doa/maksud-doa13.mp3",
+   "bahasa": "ms",
+   "suara": "Sintesis suara gTTS (ar/ms) — BUKAN rakaman manusia",
+   "tempoh_saat": 7.7,
+   "saiz_kb": 60,
+   "teks": "Zikir Harian. Maha Suci Allah, segala puji bagi Allah, dan Allah Maha Besar."
+  },
+  {
+   "kunci": "doa-maksud-doa2",
+   "fail": "assets/audio/doa/maksud-doa2.mp3",
+   "bahasa": "ms",
+   "suara": "Sintesis suara gTTS (ar/ms) — BUKAN rakaman manusia",
+   "tempoh_saat": 11.2,
+   "saiz_kb": 87,
+   "teks": "Doa Selepas Makan. Segala puji bagi Allah yang memberi kami makan dan minum serta menjadikan kami dalam kalangan orang I"
+  },
+  {
+   "kunci": "doa-maksud-doa3",
+   "fail": "assets/audio/doa/maksud-doa3.mp3",
+   "bahasa": "ms",
+   "suara": "Sintesis suara gTTS (ar/ms) — BUKAN rakaman manusia",
+   "tempoh_saat": 8.4,
+   "saiz_kb": 66,
+   "teks": "Doa Sebelum Tidur. Dengan nama-Mu ya Allah, aku mati (tidur) dan aku hidup (bangun)."
+  },
+  {
+   "kunci": "doa-maksud-doa4",
+   "fail": "assets/audio/doa/maksud-doa4.mp3",
+   "bahasa": "ms",
+   "suara": "Sintesis suara gTTS (ar/ms) — BUKAN rakaman manusia",
+   "tempoh_saat": 11.6,
+   "saiz_kb": 91,
+   "teks": "Doa Bangun Tidur. Segala puji bagi Allah yang menghidupkan kami selepas mematikan kami (tidur), dan kepada-Nya kami akan"
+  },
+  {
+   "kunci": "doa-maksud-doa5",
+   "fail": "assets/audio/doa/maksud-doa5.mp3",
+   "bahasa": "ms",
+   "suara": "Sintesis suara gTTS (ar/ms) — BUKAN rakaman manusia",
+   "tempoh_saat": 14.2,
+   "saiz_kb": 111,
+   "teks": "Doa Masuk Tandas. Ya Allah, aku berlindung dengan-Mu daripada kejahatan syaitan dan kekotoran. (Dibaca sebelum masuk — l"
+  },
+  {
+   "kunci": "doa-maksud-doa6",
+   "fail": "assets/audio/doa/maksud-doa6.mp3",
+   "bahasa": "ms",
+   "suara": "Sintesis suara gTTS (ar/ms) — BUKAN rakaman manusia",
+   "tempoh_saat": 5.2,
+   "saiz_kb": 41,
+   "teks": "Doa Keluar Tandas. (Aku memohon) keampunan-Mu ya Allah."
+  },
+  {
+   "kunci": "doa-maksud-doa7",
+   "fail": "assets/audio/doa/maksud-doa7.mp3",
+   "bahasa": "ms",
+   "suara": "Sintesis suara gTTS (ar/ms) — BUKAN rakaman manusia",
+   "tempoh_saat": 14.4,
+   "saiz_kb": 113,
+   "teks": "Doa Masuk Rumah. Dengan nama Allah kami masuk dan dengan nama Allah kami keluar, dan kepada Allah Tuhan kami, kami berta"
+  },
+  {
+   "kunci": "doa-maksud-doa8",
+   "fail": "assets/audio/doa/maksud-doa8.mp3",
+   "bahasa": "ms",
+   "suara": "Sintesis suara gTTS (ar/ms) — BUKAN rakaman manusia",
+   "tempoh_saat": 10.7,
+   "saiz_kb": 84,
+   "teks": "Doa Keluar Rumah. Dengan nama Allah, aku bertawakal kepada Allah. Tiada daya dan kekuatan melainkan dengan pertolongan A"
+  },
+  {
+   "kunci": "doa-maksud-doa9",
+   "fail": "assets/audio/doa/maksud-doa9.mp3",
+   "bahasa": "ms",
+   "suara": "Sintesis suara gTTS (ar/ms) — BUKAN rakaman manusia",
+   "tempoh_saat": 6.8,
+   "saiz_kb": 53,
+   "teks": "Doa Sebelum Belajar. Wahai Tuhanku, tambahkanlah kepadaku ilmu pengetahuan."
+  },
+  {
+   "kunci": "feedback-belum-tepat",
+   "fail": "assets/audio/feedback/belum-tepat.mp3",
+   "bahasa": "ms",
+   "suara": "Sintesis suara gTTS (ar/ms) — BUKAN rakaman manusia",
+   "tempoh_saat": 5.9,
+   "saiz_kb": 46,
+   "teks": "Belum tepat, tidak mengapa. Kita belajar bersama dan cuba lagi!"
+  },
+  {
+   "kunci": "feedback-betul",
+   "fail": "assets/audio/feedback/betul.mp3",
+   "bahasa": "ms",
+   "suara": "Sintesis suara gTTS (ar/ms) — BUKAN rakaman manusia",
+   "tempoh_saat": 3.0,
+   "saiz_kb": 23,
+   "teks": "Betul! Tahniah, kamu hebat!"
+  },
+  {
+   "kunci": "feedback-tahniah",
+   "fail": "assets/audio/feedback/tahniah-bintang.mp3",
+   "bahasa": "ms",
+   "suara": "Sintesis suara gTTS (ar/ms) — BUKAN rakaman manusia",
+   "tempoh_saat": 4.3,
+   "saiz_kb": 34,
+   "teks": "Tahniah! Kamu mendapat bintang dan lencana baru!"
+  },
+  {
+   "kunci": "hijaiyah-01",
+   "fail": "assets/audio/al-quran/hijaiyah-01.mp3",
+   "bahasa": "ar",
+   "suara": "Sintesis suara gTTS (ar/ms) — BUKAN rakaman manusia",
+   "tempoh_saat": 0.8,
+   "saiz_kb": 6,
+   "teks": "ا"
+  },
+  {
+   "kunci": "hijaiyah-02",
+   "fail": "assets/audio/al-quran/hijaiyah-02.mp3",
+   "bahasa": "ar",
+   "suara": "Sintesis suara gTTS (ar/ms) — BUKAN rakaman manusia",
+   "tempoh_saat": 0.9,
+   "saiz_kb": 7,
+   "teks": "ب"
+  },
+  {
+   "kunci": "hijaiyah-03",
+   "fail": "assets/audio/al-quran/hijaiyah-03.mp3",
+   "bahasa": "ar",
+   "suara": "Sintesis suara gTTS (ar/ms) — BUKAN rakaman manusia",
+   "tempoh_saat": 0.8,
+   "saiz_kb": 7,
+   "teks": "ت"
+  },
+  {
+   "kunci": "hijaiyah-04",
+   "fail": "assets/audio/al-quran/hijaiyah-04.mp3",
+   "bahasa": "ar",
+   "suara": "Sintesis suara gTTS (ar/ms) — BUKAN rakaman manusia",
+   "tempoh_saat": 0.9,
+   "saiz_kb": 7,
+   "teks": "ث"
+  },
+  {
+   "kunci": "hijaiyah-05",
+   "fail": "assets/audio/al-quran/hijaiyah-05.mp3",
+   "bahasa": "ar",
+   "suara": "Sintesis suara gTTS (ar/ms) — BUKAN rakaman manusia",
+   "tempoh_saat": 1.0,
+   "saiz_kb": 8,
+   "teks": "ج"
+  },
+  {
+   "kunci": "hijaiyah-06",
+   "fail": "assets/audio/al-quran/hijaiyah-06.mp3",
+   "bahasa": "ar",
+   "suara": "Sintesis suara gTTS (ar/ms) — BUKAN rakaman manusia",
+   "tempoh_saat": 0.9,
+   "saiz_kb": 7,
+   "teks": "ح"
+  },
+  {
+   "kunci": "hijaiyah-07",
+   "fail": "assets/audio/al-quran/hijaiyah-07.mp3",
+   "bahasa": "ar",
+   "suara": "Sintesis suara gTTS (ar/ms) — BUKAN rakaman manusia",
+   "tempoh_saat": 0.9,
+   "saiz_kb": 7,
+   "teks": "خ"
+  },
+  {
+   "kunci": "hijaiyah-08",
+   "fail": "assets/audio/al-quran/hijaiyah-08.mp3",
+   "bahasa": "ar",
+   "suara": "Sintesis suara gTTS (ar/ms) — BUKAN rakaman manusia",
+   "tempoh_saat": 1.0,
+   "saiz_kb": 8,
+   "teks": "د"
+  },
+  {
+   "kunci": "hijaiyah-09",
+   "fail": "assets/audio/al-quran/hijaiyah-09.mp3",
+   "bahasa": "ar",
+   "suara": "Sintesis suara gTTS (ar/ms) — BUKAN rakaman manusia",
+   "tempoh_saat": 1.0,
+   "saiz_kb": 8,
+   "teks": "ذ"
+  },
+  {
+   "kunci": "hijaiyah-10",
+   "fail": "assets/audio/al-quran/hijaiyah-10.mp3",
+   "bahasa": "ar",
+   "suara": "Sintesis suara gTTS (ar/ms) — BUKAN rakaman manusia",
+   "tempoh_saat": 0.9,
+   "saiz_kb": 7,
+   "teks": "ر"
+  },
+  {
+   "kunci": "hijaiyah-11",
+   "fail": "assets/audio/al-quran/hijaiyah-11.mp3",
+   "bahasa": "ar",
+   "suara": "Sintesis suara gTTS (ar/ms) — BUKAN rakaman manusia",
+   "tempoh_saat": 1.0,
+   "saiz_kb": 8,
+   "teks": "ز"
+  },
+  {
+   "kunci": "hijaiyah-12",
+   "fail": "assets/audio/al-quran/hijaiyah-12.mp3",
+   "bahasa": "ar",
+   "suara": "Sintesis suara gTTS (ar/ms) — BUKAN rakaman manusia",
+   "tempoh_saat": 1.0,
+   "saiz_kb": 8,
+   "teks": "س"
+  },
+  {
+   "kunci": "hijaiyah-13",
+   "fail": "assets/audio/al-quran/hijaiyah-13.mp3",
+   "bahasa": "ar",
+   "suara": "Sintesis suara gTTS (ar/ms) — BUKAN rakaman manusia",
+   "tempoh_saat": 1.1,
+   "saiz_kb": 8,
+   "teks": "ش"
+  },
+  {
+   "kunci": "hijaiyah-14",
+   "fail": "assets/audio/al-quran/hijaiyah-14.mp3",
+   "bahasa": "ar",
+   "suara": "Sintesis suara gTTS (ar/ms) — BUKAN rakaman manusia",
+   "tempoh_saat": 1.0,
+   "saiz_kb": 8,
+   "teks": "ص"
+  },
+  {
+   "kunci": "hijaiyah-15",
+   "fail": "assets/audio/al-quran/hijaiyah-15.mp3",
+   "bahasa": "ar",
+   "suara": "Sintesis suara gTTS (ar/ms) — BUKAN rakaman manusia",
+   "tempoh_saat": 0.9,
+   "saiz_kb": 7,
+   "teks": "ض"
+  },
+  {
+   "kunci": "hijaiyah-16",
+   "fail": "assets/audio/al-quran/hijaiyah-16.mp3",
+   "bahasa": "ar",
+   "suara": "Sintesis suara gTTS (ar/ms) — BUKAN rakaman manusia",
+   "tempoh_saat": 0.9,
+   "saiz_kb": 7,
+   "teks": "ط"
+  },
+  {
+   "kunci": "hijaiyah-17",
+   "fail": "assets/audio/al-quran/hijaiyah-17.mp3",
+   "bahasa": "ar",
+   "suara": "Sintesis suara gTTS (ar/ms) — BUKAN rakaman manusia",
+   "tempoh_saat": 0.9,
+   "saiz_kb": 7,
+   "teks": "ظ"
+  },
+  {
+   "kunci": "hijaiyah-18",
+   "fail": "assets/audio/al-quran/hijaiyah-18.mp3",
+   "bahasa": "ar",
+   "suara": "Sintesis suara gTTS (ar/ms) — BUKAN rakaman manusia",
+   "tempoh_saat": 0.9,
+   "saiz_kb": 7,
+   "teks": "ع"
+  },
+  {
+   "kunci": "hijaiyah-19",
+   "fail": "assets/audio/al-quran/hijaiyah-19.mp3",
+   "bahasa": "ar",
+   "suara": "Sintesis suara gTTS (ar/ms) — BUKAN rakaman manusia",
+   "tempoh_saat": 1.0,
+   "saiz_kb": 8,
+   "teks": "غ"
+  },
+  {
+   "kunci": "hijaiyah-20",
+   "fail": "assets/audio/al-quran/hijaiyah-20.mp3",
+   "bahasa": "ar",
+   "suara": "Sintesis suara gTTS (ar/ms) — BUKAN rakaman manusia",
+   "tempoh_saat": 0.9,
+   "saiz_kb": 7,
+   "teks": "ف"
+  },
+  {
+   "kunci": "hijaiyah-21",
+   "fail": "assets/audio/al-quran/hijaiyah-21.mp3",
+   "bahasa": "ar",
+   "suara": "Sintesis suara gTTS (ar/ms) — BUKAN rakaman manusia",
+   "tempoh_saat": 0.9,
+   "saiz_kb": 7,
+   "teks": "ق"
+  },
+  {
+   "kunci": "hijaiyah-22",
+   "fail": "assets/audio/al-quran/hijaiyah-22.mp3",
+   "bahasa": "ar",
+   "suara": "Sintesis suara gTTS (ar/ms) — BUKAN rakaman manusia",
+   "tempoh_saat": 0.9,
+   "saiz_kb": 7,
+   "teks": "ك"
+  },
+  {
+   "kunci": "hijaiyah-23",
+   "fail": "assets/audio/al-quran/hijaiyah-23.mp3",
+   "bahasa": "ar",
+   "suara": "Sintesis suara gTTS (ar/ms) — BUKAN rakaman manusia",
+   "tempoh_saat": 1.0,
+   "saiz_kb": 8,
+   "teks": "ل"
+  },
+  {
+   "kunci": "hijaiyah-24",
+   "fail": "assets/audio/al-quran/hijaiyah-24.mp3",
+   "bahasa": "ar",
+   "suara": "Sintesis suara gTTS (ar/ms) — BUKAN rakaman manusia",
+   "tempoh_saat": 1.0,
+   "saiz_kb": 8,
+   "teks": "م"
+  },
+  {
+   "kunci": "hijaiyah-25",
+   "fail": "assets/audio/al-quran/hijaiyah-25.mp3",
+   "bahasa": "ar",
+   "suara": "Sintesis suara gTTS (ar/ms) — BUKAN rakaman manusia",
+   "tempoh_saat": 1.0,
+   "saiz_kb": 8,
+   "teks": "ن"
+  },
+  {
+   "kunci": "hijaiyah-26",
+   "fail": "assets/audio/al-quran/hijaiyah-26.mp3",
+   "bahasa": "ar",
+   "suara": "Sintesis suara gTTS (ar/ms) — BUKAN rakaman manusia",
+   "tempoh_saat": 0.9,
+   "saiz_kb": 7,
+   "teks": "ه"
+  },
+  {
+   "kunci": "hijaiyah-27",
+   "fail": "assets/audio/al-quran/hijaiyah-27.mp3",
+   "bahasa": "ar",
+   "suara": "Sintesis suara gTTS (ar/ms) — BUKAN rakaman manusia",
+   "tempoh_saat": 0.8,
+   "saiz_kb": 6,
+   "teks": "و"
+  },
+  {
+   "kunci": "hijaiyah-28",
+   "fail": "assets/audio/al-quran/hijaiyah-28.mp3",
+   "bahasa": "ar",
+   "suara": "Sintesis suara gTTS (ar/ms) — BUKAN rakaman manusia",
+   "tempoh_saat": 0.9,
+   "saiz_kb": 7,
+   "teks": "ي"
+  },
+  {
+   "kunci": "hijaiyah-penuh",
+   "fail": "assets/audio/al-quran/hijaiyah-penuh.mp3",
+   "bahasa": "ar",
+   "suara": "Sintesis suara gTTS (ar/ms) — BUKAN rakaman manusia",
+   "tempoh_saat": 28.1,
+   "saiz_kb": 220,
+   "teks": "ا، ب، ت، ث، ج، ح، خ، د، ذ، ر، ز، س، ش، ص، ض، ط، ظ، ع، غ، ف، ق، ك، ل، م، ن، ه، و، ي"
+  },
+  {
+   "kunci": "instr-akhlak",
+   "fail": "assets/audio/instructions/akhlak.mp3",
+   "bahasa": "ms",
+   "suara": "Sintesis suara gTTS (ar/ms) — BUKAN rakaman manusia",
+   "tempoh_saat": 209.6,
+   "saiz_kb": 1638,
+   "teks": "Akhlak dan Adab Islam. 1. Adab dengan Ibu Bapa. Bercakap dengan lembut, mendengar nasihat, membantu kerja rumah mengikut"
+  },
+  {
+   "kunci": "instr-arahan",
+   "fail": "assets/audio/instructions/arahan-permainan.mp3",
+   "bahasa": "ms",
+   "suara": "Sintesis suara gTTS (ar/ms) — BUKAN rakaman manusia",
+   "tempoh_saat": 5.6,
+   "saiz_kb": 44,
+   "teks": "Tekan jawapan yang betul. Tiada had masa, fikir perlahan-lahan."
+  },
+  {
+   "kunci": "instr-batal-puasa-rukhsah",
+   "fail": "assets/audio/instructions/batal-puasa-rukhsah.mp3",
+   "bahasa": "ms",
+   "suara": "Sintesis suara gTTS (ar/ms) — BUKAN rakaman manusia",
+   "tempoh_saat": 142.5,
+   "saiz_kb": 1113,
+   "teks": "Perkara yang Membatalkan Puasa. 1. Makan atau Minum dengan Sengaja. Makan atau minum dengan sengaja dari terbit fajar hi"
+  },
+  {
+   "kunci": "instr-batal-solat",
+   "fail": "assets/audio/instructions/batal-solat.mp3",
+   "bahasa": "ms",
+   "suara": "Sintesis suara gTTS (ar/ms) — BUKAN rakaman manusia",
+   "tempoh_saat": 101.1,
+   "saiz_kb": 790,
+   "teks": "Perkara yang Membatalkan Solat. 1. Bercakap atau Ketawa dengan Sengaja. Bercakap perkara lain selain bacaan solat dengan"
+  },
+  {
+   "kunci": "instr-batal-wuduk",
+   "fail": "assets/audio/instructions/batal-wuduk.mp3",
+   "bahasa": "ms",
+   "suara": "Sintesis suara gTTS (ar/ms) — BUKAN rakaman manusia",
+   "tempoh_saat": 104.5,
+   "saiz_kb": 817,
+   "teks": "Perkara yang Membatalkan Wuduk. 1. Buang Air Kecil & Air Besar. Apabila kita buang air kecil atau buang air besar, wuduk"
+  },
+  {
+   "kunci": "instr-carta-solat",
+   "fail": "assets/audio/instructions/carta-solat.mp3",
+   "bahasa": "ms",
+   "suara": "Sintesis suara gTTS (ar/ms) — BUKAN rakaman manusia",
+   "tempoh_saat": 59.3,
+   "saiz_kb": 463,
+   "teks": "Pergerakan 1: Berdiri & Takbiratul Ihram. Berdiri tegak bagi yang mampu, berniat dan ucapkan “Allahu Akbar”. Pergerakan "
+  },
+  {
+   "kunci": "instr-carta-wuduk",
+   "fail": "assets/audio/instructions/carta-wuduk.mp3",
+   "bahasa": "ms",
+   "suara": "Sintesis suara gTTS (ar/ms) — BUKAN rakaman manusia",
+   "tempoh_saat": 87.6,
+   "saiz_kb": 684,
+   "teks": "Langkah 1: Niat & Basmalah. Niat dalam hati kerana Allah (RUKUN: niat). Membaca basmalah adalah sunat. Langkah 2: Basuh "
+  },
+  {
+   "kunci": "instr-jemaah",
+   "fail": "assets/audio/instructions/solat-jemaah.mp3",
+   "bahasa": "ms",
+   "suara": "Sintesis suara gTTS (ar/ms) — BUKAN rakaman manusia",
+   "tempoh_saat": 46.1,
+   "saiz_kb": 360,
+   "teks": "Pengenalan Solat Berjemaah. Imam memimpin solat di hadapan, manakala makmum mengikut pergerakan imam dan tidak mendahulu"
+  },
+  {
+   "kunci": "instr-jenis-air",
+   "fail": "assets/audio/instructions/jenis-air.mp3",
+   "bahasa": "ms",
+   "suara": "Sintesis suara gTTS (ar/ms) — BUKAN rakaman manusia",
+   "tempoh_saat": 113.8,
+   "saiz_kb": 889,
+   "teks": "Jenis-jenis Air. 1. Air Mutlak. Suci lagi Menyucikan. Air yang kekal dengan sifat asal yang Allah ciptakan dan tidak ber"
+  },
+  {
+   "kunci": "instr-najis",
+   "fail": "assets/audio/instructions/najis.mp3",
+   "bahasa": "ms",
+   "suara": "Sintesis suara gTTS (ar/ms) — BUKAN rakaman manusia",
+   "tempoh_saat": 112.7,
+   "saiz_kb": 881,
+   "teks": "Jenis-jenis Najis dan Cara Menyucikannya. 1. Najis Mukhaffafah (Ringan). Contohnya: Air kencing bayi lelaki berumur bawa"
+  },
+  {
+   "kunci": "instr-salam",
+   "fail": "assets/audio/instructions/selamat-datang.mp3",
+   "bahasa": "ms",
+   "suara": "Sintesis suara gTTS (ar/ms) — BUKAN rakaman manusia",
+   "tempoh_saat": 6.4,
+   "saiz_kb": 50,
+   "teks": "Selamat datang ke Jom Faham Fardu Ain. Pilih modul dan tekan Mula Belajar."
+  },
+  {
+   "kunci": "instr-solat-waktu",
+   "fail": "assets/audio/instructions/solat-waktu.mp3",
+   "bahasa": "ms",
+   "suara": "Sintesis suara gTTS (ar/ms) — BUKAN rakaman manusia",
+   "tempoh_saat": 81.6,
+   "saiz_kb": 637,
+   "teks": "Solat Lima Waktu. Subuh, 2 rakaat. Waktu fajar, sebelum matahari terbit. Mulakan hari dengan mengingati Allah. Bangun aw"
+  },
+  {
+   "kunci": "instr-zakat-korban-haji",
+   "fail": "assets/audio/instructions/zakat-korban-haji.mp3",
+   "bahasa": "ms",
+   "suara": "Sintesis suara gTTS (ar/ms) — BUKAN rakaman manusia",
+   "tempoh_saat": 140.8,
+   "saiz_kb": 1100,
+   "teks": "Pengenalan Zakat Fitrah. Zakat fitrah ditunaikan dalam bulan Ramadan dan diselesaikan sebelum solat sunat Aidilfitri. Ke"
+  },
+  {
+   "kunci": "lafaz-alhamdulillah",
+   "fail": "assets/audio/doa/lafaz-alhamdulillah.mp3",
+   "bahasa": "ar",
+   "suara": "Sintesis suara gTTS (ar/ms) — BUKAN rakaman manusia",
+   "tempoh_saat": 3.6,
+   "saiz_kb": 28,
+   "teks": "الْحَمْدُ لِلَّهِ، الْحَمْدُ لِلَّهِ"
+  },
+  {
+   "kunci": "lafaz-assalamualaikum",
+   "fail": "assets/audio/doa/lafaz-assalamualaikum.mp3",
+   "bahasa": "ar",
+   "suara": "Sintesis suara gTTS (ar/ms) — BUKAN rakaman manusia",
+   "tempoh_saat": 4.4,
+   "saiz_kb": 34,
+   "teks": "السَّلَامُ عَلَيْكُمْ وَرَحْمَةُ اللَّهِ وَبَرَكَاتُهُ"
+  },
+  {
+   "kunci": "lafaz-subhanallah",
+   "fail": "assets/audio/doa/lafaz-subhanallah.mp3",
+   "bahasa": "ar",
+   "suara": "Sintesis suara gTTS (ar/ms) — BUKAN rakaman manusia",
+   "tempoh_saat": 3.4,
+   "saiz_kb": 27,
+   "teks": "سُبْحَانَ اللَّهِ، سُبْحَانَ اللَّهِ"
+  },
+  {
+   "kunci": "modul-akhlak",
+   "fail": "assets/audio/instructions/modul-akhlak.mp3",
+   "bahasa": "ms",
+   "suara": "Sintesis suara gTTS (ar/ms) — BUKAN rakaman manusia",
+   "tempoh_saat": 11.7,
+   "saiz_kb": 92,
+   "teks": "Akhlak dan Adab Islam. Adab dengan ibu bapa, guru, rakan, makan, tidur, masjid, keselamatan dan internet."
+  },
+  {
+   "kunci": "modul-akidah",
+   "fail": "assets/audio/instructions/modul-akidah.mp3",
+   "bahasa": "ms",
+   "suara": "Sintesis suara gTTS (ar/ms) — BUKAN rakaman manusia",
+   "tempoh_saat": 8.8,
+   "saiz_kb": 69,
+   "teks": "Asas Akidah. Mengenal Allah SWT, Nabi Muhammad SAW, Rukun Iman dan Rukun Islam."
+  },
+  {
+   "kunci": "modul-alquran",
+   "fail": "assets/audio/instructions/modul-alquran.mp3",
+   "bahasa": "ms",
+   "suara": "Sintesis suara gTTS (ar/ms) — BUKAN rakaman manusia",
+   "tempoh_saat": 10.7,
+   "saiz_kb": 84,
+   "teks": "Al-Quran dan Tajwid Asas. Huruf hijaiyah, baris, tanwin, sukun, syaddah, mad dan latihan al-Fatihah."
+  },
+  {
+   "kunci": "modul-doa",
+   "fail": "assets/audio/instructions/modul-doa.mp3",
+   "bahasa": "ms",
+   "suara": "Sintesis suara gTTS (ar/ms) — BUKAN rakaman manusia",
+   "tempoh_saat": 10.8,
+   "saiz_kb": 84,
+   "teks": "Hafalan Doa Harian. Doa makan, tidur, tandas, rumah, belajar, ibu bapa, kenderaan dan zikir harian."
+  },
+  {
+   "kunci": "modul-ibadah",
+   "fail": "assets/audio/instructions/modul-ibadah.mp3",
+   "bahasa": "ms",
+   "suara": "Sintesis suara gTTS (ar/ms) — BUKAN rakaman manusia",
+   "tempoh_saat": 12.5,
+   "saiz_kb": 97,
+   "teks": "Puasa dan Ibadah. Puasa Ramadan, sahur dan berbuka, perkara membatalkan puasa, zakat fitrah, korban, haji dan umrah."
+  },
+  {
+   "kunci": "modul-sirah",
+   "fail": "assets/audio/instructions/modul-sirah.mp3",
+   "bahasa": "ms",
+   "suara": "Sintesis suara gTTS (ar/ms) — BUKAN rakaman manusia",
+   "tempoh_saat": 13.4,
+   "saiz_kb": 105,
+   "teks": "Sirah Nabi dan Kisah Islam. Kelahiran Nabi Muhammad SAW, wahyu pertama, hijrah, Madinah dan akhlak Rasulullah SAW. (Tiad"
+  },
+  {
+   "kunci": "modul-solat",
+   "fail": "assets/audio/instructions/modul-solat.mp3",
+   "bahasa": "ms",
+   "suara": "Sintesis suara gTTS (ar/ms) — BUKAN rakaman manusia",
+   "tempoh_saat": 7.8,
+   "saiz_kb": 61,
+   "teks": "Solat. Solat lima waktu, syarat, rukun solat, pergerakan dan bacaan asas solat."
+  },
+  {
+   "kunci": "modul-taharah",
+   "fail": "assets/audio/instructions/modul-taharah.mp3",
+   "bahasa": "ms",
+   "suara": "Sintesis suara gTTS (ar/ms) — BUKAN rakaman manusia",
+   "tempoh_saat": 11.5,
+   "saiz_kb": 90,
+   "teks": "Taharah dan Bersuci. Maksud taharah, jenis air, langkah wuduk, perkara membatalkan wuduk, mandi wajib dan tayamum."
+  },
+  {
+   "kunci": "pelajaran-akhlak-k1",
+   "fail": "assets/audio/instructions/pelajaran-akhlak-k1.mp3",
+   "bahasa": "ms",
+   "suara": "Sintesis suara gTTS (ar/ms) — BUKAN rakaman manusia",
+   "tempoh_saat": 33.4,
+   "saiz_kb": 261,
+   "teks": "Adab dengan Ibu Bapa & Guru. Ibu bapa dan guru banyak berjasa kepada kita. Kita menghormati dan menyayangi mereka. Berca"
+  },
+  {
+   "kunci": "pelajaran-akhlak-k2",
+   "fail": "assets/audio/instructions/pelajaran-akhlak-k2.mp3",
+   "bahasa": "ms",
+   "suara": "Sintesis suara gTTS (ar/ms) — BUKAN rakaman manusia",
+   "tempoh_saat": 42.9,
+   "saiz_kb": 335,
+   "teks": "Adab Makan, Tidur & Berpakaian. Islam mengajar adab dalam aktiviti harian supaya hidup kita bersih dan teratur. Makan: b"
+  },
+  {
+   "kunci": "pelajaran-akhlak-k3",
+   "fail": "assets/audio/instructions/pelajaran-akhlak-k3.mp3",
+   "bahasa": "ms",
+   "suara": "Sintesis suara gTTS (ar/ms) — BUKAN rakaman manusia",
+   "tempoh_saat": 40.6,
+   "saiz_kb": 317,
+   "teks": "Berkata Benar, Amanah & Urus Marah. Muslim yang baik berkata benar, amanah dan sabar apabila marah. Bercakap benar walau"
+  },
+  {
+   "kunci": "pelajaran-akhlak-k4",
+   "fail": "assets/audio/instructions/pelajaran-akhlak-k4.mp3",
+   "bahasa": "ms",
+   "suara": "Sintesis suara gTTS (ar/ms) — BUKAN rakaman manusia",
+   "tempoh_saat": 57.6,
+   "saiz_kb": 450,
+   "teks": "Keselamatan Diri, Telefon & Internet. Kita menjaga keselamatan diri di rumah, di sekolah dan ketika menggunakan telefon "
+  },
+  {
+   "kunci": "pelajaran-akidah-a1",
+   "fail": "assets/audio/instructions/pelajaran-akidah-a1.mp3",
+   "bahasa": "ms",
+   "suara": "Sintesis suara gTTS (ar/ms) — BUKAN rakaman manusia",
+   "tempoh_saat": 47.0,
+   "saiz_kb": 367,
+   "teks": "Mengenal Allah SWT. Allah SWT ialah Tuhan kita yang Maha Esa. Allah mencipta langit, bumi, manusia, haiwan dan tumbuhan."
+  },
+  {
+   "kunci": "pelajaran-akidah-a2",
+   "fail": "assets/audio/instructions/pelajaran-akidah-a2.mp3",
+   "bahasa": "ms",
+   "suara": "Sintesis suara gTTS (ar/ms) — BUKAN rakaman manusia",
+   "tempoh_saat": 38.6,
+   "saiz_kb": 302,
+   "teks": "Nabi Muhammad SAW Rasul Terakhir. Nabi Muhammad SAW ialah utusan Allah yang terakhir. Baginda membawa ajaran Islam untuk"
+  },
+  {
+   "kunci": "pelajaran-akidah-a3",
+   "fail": "assets/audio/instructions/pelajaran-akidah-a3.mp3",
+   "bahasa": "ms",
+   "suara": "Sintesis suara gTTS (ar/ms) — BUKAN rakaman manusia",
+   "tempoh_saat": 40.3,
+   "saiz_kb": 315,
+   "teks": "Enam Rukun Iman. Rukun Iman ialah enam perkara yang wajib diyakini oleh setiap Muslim. 1. Beriman kepada Allah SWT. 2. B"
+  },
+  {
+   "kunci": "pelajaran-akidah-a4",
+   "fail": "assets/audio/instructions/pelajaran-akidah-a4.mp3",
+   "bahasa": "ms",
+   "suara": "Sintesis suara gTTS (ar/ms) — BUKAN rakaman manusia",
+   "tempoh_saat": 27.8,
+   "saiz_kb": 217,
+   "teks": "Lima Rukun Islam. Rukun Islam ialah lima amalan asas yang membina kehidupan seorang Muslim. 1. Mengucap dua kalimah syah"
+  },
+  {
+   "kunci": "pelajaran-akidah-a5",
+   "fail": "assets/audio/instructions/pelajaran-akidah-a5.mp3",
+   "bahasa": "ms",
+   "suara": "Sintesis suara gTTS (ar/ms) — BUKAN rakaman manusia",
+   "tempoh_saat": 76.1,
+   "saiz_kb": 594,
+   "teks": "Malaikat, Kitab, Nabi & Hari Akhirat. Allah mengutus malaikat, menurunkan kitab dan mengutus nabi untuk membimbing manus"
+  },
+  {
+   "kunci": "pelajaran-alquran-q1",
+   "fail": "assets/audio/instructions/pelajaran-alquran-q1.mp3",
+   "bahasa": "ms",
+   "suara": "Sintesis suara gTTS (ar/ms) — BUKAN rakaman manusia",
+   "tempoh_saat": 40.1,
+   "saiz_kb": 313,
+   "teks": "Huruf Hijaiyah. Huruf hijaiyah ialah huruf Arab. Al-Quran diturunkan dalam bahasa Arab. Kita belajar menyebut huruf dari"
+  },
+  {
+   "kunci": "pelajaran-alquran-q2",
+   "fail": "assets/audio/instructions/pelajaran-alquran-q2.mp3",
+   "bahasa": "ms",
+   "suara": "Sintesis suara gTTS (ar/ms) — BUKAN rakaman manusia",
+   "tempoh_saat": 36.9,
+   "saiz_kb": 288,
+   "teks": "Baris Atas, Bawah, Hadapan & Tanwin. Baris (harakat) membantu kita membaca huruf dengan betul. Baris atas (fathah): بَ d"
+  },
+  {
+   "kunci": "pelajaran-alquran-q3",
+   "fail": "assets/audio/instructions/pelajaran-alquran-q3.mp3",
+   "bahasa": "ms",
+   "suara": "Sintesis suara gTTS (ar/ms) — BUKAN rakaman manusia",
+   "tempoh_saat": 46.7,
+   "saiz_kb": 365,
+   "teks": "Sukun, Syaddah & Mad. Sukun, syaddah dan mad mengubah cara huruf dibaca. Sukun ( ْ ): huruf mati, contoh بْ — bunyi berh"
+  },
+  {
+   "kunci": "pelajaran-alquran-q4",
+   "fail": "assets/audio/instructions/pelajaran-alquran-q4.mp3",
+   "bahasa": "ms",
+   "suara": "Sintesis suara gTTS (ar/ms) — BUKAN rakaman manusia",
+   "tempoh_saat": 42.7,
+   "saiz_kb": 334,
+   "teks": "Adab Membaca Al-Quran & Surah Pendek. Kita membaca al-Quran dengan suci, tenang dan penuh hormat. Berwuduk, duduk dengan"
+  },
+  {
+   "kunci": "pelajaran-doa-d1",
+   "fail": "assets/audio/instructions/pelajaran-doa-d1.mp3",
+   "bahasa": "ms",
+   "suara": "Sintesis suara gTTS (ar/ms) — BUKAN rakaman manusia",
+   "tempoh_saat": 28.2,
+   "saiz_kb": 221,
+   "teks": "Doa Makan & Minum. Kita membaca doa sebelum dan selepas makan untuk bersyukur kepada Allah. Basuh tangan sebelum makan. "
+  },
+  {
+   "kunci": "pelajaran-doa-d2",
+   "fail": "assets/audio/instructions/pelajaran-doa-d2.mp3",
+   "bahasa": "ms",
+   "suara": "Sintesis suara gTTS (ar/ms) — BUKAN rakaman manusia",
+   "tempoh_saat": 32.6,
+   "saiz_kb": 255,
+   "teks": "Doa Tidur & Bangun Tidur. Kita tidur dan bangun dengan mengingati Allah. Sebelum tidur: berwuduk (sunat), membaca doa se"
+  },
+  {
+   "kunci": "pelajaran-doa-d3",
+   "fail": "assets/audio/instructions/pelajaran-doa-d3.mp3",
+   "bahasa": "ms",
+   "suara": "Sintesis suara gTTS (ar/ms) — BUKAN rakaman manusia",
+   "tempoh_saat": 38.1,
+   "saiz_kb": 298,
+   "teks": "Doa Tandas & Rumah. Islam mengajar doa untuk aktiviti harian termasuk masuk tandas dan masuk rumah. Masuk tandas: melang"
+  },
+  {
+   "kunci": "pelajaran-doa-d4",
+   "fail": "assets/audio/instructions/pelajaran-doa-d4.mp3",
+   "bahasa": "ms",
+   "suara": "Sintesis suara gTTS (ar/ms) — BUKAN rakaman manusia",
+   "tempoh_saat": 47.7,
+   "saiz_kb": 373,
+   "teks": "Doa Belajar, Ibu Bapa, Kenderaan & Zikir. Kita berdoa sebelum belajar, mendoakan ibu bapa dan memohon keselamatan ketika"
+  },
+  {
+   "kunci": "pelajaran-ibadah-i1",
+   "fail": "assets/audio/instructions/pelajaran-ibadah-i1.mp3",
+   "bahasa": "ms",
+   "suara": "Sintesis suara gTTS (ar/ms) — BUKAN rakaman manusia",
+   "tempoh_saat": 52.6,
+   "saiz_kb": 411,
+   "teks": "Maksud Puasa & Niat. Puasa ialah menahan diri daripada makan, minum dan perkara yang membatalkan puasa dari terbit fajar"
+  },
+  {
+   "kunci": "pelajaran-ibadah-i2",
+   "fail": "assets/audio/instructions/pelajaran-ibadah-i2.mp3",
+   "bahasa": "ms",
+   "suara": "Sintesis suara gTTS (ar/ms) — BUKAN rakaman manusia",
+   "tempoh_saat": 66.6,
+   "saiz_kb": 520,
+   "teks": "Sahur, Berbuka & Pembatal Puasa. Bersahur ialah makan sebelum fajar (sunat yang digalakkan). Berbuka ialah makan apabila"
+  },
+  {
+   "kunci": "pelajaran-ibadah-i3",
+   "fail": "assets/audio/instructions/pelajaran-ibadah-i3.mp3",
+   "bahasa": "ms",
+   "suara": "Sintesis suara gTTS (ar/ms) — BUKAN rakaman manusia",
+   "tempoh_saat": 66.8,
+   "saiz_kb": 522,
+   "teks": "Zakat Fitrah, Korban, Haji & Umrah. Zakat, korban, haji dan umrah ialah ibadah yang mengajar kita berkongsi rezeki dan m"
+  },
+  {
+   "kunci": "pelajaran-sirah-h1",
+   "fail": "assets/audio/instructions/pelajaran-sirah-h1.mp3",
+   "bahasa": "ms",
+   "suara": "Sintesis suara gTTS (ar/ms) — BUKAN rakaman manusia",
+   "tempoh_saat": 49.6,
+   "saiz_kb": 388,
+   "teks": "Kelahiran & Zaman Kanak-kanak Nabi SAW. Nabi Muhammad SAW dilahirkan di Makkah pada Tahun Gajah. Sejak kecil Baginda dik"
+  },
+  {
+   "kunci": "pelajaran-sirah-h2",
+   "fail": "assets/audio/instructions/pelajaran-sirah-h2.mp3",
+   "bahasa": "ms",
+   "suara": "Sintesis suara gTTS (ar/ms) — BUKAN rakaman manusia",
+   "tempoh_saat": 40.0,
+   "saiz_kb": 313,
+   "teks": "Wahyu Pertama & Dakwah. Pada usia 40 tahun, Baginda menerima wahyu pertama di Gua Hira melalui Malaikat Jibril. Perkataa"
+  },
+  {
+   "kunci": "pelajaran-sirah-h3",
+   "fail": "assets/audio/instructions/pelajaran-sirah-h3.mp3",
+   "bahasa": "ms",
+   "suara": "Sintesis suara gTTS (ar/ms) — BUKAN rakaman manusia",
+   "tempoh_saat": 51.9,
+   "saiz_kb": 406,
+   "teks": "Hijrah & Masyarakat Madinah. Hijrah ialah perpindahan Nabi SAW dan umat Islam dari Makkah ke Madinah untuk menyebarkan I"
+  },
+  {
+   "kunci": "pelajaran-solat-s1",
+   "fail": "assets/audio/instructions/pelajaran-solat-s1.mp3",
+   "bahasa": "ms",
+   "suara": "Sintesis suara gTTS (ar/ms) — BUKAN rakaman manusia",
+   "tempoh_saat": 33.0,
+   "saiz_kb": 257,
+   "teks": "Maksud Solat & Lima Waktu. Solat ialah ibadat menghubungkan kita dengan Allah melalui bacaan dan pergerakan tertentu, be"
+  },
+  {
+   "kunci": "pelajaran-solat-s2",
+   "fail": "assets/audio/instructions/pelajaran-solat-s2.mp3",
+   "bahasa": "ms",
+   "suara": "Sintesis suara gTTS (ar/ms) — BUKAN rakaman manusia",
+   "tempoh_saat": 67.5,
+   "saiz_kb": 527,
+   "teks": "Persediaan, Syarat & Pakaian Solat. Sebelum solat, pastikan badan, pakaian dan tempat solat suci, menutup aurat dan meng"
+  },
+  {
+   "kunci": "pelajaran-solat-s3",
+   "fail": "assets/audio/instructions/pelajaran-solat-s3.mp3",
+   "bahasa": "ms",
+   "suara": "Sintesis suara gTTS (ar/ms) — BUKAN rakaman manusia",
+   "tempoh_saat": 89.9,
+   "saiz_kb": 702,
+   "teks": "Rukun & Pergerakan Solat. Rukun solat ialah pergerakan dan bacaan wajib dalam solat. Antara rukun: niat, berdiri bagi ya"
+  },
+  {
+   "kunci": "pelajaran-solat-s4",
+   "fail": "assets/audio/instructions/pelajaran-solat-s4.mp3",
+   "bahasa": "ms",
+   "suara": "Sintesis suara gTTS (ar/ms) — BUKAN rakaman manusia",
+   "tempoh_saat": 62.2,
+   "saiz_kb": 486,
+   "teks": "Bacaan al-Fatihah & Adab Masjid. Surah al-Fatihah wajib dibaca dalam setiap rakaat. Masjid ialah rumah Allah — kita menj"
+  },
+  {
+   "kunci": "pelajaran-taharah-t1",
+   "fail": "assets/audio/instructions/pelajaran-taharah-t1.mp3",
+   "bahasa": "ms",
+   "suara": "Sintesis suara gTTS (ar/ms) — BUKAN rakaman manusia",
+   "tempoh_saat": 35.3,
+   "saiz_kb": 276,
+   "teks": "Maksud Taharah & Kebersihan. Taharah bermaksud bersuci daripada hadas dan najis. Islam sangat menyayangi kebersihan. Kit"
+  },
+  {
+   "kunci": "pelajaran-taharah-t2",
+   "fail": "assets/audio/instructions/pelajaran-taharah-t2.mp3",
+   "bahasa": "ms",
+   "suara": "Sintesis suara gTTS (ar/ms) — BUKAN rakaman manusia",
+   "tempoh_saat": 62.6,
+   "saiz_kb": 489,
+   "teks": "Jenis Air & Najis. Air mutlak seperti air paip, air hujan, air sungai dan air telaga boleh digunakan untuk bersuci jika "
+  },
+  {
+   "kunci": "pelajaran-taharah-t3",
+   "fail": "assets/audio/instructions/pelajaran-taharah-t3.mp3",
+   "bahasa": "ms",
+   "suara": "Sintesis suara gTTS (ar/ms) — BUKAN rakaman manusia",
+   "tempoh_saat": 105.6,
+   "saiz_kb": 825,
+   "teks": "Langkah Berwuduk (Rukun & Sunat). Wuduk menyucikan kita daripada hadas kecil sebelum solat. Rukun wuduk (wajib dalam maz"
+  },
+  {
+   "kunci": "pelajaran-taharah-t4",
+   "fail": "assets/audio/instructions/pelajaran-taharah-t4.mp3",
+   "bahasa": "ms",
+   "suara": "Sintesis suara gTTS (ar/ms) — BUKAN rakaman manusia",
+   "tempoh_saat": 88.6,
+   "saiz_kb": 692,
+   "teks": "Perkara Membatalkan Wuduk, Mandi Wajib & Tayamum. Wuduk terbatal apabila berlaku perkara tertentu. Tayamum ialah bersuci"
+  },
+  {
+   "kunci": "solat-alfatihah",
+   "fail": "assets/audio/solat/alfatihah.mp3",
+   "bahasa": "ar",
+   "suara": "Rakaman disediakan pengguna melalui Google Drive (diganti 13 Okt 2026)",
+   "tempoh_saat": 30.0,
+   "saiz_kb": 446,
+   "teks": "بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ الْحَمْدُ لِلَّهِ رَبِّ الْعَالَمِينَ الرَّحْمَٰنِ الرَّحِيمِ مَالِكِ يَوْمِ الدِ",
+   "saiz": 456933
+  },
+  {
+   "kunci": "solat-duduk-dua-sujud",
+   "fail": "assets/audio/solat/duduk-dua-sujud.mp3",
+   "bahasa": "ar",
+   "suara": "Rakaman disediakan pengguna melalui Google Drive (diganti 13 Okt 2026)",
+   "tempoh_saat": 30.0,
+   "saiz_kb": 475,
+   "teks": "رَبِّ اغْفِرْ لِي، وَارْحَمْنِي، وَاجْبُرْنِي، وَارْفَعْنِي، وَارْزُقْنِي، وَاهْدِنِي، وَعَافِنِي، وَاعْفُ عَنِّي",
+   "saiz": 486445
+  },
+  {
+   "kunci": "solat-iktidal",
+   "fail": "assets/audio/solat/iktidal.mp3",
+   "bahasa": "ar",
+   "suara": "Rakaman disediakan pengguna melalui Google Drive (diganti 13 Okt 2026)",
+   "tempoh_saat": 17.0,
+   "saiz_kb": 211,
+   "teks": "سَمِعَ اللَّهُ لِمَنْ حَمِدَهُ، رَبَّنَا لَكَ الْحَمْدُ",
+   "saiz": 216913
+  },
+  {
+   "kunci": "solat-maksud-duduk-dua-sujud",
+   "fail": "assets/audio/solat/maksud-duduk-dua-sujud.mp3",
+   "bahasa": "ms",
+   "suara": "Sintesis suara gTTS (ar/ms) — BUKAN rakaman manusia",
+   "tempoh_saat": 21.4,
+   "saiz_kb": 167,
+   "teks": "Doa Duduk Antara Dua Sujud. Wahai Tuhanku, ampunilah aku, rahmatilah aku, cukupkanlah kekuranganku, angkatlah darjatku, "
+  },
+  {
+   "kunci": "solat-maksud-iktidal",
+   "fail": "assets/audio/solat/maksud-iktidal.mp3",
+   "bahasa": "ms",
+   "suara": "Sintesis suara gTTS (ar/ms) — BUKAN rakaman manusia",
+   "tempoh_saat": 9.0,
+   "saiz_kb": 70,
+   "teks": "Bacaan Iktidal. Allah mendengar orang yang memuji-Nya. Wahai Tuhan kami, bagi-Mulah segala pujian."
+  },
+  {
+   "kunci": "solat-maksud-rukuk",
+   "fail": "assets/audio/solat/maksud-rukuk.mp3",
+   "bahasa": "ms",
+   "suara": "Sintesis suara gTTS (ar/ms) — BUKAN rakaman manusia",
+   "tempoh_saat": 6.2,
+   "saiz_kb": 49,
+   "teks": "Bacaan Rukuk. Maha Suci Tuhanku Yang Maha Agung dan dengan memuji-Nya."
+  },
+  {
+   "kunci": "solat-maksud-salam",
+   "fail": "assets/audio/solat/maksud-salam.mp3",
+   "bahasa": "ms",
+   "suara": "Sintesis suara gTTS (ar/ms) — BUKAN rakaman manusia",
+   "tempoh_saat": 5.6,
+   "saiz_kb": 44,
+   "teks": "Bacaan Salam. Salam sejahtera ke atas kamu dan rahmat Allah."
+  },
+  {
+   "kunci": "solat-maksud-sujud",
+   "fail": "assets/audio/solat/maksud-sujud.mp3",
+   "bahasa": "ms",
+   "suara": "Sintesis suara gTTS (ar/ms) — BUKAN rakaman manusia",
+   "tempoh_saat": 6.3,
+   "saiz_kb": 49,
+   "teks": "Bacaan Sujud. Maha Suci Tuhanku Yang Maha Tinggi dan dengan memuji-Nya."
+  },
+  {
+   "kunci": "solat-maksud-tahiyat",
+   "fail": "assets/audio/solat/maksud-tahiyat.mp3",
+   "bahasa": "ms",
+   "suara": "Sintesis suara gTTS (ar/ms) — BUKAN rakaman manusia",
+   "tempoh_saat": 52.6,
+   "saiz_kb": 411,
+   "teks": "Bacaan Tahiyat & Selawat. Segala penghormatan yang berkat, selawat dan kebaikan adalah bagi Allah. Salam sejahtera ke at"
+  },
+  {
+   "kunci": "solat-rukuk",
+   "fail": "assets/audio/solat/rukuk.mp3",
+   "bahasa": "ar",
+   "suara": "Rakaman disediakan pengguna melalui Google Drive (diganti 13 Okt 2026)",
+   "tempoh_saat": 30.0,
+   "saiz_kb": 446,
+   "teks": "سُبْحَانَ رَبِّيَ الْعَظِيمِ وَبِحَمْدِهِ، سُبْحَانَ رَبِّيَ الْعَظِيمِ وَبِحَمْدِهِ، سُبْحَانَ رَبِّيَ الْعَظِيمِ وَبِح",
+   "saiz": 457522
+  },
+  {
+   "kunci": "solat-salam",
+   "fail": "assets/audio/solat/salam.mp3",
+   "bahasa": "ar",
+   "suara": "Sintesis suara gTTS (ar/ms) — BUKAN rakaman manusia",
+   "tempoh_saat": 3.2,
+   "saiz_kb": 25,
+   "teks": "السَّلَامُ عَلَيْكُمْ وَرَحْمَةُ اللَّهِ"
+  },
+  {
+   "kunci": "solat-sujud",
+   "fail": "assets/audio/solat/sujud.mp3",
+   "bahasa": "ar",
+   "suara": "Rakaman disediakan pengguna melalui Google Drive (diganti 13 Okt 2026)",
+   "tempoh_saat": 29.0,
+   "saiz_kb": 446,
+   "teks": "سُبْحَانَ رَبِّيَ الْأَعْلَى وَبِحَمْدِهِ، سُبْحَانَ رَبِّيَ الْأَعْلَى وَبِحَمْدِهِ، سُبْحَانَ رَبِّيَ الْأَعْلَى وَبِح",
+   "saiz": 457428
+  },
+  {
+   "kunci": "solat-tahiyat",
+   "fail": "assets/audio/solat/tahiyat.mp3",
+   "bahasa": "ar",
+   "suara": "Rakaman disediakan pengguna melalui Google Drive (diganti 13 Okt 2026)",
+   "tempoh_saat": 90.0,
+   "saiz_kb": 1398,
+   "teks": "التَّحِيَّاتُ الْمُبَارَكَاتُ الصَّلَوَاتُ الطَّيِّبَاتُ لِلَّهِ، السَّلَامُ عَلَيْكَ أَيُّهَا النَّبِيُّ وَرَحْمَةُ الل",
+   "saiz": 1432181
+  },
+  {
+   "kunci": "solat-takbir",
+   "fail": "assets/audio/solat/takbir.mp3",
+   "bahasa": "ar",
+   "suara": "Rakaman disediakan pengguna melalui Google Drive (diganti 13 Okt 2026)",
+   "tempoh_saat": 2.1,
+   "saiz_kb": 12,
+   "teks": "ٱللَّٰهُ أَكْبَرُ، ٱللَّٰهُ أَكْبَرُ",
+   "saiz": 12528
+  },
+  {
+   "kunci": "niat-subuh",
+   "fail": "assets/audio/solat/niat-subuh.mp3",
+   "bahasa": "ar",
+   "suara": "Sintesis suara gTTS (ar/ms) — BUKAN rakaman manusia",
+   "tempoh_saat": 4.9,
+   "saiz_kb": 38,
+   "teks": "أُصَلِّي فَرْضَ الصُّبْحِ رَكْعَتَيْنِ أَدَاءً لِلَّهِ تَعَالَى",
+   "saiz": 38976
+  },
+  {
+   "kunci": "niat-subuh-maksud",
+   "fail": "assets/audio/solat/niat-subuh-maksud.mp3",
+   "bahasa": "ms",
+   "suara": "Sintesis suara gTTS (ar/ms) — BUKAN rakaman manusia",
+   "tempoh_saat": 8.6,
+   "saiz_kb": 67,
+   "teks": "Niat solat Subuh. Maksudnya: Sahaja aku solat fardu Subuh dua rakaat tunai kerana Allah Ta'ala.",
+   "saiz": 68736
+  },
+  {
+   "kunci": "niat-zuhur",
+   "fail": "assets/audio/solat/niat-zuhur.mp3",
+   "bahasa": "ar",
+   "suara": "Sintesis suara gTTS (ar/ms) — BUKAN rakaman manusia",
+   "tempoh_saat": 5.4,
+   "saiz_kb": 41,
+   "teks": "أُصَلِّي فَرْضَ الظُّهْرِ أَرْبَعَ رَكَعَاتٍ أَدَاءً لِلَّهِ تَعَالَى",
+   "saiz": 42816
+  },
+  {
+   "kunci": "niat-zuhur-maksud",
+   "fail": "assets/audio/solat/niat-zuhur-maksud.mp3",
+   "bahasa": "ms",
+   "suara": "Sintesis suara gTTS (ar/ms) — BUKAN rakaman manusia",
+   "tempoh_saat": 8.7,
+   "saiz_kb": 68,
+   "teks": "Niat solat Zuhur. Maksudnya: Sahaja aku solat fardu Zohor empat rakaat tunai kerana Allah Ta'ala.",
+   "saiz": 69696
+  },
+  {
+   "kunci": "niat-asar",
+   "fail": "assets/audio/solat/niat-asar.mp3",
+   "bahasa": "ar",
+   "suara": "Sintesis suara gTTS (ar/ms) — BUKAN rakaman manusia",
+   "tempoh_saat": 5.3,
+   "saiz_kb": 41,
+   "teks": "أُصَلِّي فَرْضَ الْعَصْرِ أَرْبَعَ رَكَعَاتٍ أَدَاءً لِلَّهِ تَعَالَى",
+   "saiz": 42624
+  },
+  {
+   "kunci": "niat-asar-maksud",
+   "fail": "assets/audio/solat/niat-asar-maksud.mp3",
+   "bahasa": "ms",
+   "suara": "Sintesis suara gTTS (ar/ms) — BUKAN rakaman manusia",
+   "tempoh_saat": 8.7,
+   "saiz_kb": 67,
+   "teks": "Niat solat Asar. Maksudnya: Sahaja aku solat fardu Asar empat rakaat tunai kerana Allah Ta'ala.",
+   "saiz": 69312
+  },
+  {
+   "kunci": "niat-maghrib",
+   "fail": "assets/audio/solat/niat-maghrib.mp3",
+   "bahasa": "ar",
+   "suara": "Sintesis suara gTTS (ar/ms) — BUKAN rakaman manusia",
+   "tempoh_saat": 5.5,
+   "saiz_kb": 42,
+   "teks": "أُصَلِّي فَرْضَ الْمَغْرِبِ ثَلَاثَ رَكَعَاتٍ أَدَاءً لِلَّهِ تَعَالَى",
+   "saiz": 43968
+  },
+  {
+   "kunci": "niat-maghrib-maksud",
+   "fail": "assets/audio/solat/niat-maghrib-maksud.mp3",
+   "bahasa": "ms",
+   "suara": "Sintesis suara gTTS (ar/ms) — BUKAN rakaman manusia",
+   "tempoh_saat": 8.5,
+   "saiz_kb": 66,
+   "teks": "Niat solat Maghrib. Maksudnya: Sahaja aku solat fardu Maghrib tiga rakaat tunai kerana Allah Ta'ala.",
+   "saiz": 68352
+  },
+  {
+   "kunci": "niat-isyak",
+   "fail": "assets/audio/solat/niat-isyak.mp3",
+   "bahasa": "ar",
+   "suara": "Sintesis suara gTTS (ar/ms) — BUKAN rakaman manusia",
+   "tempoh_saat": 5.4,
+   "saiz_kb": 41,
+   "teks": "أُصَلِّي فَرْضَ الْعِشَاءِ أَرْبَعَ رَكَعَاتٍ أَدَاءً لِلَّهِ تَعَالَى",
+   "saiz": 42816
+  },
+  {
+   "kunci": "niat-isyak-maksud",
+   "fail": "assets/audio/solat/niat-isyak-maksud.mp3",
+   "bahasa": "ms",
+   "suara": "Sintesis suara gTTS (ar/ms) — BUKAN rakaman manusia",
+   "tempoh_saat": 8.6,
+   "saiz_kb": 66,
+   "teks": "Niat solat Isyak. Maksudnya: Sahaja aku solat fardu Isyak empat rakaat tunai kerana Allah Ta'ala.",
+   "saiz": 68544
+  },
+  {
+   "kunci": "surah-alikhlas",
+   "fail": "assets/audio/solat/surah-alikhlas.mp3",
+   "bahasa": "ar",
+   "suara": "Rakaman disediakan pengguna melalui Google Drive (diganti 13 Okt 2026)",
+   "tempoh_saat": 21.7,
+   "saiz_kb": 345,
+   "teks": "بِسْمِ ٱللَّهِ ٱلرَّحْمَٰنِ ٱلرَّحِيمِ. قُلْ هُوَ ٱللَّهُ أَحَدٌ. ٱللَّهُ ٱلصَّمَدُ. لَمْ يَلِدْ وَلَمْ يُولَدْ. وَلَمْ يَكُن لَّهُۥ كُفُوًا أَحَدٌۢ",
+   "saiz": 354155
+  },
+  {
+   "kunci": "surah-alikhlas-maksud",
+   "fail": "assets/audio/solat/surah-alikhlas-maksud.mp3",
+   "bahasa": "ms",
+   "suara": "Sintesis suara gTTS (ar/ms) — BUKAN rakaman manusia",
+   "tempoh_saat": 22.0,
+   "saiz_kb": 172,
+   "teks": "Surah Al-Ikhlas. Maksudnya: Katakanlah (wahai Muhammad): Dialah Allah, Yang Maha Esa. Allah ialah Tuhan yang bergantung kepada-Nya segala sesuatu. Dia tidak beranak dan tidak pula diperanakkan. Dan tidak ada sesuatupun yang setara dengan-Nya.",
+   "saiz": 176256
+  },
+  {
+   "kunci": "surah-alfalaq",
+   "fail": "assets/audio/solat/surah-alfalaq.mp3",
+   "bahasa": "ar",
+   "suara": "Rakaman disediakan pengguna melalui Google Drive (diganti 13 Okt 2026)",
+   "tempoh_saat": 33.1,
+   "saiz_kb": 523,
+   "teks": "بِسْمِ ٱللَّهِ ٱلرَّحْمَٰنِ ٱلرَّحِيمِ. قُلْ أَعُوذُ بِرَبِّ ٱلْفَلَقِ. مِن شَرِّ مَا خَلَقَ. وَمِن شَرِّ غَاسِقٍ إِذَا وَقَبَ. وَمِن شَرِّ ٱلنَّفَّٰثَٰتِ فِى ٱلْعُقَدِ. وَمِن شَرِّ حَاسِدٍ إِذَا حَسَدَ",
+   "saiz": 535966
+  },
+  {
+   "kunci": "surah-alfalaq-maksud",
+   "fail": "assets/audio/solat/surah-alfalaq-maksud.mp3",
+   "bahasa": "ms",
+   "suara": "Sintesis suara gTTS (ar/ms) — BUKAN rakaman manusia",
+   "tempoh_saat": 27.8,
+   "saiz_kb": 217,
+   "teks": "Surah Al-Falaq. Maksudnya: Katakanlah: Aku berlindung kepada Tuhan yang menguasai waktu subuh, daripada kejahatan makhluk yang Dia ciptakan, dan daripada kejahatan malam apabila ia gelap gelita, dan daripada kejahatan tukang-tukang sihir yang meniup pada simpulan-simpulan, dan daripada kejahatan orang yang dengki apabila ia dengki.",
+   "saiz": 222720
+  },
+  {
+   "kunci": "surah-annas",
+   "fail": "assets/audio/solat/surah-annas.mp3",
+   "bahasa": "ar",
+   "suara": "Rakaman disediakan pengguna melalui Google Drive (diganti 13 Okt 2026)",
+   "tempoh_saat": 50.1,
+   "saiz_kb": 788,
+   "teks": "بِسْمِ ٱللَّهِ ٱلرَّحْمَٰنِ ٱلرَّحِيمِ. قُلْ أَعُوذُ بِرَبِّ ٱلنَّاسِ. مَلِكِ ٱلنَّاسِ. إِلَٰهِ ٱلنَّاسِ. مِن شَرِّ ٱلْوَسْوَاسِ ٱلْخَنَّاسِ. ٱلَّذِى يُوَسْوِسُ فِى صُدُورِ ٱلنَّاسِ. مِنَ ٱلْجِنَّةِ وَٱلنَّاسِ",
+   "saiz": 807637
+  },
+  {
+   "kunci": "surah-annas-maksud",
+   "fail": "assets/audio/solat/surah-annas-maksud.mp3",
+   "bahasa": "ms",
+   "suara": "Sintesis suara gTTS (ar/ms) — BUKAN rakaman manusia",
+   "tempoh_saat": 22.4,
+   "saiz_kb": 175,
+   "teks": "Surah An-Nas. Maksudnya: Katakanlah: Aku berlindung kepada Tuhan manusia, Raja manusia, Sembahan manusia, daripada kejahatan bisikan syaitan yang bersembunyi, yang membisikkan kejahatan ke dalam dada manusia, daripada golongan jin dan manusia.",
+   "saiz": 179520
+  },
+  {
+   "kunci": "surah-alfatihah",
+   "fail": "assets/audio/solat/alfatihah.mp3",
+   "bahasa": "ar",
+   "suara": "Rakaman disediakan pengguna melalui Google Drive (diganti 13 Okt 2026)",
+   "tempoh_saat": 30.0,
+   "saiz_kb": 446,
+   "teks": "بِسْمِ ٱللَّهِ ٱلرَّحْمَـٰنِ ٱلرَّحِيمِ ١ ٱلْحَمْدُ لِلَّهِ رَبِّ ٱلْعَـٰلَمِينَ ٢ ٱلرَّحْمَـٰنِ ٱلرَّحِيمِ ٣ مَـٰلِكِ يَوْمِ ٱلدِّينِ ٤ إِيَّاكَ نَعْبُدُ وَإِيَّاكَ نَسْتَعِينُ ٥ ٱهْدِنَا ٱلصِّرَٰطَ ٱلْمُسْتَقِيمَ ٦ صِرَٰطَ ٱلَّذِينَ أَنْعَمْتَ عَلَيْهِمْ غَيْرِ ٱلْمَغْضُوبِ عَلَيْهِمْ وَلَا ٱلضَّآلِّينَ ٧",
+   "saiz": 456933
+  },
+  {
+   "kunci": "surah-alfatihah-maksud",
+   "fail": "assets/audio/solat/surah-alfatihah-maksud.mp3",
+   "bahasa": "ms",
+   "suara": "Sintesis suara gTTS (ms) — BUKAN rakaman manusia",
+   "tempoh_saat": 38.7,
+   "saiz_kb": 302,
+   "teks": "Surah Al-Fatihah. Maksudnya: Dengan nama Allah Yang Maha Pemurah lagi Maha Mengasihani. Segala puji bagi Allah, Tuhan sekalian alam. Yang Maha Pemurah lagi Maha Mengasihani. Yang menguasai hari pembalasan. Hanya Engkaulah yang kami sembah dan hanya kepada Engkaulah kami meminta pertolongan. Tunjukilah kami jalan yang lurus. Iaitu jalan orang-orang yang Engkau kurniakan nikmat kepada mereka, bukan jalan mereka yang dimurkai dan bukan pula jalan mereka yang sesat.",
+   "saiz": 309888
+  },
+  {
+   "kunci": "solat-tahiyat-awal",
+   "fail": "assets/audio/solat/tahiyat-awal.mp3",
+   "bahasa": "ar",
+   "suara": "Rakaman disediakan pengguna melalui Google Drive (diganti 13 Okt 2026)",
+   "tempoh_saat": 30.0,
+   "saiz_kb": 491,
+   "teks": "التَّحِيَّاتُ الْمُبَارَكَاتُ الصَّلَوَاتُ الطَّيِّبَاتُ لِلَّهِ، السَّلَامُ عَلَيْكَ أَيُّهَا النَّبِيُّ وَرَحْمَةُ اللَّهِ وَبَرَكَاتُهُ، السَّلَامُ عَلَيْنَا وَعَلَىٰ عِبَادِ اللَّهِ الصَّالِحِينَ، أَشْهَدُ أَنْ لَا إِلَٰهَ إِلَّا اللَّهُ وَأَشْهَدُ أَنَّ مُحَمَّدًا رَسُولُ اللَّهِ، اللَّهُمَّ صَلِّ عَلَى مُحَمَّدٍ وَعَلَىٰ آلِ مُحَمَّدٍ، كَمَا صَلَّيْتَ عَلَىٰ إِبْرَاهِيمَ وَعَلَىٰ آلِ إِبْرَاهِيمَ، إِنَّكَ حَمِيدٌ مَجِيدٌ",
+   "saiz": 503466
+  }
+ ]
+}
