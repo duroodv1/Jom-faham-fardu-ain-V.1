@@ -820,9 +820,9 @@
    "fail": "assets/audio/instructions/pelajaran-akidah-a2.mp3",
    "bahasa": "ms",
    "suara": "Sintesis suara gTTS (ar/ms) — BUKAN rakaman manusia",
-   "tempoh_saat": 42.3,
-   "saiz_kb": 330,
-   "teks": "Nabi Muhammad Sallallahu Alaihi Wasallam Rasul Terakhir. Nabi Muhammad Sallallahu Alaihi Wasallam ialah utusan Allah yang terakhir. Baginda membawa ajaran Islam untuk seluruh manusia. Baginda dilahirkan di Makkah. Baginda bersifat benar (Siddiq), dipercayai (Amanah), menyampaikan (Tabligh) dan bijaksana (Fatonah). Kita mengasihi Baginda dengan mengikut sunnah dan berselawat. Selawat ringkas: اللَّهُمَّ صَلِّ عَلَى مُحَمَّدٍ — Maksudnya: Ya Allah, kurniakanlah kesejahteraan ke atas Nabi Muhammad. "
+   "tempoh_saat": 38.6,
+   "saiz_kb": 302,
+   "teks": "Nabi Muhammad SAW Rasul Terakhir. Nabi Muhammad SAW ialah utusan Allah yang terakhir. Baginda membawa ajaran Islam untuk"
   },
   {
    "kunci": "pelajaran-akidah-a3",
@@ -952,11 +952,11 @@
   },
   {
    "kunci": "pelajaran-sirah-h1",
-   "fail": "assets/audio/instructions/pelajaran-sirah-h1.mp3",
+   "fail": "assets/audio/instructions/pelajaran-sirah-h1-penuh.mp3",
    "bahasa": "ms",
    "suara": "Sintesis suara gTTS (ar/ms) — BUKAN rakaman manusia",
    "tempoh_saat": 53.8,
-   "saiz_kb": 420,
+   "saiz_kb": 421,
    "teks": "Kelahiran & Zaman Kanak-kanak Nabi Muhammad Sallallahu Alaihi Wasallam. Nabi Muhammad Sallallahu Alaihi Wasallam dilahirkan di Makkah pada Tahun Gajah. Sejak kecil Baginda dikenali jujur dan amanah. Ayah Baginda, Abdullah, wafat sebelum Baginda dilahirkan. Ibu Baginda ialah Aminah binti Wahab. Baginda disusui oleh Halimah as-Sa‘diah dan membesar dengan akhlak mulia. Apabila dewasa, Baginda digelar al-Amin (yang dipercayai) kerana kejujuran Baginda. Pengajaran: berkata benar dan amanah sejak kecil. Nota visual: App ini TIDAK menggambarkan wajah para nabi. Kita menggunakan pemandangan, objek dan tempat sejarah."
   },
   {
@@ -973,9 +973,9 @@
    "fail": "assets/audio/instructions/pelajaran-sirah-h3.mp3",
    "bahasa": "ms",
    "suara": "Sintesis suara gTTS (ar/ms) — BUKAN rakaman manusia",
-   "tempoh_saat": 54.2,
-   "saiz_kb": 423,
-   "teks": "Hijrah & Masyarakat Madinah. Hijrah ialah perpindahan Nabi Muhammad Sallallahu Alaihi Wasallam dan umat Islam dari Makkah ke Madinah untuk menyebarkan Islam dengan aman. Di Madinah, Baginda membina Masjid Nabawi dan mempersaudarakan Muhajirin (dari Makkah) dan Ansar (penduduk Madinah). Piagam Madinah menjaga keadilan dan keamanan masyarakat berbilang kaum/agama (pada tahap pengenalan kanak-kanak). Akhlak Baginda: penyayang, pemaaf, suka membantu, jujur dan merendah diri. Pengajaran: bekerjasama, berlaku adil dan menyayangi sesama manusia. Gunakan permainan Susun Langkah untuk menyusun garis masa sirah."
+   "tempoh_saat": 51.9,
+   "saiz_kb": 406,
+   "teks": "Hijrah & Masyarakat Madinah. Hijrah ialah perpindahan Nabi SAW dan umat Islam dari Makkah ke Madinah untuk menyebarkan I"
   },
   {
    "kunci": "pelajaran-solat-s1",
