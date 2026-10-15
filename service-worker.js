@@ -1,5 +1,5 @@
 /* Service Worker - JOM FAHAM FARDU AIN V.1 (cache-first, luar talian selepas caching) */
-const CACHE = "jffa-v1.4.0-v45";
+const CACHE = "jffa-v1.4.0-v47";
 const ASSETS = [
  "./",
  "./assets/audio/akidah/selawat.mp3",
@@ -248,6 +248,7 @@ const ASSETS = [
  "./assets/images/taharah/wuduk-09-kaki.jpg",
  "./assets/images/taharah/wuduk-09-kaki.svg",
  "./assets/images/taharah/wuduk-10-doa.jpg",
+ "./assets/images/taharah/wuduk-langkah-penuh.jpg",
  "./assets/images/taharah/wuduk-10-doa.svg",
  "./assets/videos/poster/video-01-bergurau-biar-beradab.jpg",
  "./assets/videos/poster/video-02-pilih-tidak-mengikut-bisikan.jpg",
