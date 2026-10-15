@@ -178,7 +178,7 @@ function viewModule(id) {
   <div class="maklum betul">👨‍👩‍👧 Kanak-kanak yang belum baligh berlatih berpuasa mengikut kemampuan dan kesihatan dengan bimbingan ibu bapa. Jika tidak sihat atau tidak mampu, beritahu orang dewasa.</div></div>
   ${APP_DATA.ibadahInfo.map(info => `<div class="kad"><h2>${info.emo} ${esc(info.tajuk)}</h2><img src="${info.img}" alt="Ilustrasi ${esc(info.tajuk)}" style="width:100%;border-radius:18px">${info.id === "zakat-fitrah" ? "" : ""}<ol>${info.points.map(pt => `<li style="margin:7px 0">${esc(pt)}</li>`).join("")}</ol></div>`).join("")}
   <div class="kad"><h2>🎧 Dengar Penerangan Zakat, Korban, Haji & Umrah</h2>${audioBar(APP_DATA.ibadahInfo.map(info => `${info.tajuk}. ` + info.points.join(" ")).join(" "), null, null, "instr-zakat-korban-haji")}</div>` : "";
-  const extra = id === "taharah" ? `<div class="kad"><h2>💧 Carta Langkah Berwuduk (dengan gambar)</h2><p>Tekan “Dengar Langkah” untuk mendengar penerangan. <strong>RUKUN</strong> mesti dilakukan, <strong>SUNAT</strong> digalakkan mengikut ajaran guru.</p>${audioBar(APP_DATA.wudukLangkah.map((s, i) => `Langkah ${i + 1}: ${s.t}. ${s.d}`).join(" "), null, null, "instr-carta-wuduk")}<div class="langkah-grid">${APP_DATA.wudukLangkah.map((s, i) => `<div class="langkah-kad"><img src="${s.img}" alt="Ilustrasi langkah wuduk: ${esc(s.t)}"><span class="n">${i + 1}</span><h4>${s.emo} ${esc(s.t)}</h4><p style="padding:0 10px">${esc(s.d)}</p></div>`).join("")}</div></div>` : "";
+  const extra = id === "taharah" ? `<div class="kad"><h2>💧 Carta Langkah Berwuduk (dengan gambar)</h2><p>Tekan “Dengar Langkah” untuk mendengar penerangan. <strong>RUKUN</strong> mesti dilakukan, <strong>SUNAT</strong> digalakkan mengikut ajaran guru.</p><img src="assets/images/taharah/wuduk-langkah-penuh.jpg" alt="Carta penuh sembilan langkah berwuduk" style="width:100%;border-radius:14px;margin:6px 0 10px" loading="lazy">${audioBar(APP_DATA.wudukLangkah.map((s, i) => `Langkah ${i + 1}: ${s.t}. ${s.d}`).join(" "), null, null, "instr-carta-wuduk")}<div class="langkah-grid">${APP_DATA.wudukLangkah.map((s, i) => `<div class="langkah-kad"><img src="${s.img}" alt="Ilustrasi langkah wuduk: ${esc(s.t)}"><span class="n">${i + 1}</span><h4>${s.emo} ${esc(s.t)}</h4><p style="padding:0 10px">${esc(s.d)}</p></div>`).join("")}</div></div>` : "";
   const extraSolat = id === "solat" ? `<div class="kad"><h2>🧎 Carta Pergerakan Solat</h2>${audioBar(APP_DATA.solatGerak.map((s, i) => `Pergerakan ${i + 1}: ${s.t}. ${s.d}`).join(" "), null, null, "instr-carta-solat")}<div class="langkah-grid">${APP_DATA.solatGerak.map((s, i) => `<div class="langkah-kad"><img src="${s.img}" alt="Ilustrasi pergerakan solat: ${esc(s.t)}"><span class="n">${i + 1}</span><h4>${s.emo} ${esc(s.t)}</h4><p style="padding:0 10px">${esc(s.d)}</p></div>`).join("")}</div></div>` : "";
   const aturanKad = id === "solat" ? `<div class="kad"><h2>🕌 Aturan Solat</h2><p>Poster tertib solat dari niat hingga memberi salam. Ikuti langkah demi langkah bersama guru.</p><img src="${APP_DATA.aturanSolat}" alt="Poster Aturan Solat: tertib 13 langkah solat dari niat, takbiratul ihram, rukuk, sujud, tahiyat hingga salam" style="width:100%;border-radius:18px"></div>` : "";
   const bacaRingkasKad = id === "solat" ? `<div class="kad"><h2>📖 Baca Ringkas Dalam Solat</h2><p>Poster bacaan ringkas dalam solat: takbiratul ihram, al-Fatihah, surah ringkas, rukuk, iktidal, sujud, duduk antara dua sujud, tasyahhud akhir dan salam. Baca dengan tartil dan khusyuk — semak bacaan bersama guru.</p><img src="${APP_DATA.bacaRingkasSolat}" alt="Poster Baca Ringkas Dalam Solat: 9 langkah bacaan solat dari takbiratul ihram hingga salam" style="width:100%;border-radius:18px"></div>` : "";
@@ -395,17 +395,49 @@ function missionStart(modId) {
 /* ---------- Koleksi Video Pendidikan (berasingan daripada modul) ---------- */
 function formatTempohVideo(saat) { const s = Math.max(0, Math.round(saat || 0)); return Math.floor(s / 60) + ":" + String(s % 60).padStart(2, "0"); }
 function formatSaizVideo(bait) { return bait >= 1048576 ? (bait / 1048576).toFixed(1) + " MB" : Math.max(1, Math.round(bait / 1024)) + " KB"; }
+function semuaVideoKoleksi() {
+  const offline = (APP_DATA.koleksiVideo || []).map(v => ({ ...v, _jenis: "offline", _sumberLabel: "Offline MP4" }));
+  const online = (APP_DATA.videoPautan || []).map(v => ({ ...v, _jenis: "online", _sumberLabel: v.platform || "Online" }));
+  return [...offline, ...online];
+}
+function youtubeIdDaripadaPautan(url) {
+  const m = String(url || "").match(/(?:youtube\.com\/(?:watch\?v=|embed\/|shorts\/)|youtu\.be\/)([A-Za-z0-9_-]{6,})/);
+  return m ? m[1] : "";
+}
+function videoEmbedUrl(v) {
+  if (v.embed) return v.embed;
+  const pautan = v.pautan || "";
+  const yid = youtubeIdDaripadaPautan(pautan);
+  if (yid) return "https://www.youtube-nocookie.com/embed/" + yid + "?rel=0";
+  if (/screenpal\.com\/watch\//i.test(pautan)) return pautan.replace("/watch/", "/player/");
+  return pautan;
+}
+function posterVideo(v) {
+  if (v.poster) return v.poster;
+  const yid = youtubeIdDaripadaPautan(v.pautan || "");
+  if (yid) return "https://i.ytimg.com/vi/" + yid + "/hqdefault.jpg";
+  return "assets/images/logo/logo-app.png";
+}
+function labelTempohVideo(v) { return v.tempoh ? formatTempohVideo(v.tempoh) : (v._jenis === "online" ? "Online" : "0:00"); }
+function labelSaizVideo(v) { return v._jenis === "online" ? "Penstriman internet" : formatSaizVideo(v.saiz); }
 function filterVideoCards() {
   const q = (document.getElementById("videoCari")?.value || "").toLowerCase();
   const aktif = document.querySelector("[data-video-kat].btn-teal")?.getAttribute("data-video-kat") || "Semua";
+  const sumber = document.querySelector("[data-video-sumber].btn-teal")?.getAttribute("data-video-sumber") || "Semua";
   document.querySelectorAll("[data-video-card]").forEach(kad => {
     const padanKategori = aktif === "Semua" || kad.getAttribute("data-kategori") === aktif;
+    const padanSumber = sumber === "Semua" || kad.getAttribute("data-sumber") === sumber;
     const padanCari = kad.getAttribute("data-cari").includes(q);
-    kad.style.display = padanKategori && padanCari ? "" : "none";
+    kad.style.display = padanKategori && padanSumber && padanCari ? "" : "none";
   });
 }
 function pilihKategoriVideo(kat, btn) {
   document.querySelectorAll("[data-video-kat]").forEach(b => { b.classList.remove("btn-teal"); b.classList.add("btn-kelabu"); });
+  if (btn) { btn.classList.remove("btn-kelabu"); btn.classList.add("btn-teal"); }
+  filterVideoCards();
+}
+function pilihSumberVideo(sumber, btn) {
+  document.querySelectorAll("[data-video-sumber]").forEach(b => { if (!b.hasAttribute("data-video-card")) { b.classList.remove("btn-teal"); b.classList.add("btn-kelabu"); } });
   if (btn) { btn.classList.remove("btn-kelabu"); btn.classList.add("btn-teal"); }
   filterVideoCards();
 }
@@ -415,42 +447,44 @@ function tandaVideoDitonton(id) {
   const el = document.getElementById("statusVideo"); if (el) el.innerHTML = "✅ Ditandakan sebagai telah ditonton.";
 }
 function viewVideos() {
-  const senarai = APP_DATA.koleksiVideo || [];
+  const senarai = semuaVideoKoleksi();
   const kategori = ["Semua", ...new Set(senarai.map(v => v.kategori))];
   const ditonton = new Set(Array.isArray(STATE.watchedVideos) ? STATE.watchedVideos : []);
-  const jumlahMB = senarai.reduce((j, v) => j + (v.saiz || 0), 0) / 1048576;
+  const jumlahMB = senarai.filter(v => v._jenis === "offline").reduce((j, v) => j + (v.saiz || 0), 0) / 1048576;
+  const bilanganOffline = senarai.filter(v => v._jenis === "offline").length;
+  const bilanganOnline = senarai.filter(v => v._jenis === "online").length;
   $app.innerHTML = `<button class="btn btn-kelabu" onclick="location.hash='#/'">⬅️ Kembali</button>
   <div class="kad"><h1 style="margin-top:0">🎬 Koleksi Video Pendidikan</h1>
-  <p><strong>${senarai.length} video</strong> • Jumlah saiz: ${jumlahMB.toFixed(0)} MB • Ditonton: ${ditonton.size}/${senarai.length}</p>
-  <p>Ruangan tontonan pendidikan yang <strong>berasingan daripada modul</strong> — ia tidak menjejaskan kemajuan pelajaran, bintang, lencana atau kuiz. Semua video ialah fail MP4 tempatan dan boleh dimainkan semula dalam aplikasi.</p>
+  <p><strong>${senarai.length} video</strong> • Offline: ${bilanganOffline} • Online: ${bilanganOnline} • Saiz MP4 tempatan: ${jumlahMB.toFixed(0)} MB • Ditonton: ${ditonton.size}/${senarai.length}</p>
+  <p>Ruangan tontonan pendidikan yang <strong>berasingan daripada modul</strong> — ia tidak menjejaskan kemajuan pelajaran, bintang, lencana atau kuiz. Video <strong>Offline</strong> ialah MP4 tempatan; video <strong>Online</strong> (YouTube/ScreenPal) memerlukan internet dan hanya dimainkan jika pemilik membenarkan embed.</p>
   <label for="videoCari"><strong>🔎 Cari video</strong></label>
   <input id="videoCari" type="search" placeholder="Taip tajuk video…" oninput="filterVideoCards()" style="width:100%;padding:12px;border:2px solid #80cbc4;border-radius:12px;font-size:1rem;margin:8px 0">
+  <div class="aksi-row" role="group" aria-label="Tapisan sumber video">${[["Semua", "🌐 Semua"], ["offline", "📴 Offline"], ["online", "🌍 Online"]].map((x, i) => `<button class="btn ${i === 0 ? "btn-teal" : "btn-kelabu"}" data-video-sumber="${x[0]}" onclick="pilihSumberVideo(${jsArg(x[0])}, this)">${x[1]}</button>`).join("")}</div>
   <div class="aksi-row" role="group" aria-label="Tapisan kategori video">${kategori.map((k, i) => `<button class="btn ${i === 0 ? "btn-teal" : "btn-kelabu"}" data-video-kat="${esc(k)}" onclick="pilihKategoriVideo(${jsArg(k)}, this)">${esc(k)}</button>`).join("")}</div></div>
-  <div class="modul-grid">${senarai.map(v => `<article class="modul-kad" data-video-card data-kategori="${esc(v.kategori)}" data-cari="${esc((v.tajuk + " " + v.kategori + " " + v.ringkas).toLowerCase())}">
+  <div class="modul-grid">${senarai.map(v => `<article class="modul-kad" data-video-card data-kategori="${esc(v.kategori)}" data-sumber="${esc(v._jenis)}" data-cari="${esc((v.tajuk + " " + v.kategori + " " + v.ringkas + " " + (v.platform || "")).toLowerCase())}">
     <button onclick="location.hash='#/video/${esc(v.id)}'" aria-label="Tonton ${esc(v.tajuk)}" style="display:block;width:100%;padding:0;border:none;background:none;cursor:pointer;position:relative;text-align:left">
-      <img src="${esc(v.poster)}" alt="Poster video ${esc(v.tajuk)}" style="width:100%;aspect-ratio:9/13;max-height:300px;object-fit:cover;display:block">
+      <img src="${esc(posterVideo(v))}" alt="Poster video ${esc(v.tajuk)}" style="width:100%;aspect-ratio:9/13;max-height:300px;object-fit:cover;display:block">
       <span style="position:absolute;inset:0;display:flex;align-items:center;justify-content:center;font-size:3.6rem;color:#fff;text-shadow:0 3px 12px #000" aria-hidden="true">▶️</span>
-      <span style="position:absolute;right:10px;bottom:10px;background:rgba(0,0,0,.75);color:#fff;padding:4px 9px;border-radius:999px;font-weight:800">${formatTempohVideo(v.tempoh)}</span>
+      <span style="position:absolute;right:10px;bottom:10px;background:rgba(0,0,0,.75);color:#fff;padding:4px 9px;border-radius:999px;font-weight:800">${esc(labelTempohVideo(v))}</span>
     </button>
-    <div class="isi"><span class="pill pill-teal">${esc(v.kategori)}</span> ${ditonton.has(v.id) ? '<span class="pill pill-gold">✅ Ditonton</span>' : ''}
-    <h3>${esc(v.tajuk)}</h3><p>${esc(v.ringkas)}</p><small>⏱️ ${formatTempohVideo(v.tempoh)} • 💾 ${formatSaizVideo(v.saiz)} • ${esc(v.umur)}</small>
+    <div class="isi"><span class="pill pill-teal">${esc(v.kategori)}</span> <span class="pill ${v._jenis === "online" ? "pill-pink" : "pill-gold"}">${v._jenis === "online" ? "🌍 Online" : "📴 Offline"}</span> ${ditonton.has(v.id) ? '<span class="pill pill-gold">✅ Ditonton</span>' : ''}
+    <h3>${esc(v.tajuk)}</h3><p>${esc(v.ringkas)}</p><small>⏱️ ${esc(labelTempohVideo(v))} • 💾 ${esc(labelSaizVideo(v))} • ${esc(v.umur || "Kanak-kanak")}</small>
     <div class="aksi-row"><a class="btn btn-teal" href="#/video/${esc(v.id)}">▶️ Tonton Video</a></div></div></article>`).join("")}</div>
   <div class="kad"><h3>👨‍👩‍👧 Nota Ibu Bapa & Guru</h3><p>Video dibekalkan oleh pentadbir aplikasi untuk tontonan pendidikan. Sila semak kesesuaian kandungan untuk anak anda. Koleksi ini tidak mengukur kemajuan atau tahap keimanan kanak-kanak.</p></div>`;
   window.scrollTo(0, 0);
 }
 function viewVideoPlayer(id) {
-  const v = (APP_DATA.koleksiVideo || []).find(x => x.id === id);
+  const senarai = semuaVideoKoleksi();
+  const v = senarai.find(x => x.id === id);
   if (!v) return viewVideos();
-  const senarai = APP_DATA.koleksiVideo || []; const idx = senarai.indexOf(v); const next = senarai[(idx + 1) % senarai.length];
+  const idx = senarai.indexOf(v); const next = senarai[(idx + 1) % senarai.length];
   const sudah = Array.isArray(STATE.watchedVideos) && STATE.watchedVideos.includes(v.id);
   $app.innerHTML = `<button class="btn btn-kelabu" onclick="location.hash='#/video'">⬅️ Koleksi Video</button>
-  <article class="kad"><span class="pill pill-teal">${esc(v.kategori)}</span> <span class="pill pill-gold">⏱️ ${formatTempohVideo(v.tempoh)}</span> <span class="pill pill-pink">💾 ${formatSaizVideo(v.saiz)}</span>
+  <article class="kad"><span class="pill pill-teal">${esc(v.kategori)}</span> <span class="pill ${v._jenis === "online" ? "pill-pink" : "pill-gold"}">${v._jenis === "online" ? "🌍 Online — perlu internet" : "📴 Offline MP4"}</span> <span class="pill pill-gold">⏱️ ${esc(labelTempohVideo(v))}</span>
   <h1>${esc(v.tajuk)}</h1><p>${esc(v.ringkas)}</p>
-  <video controls playsinline preload="metadata" poster="${esc(v.poster)}" onended="tandaVideoDitonton(${jsArg(v.id)})" style="width:100%;max-height:78vh;background:#000;border-radius:18px">
-    <source src="${esc(v.fail)}" type="video/mp4">Pelayar anda tidak menyokong video MP4.
-  </video>
+  ${v._jenis === "online" ? `<div style="position:relative;width:100%;aspect-ratio:16/9;background:#000;border-radius:18px;overflow:hidden"><iframe src="${esc(videoEmbedUrl(v))}" title="${esc(v.tajuk)}" style="position:absolute;inset:0;width:100%;height:100%;border:0" allow="accelerometer; autoplay; encrypted-media; picture-in-picture" allowfullscreen referrerpolicy="strict-origin-when-cross-origin"></iframe></div><p><small>Jika pemain kosong, pemilik video mungkin mematikan fungsi embed atau video memerlukan kebenaran khas. Gunakan pautan asal di bawah.</small></p>` : `<video controls playsinline preload="metadata" poster="${esc(posterVideo(v))}" onended="tandaVideoDitonton(${jsArg(v.id)})" style="width:100%;max-height:78vh;background:#000;border-radius:18px"><source src="${esc(v.fail)}" type="video/mp4">Pelayar anda tidak menyokong video MP4.</video>`}
   <p id="statusVideo">${sudah ? "✅ Video ini telah ditandakan sebagai ditonton." : "Tekan butang main untuk menonton. Rekod tontonan disimpan berasingan daripada modul."}</p>
-  <div class="aksi-row"><button class="btn btn-gold" onclick="tandaVideoDitonton(${jsArg(v.id)})">✅ Tandakan Ditonton</button><a class="btn btn-teal" href="#/video/${esc(next.id)}">⏭️ Video Seterusnya</a><a class="btn btn-blue" href="#/video">🎬 Semua Video</a></div>
+  <div class="aksi-row"><button class="btn btn-gold" onclick="tandaVideoDitonton(${jsArg(v.id)})">✅ Tandakan Ditonton</button><a class="btn btn-teal" href="#/video/${esc(next.id)}">⏭️ Video Seterusnya</a><a class="btn btn-blue" href="#/video">🎬 Semua Video</a>${v._jenis === "online" && v.pautan ? `<a class="btn btn-kelabu" href="${esc(v.pautan)}" target="_blank" rel="noopener noreferrer">🔗 Buka Pautan Asal</a>` : ""}</div>
   <p><small>Untuk ibu bapa/guru: kandungan video perlu disemak mengikut kesesuaian umur dan bimbingan keluarga.</small></p></article>`;
   window.scrollTo(0, 0);
 }
