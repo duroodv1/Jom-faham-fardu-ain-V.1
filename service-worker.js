@@ -1,5 +1,5 @@
 /* Service Worker - JOM FAHAM FARDU AIN V.1 (cache-first, luar talian selepas caching) */
-const CACHE = "jffa-v1.4.0-v43";
+const CACHE = "jffa-v1.4.0-v45";
 const ASSETS = [
  "./",
  "./assets/audio/akidah/selawat.mp3",
@@ -104,6 +104,7 @@ const ASSETS = [
  "./assets/audio/instructions/pelajaran-ibadah-i1.mp3",
  "./assets/audio/instructions/pelajaran-ibadah-i2.mp3",
  "./assets/audio/instructions/pelajaran-ibadah-i3.mp3",
+ "./assets/audio/instructions/pelajaran-sirah-h1-penuh.mp3",
  "./assets/audio/instructions/pelajaran-sirah-h1.mp3",
  "./assets/audio/instructions/pelajaran-sirah-h2.mp3",
  "./assets/audio/instructions/pelajaran-sirah-h3.mp3",
@@ -248,6 +249,58 @@ const ASSETS = [
  "./assets/images/taharah/wuduk-09-kaki.svg",
  "./assets/images/taharah/wuduk-10-doa.jpg",
  "./assets/images/taharah/wuduk-10-doa.svg",
+ "./assets/videos/poster/video-01-bergurau-biar-beradab.jpg",
+ "./assets/videos/poster/video-02-pilih-tidak-mengikut-bisikan.jpg",
+ "./assets/videos/poster/video-03-mulakan-dengan-bismillah.jpg",
+ "./assets/videos/poster/video-04-berkongsi-dengan-makhluk-allah.jpg",
+ "./assets/videos/poster/video-05-sabar-adil-bertanggungjawab.jpg",
+ "./assets/videos/poster/video-06-doa-jika-lupa-bismillah.jpg",
+ "./assets/videos/poster/video-07-detik-kecil-akhlak-besar.jpg",
+ "./assets/videos/poster/video-08-ayat-al-kursi-sebelum-tidur.jpg",
+ "./assets/videos/poster/video-09-nasyid-i-m-a-little-muslim.jpg",
+ "./assets/videos/poster/video-10-doa-sebelum-keluar-rumah.jpg",
+ "./assets/videos/poster/video-11-rahsia-tutup-bekas-makanan.jpg",
+ "./assets/videos/poster/video-12-enam-pilihan-di-rumah.jpg",
+ "./assets/videos/poster/video-13-ingat-tepat-pada-masanya.jpg",
+ "./assets/videos/poster/video-14-soalan-kecil-sebelum-makan.jpg",
+ "./assets/videos/poster/video-15-amalan-sebelum-tidur.jpg",
+ "./assets/videos/poster/video-16-bangun-dan-putuskan-ikatan-malas.jpg",
+ "./assets/videos/poster/video-17-jaga-adab-ketika-menguap.jpg",
+ "./assets/videos/poster/video-18-pilih-kata-yang-baik.jpg",
+ "./assets/videos/poster/video-19-amina-memilih-yang-lebih-baik.jpg",
+ "./assets/videos/poster/video-20-doa-masuk-rumah.jpg",
+ "./assets/videos/poster/video-21-membantu-rakan-yang-jatuh.jpg",
+ "./assets/videos/poster/video-22-adam-belajar-membuat-pilihan.jpg",
+ "./assets/videos/poster/video-23-pilihan-yang-menggembirakan-allah.jpg",
+ "./assets/videos/poster/video-24-jujur-adil-berdisiplin.jpg",
+ "./assets/videos/poster/video-25-enam-bisikan-enam-pilihan.jpg",
+ "./assets/videos/poster/video-26-kebaikan-kepada-haiwan.jpg",
+ "./assets/videos/video-01-bergurau-biar-beradab.mp4",
+ "./assets/videos/video-02-pilih-tidak-mengikut-bisikan.mp4",
+ "./assets/videos/video-03-mulakan-dengan-bismillah.mp4",
+ "./assets/videos/video-04-berkongsi-dengan-makhluk-allah.mp4",
+ "./assets/videos/video-05-sabar-adil-bertanggungjawab.mp4",
+ "./assets/videos/video-06-doa-jika-lupa-bismillah.mp4",
+ "./assets/videos/video-07-detik-kecil-akhlak-besar.mp4",
+ "./assets/videos/video-08-ayat-al-kursi-sebelum-tidur.mp4",
+ "./assets/videos/video-09-nasyid-i-m-a-little-muslim.mp4",
+ "./assets/videos/video-10-doa-sebelum-keluar-rumah.mp4",
+ "./assets/videos/video-11-rahsia-tutup-bekas-makanan.mp4",
+ "./assets/videos/video-12-enam-pilihan-di-rumah.mp4",
+ "./assets/videos/video-13-ingat-tepat-pada-masanya.mp4",
+ "./assets/videos/video-14-soalan-kecil-sebelum-makan.mp4",
+ "./assets/videos/video-15-amalan-sebelum-tidur.mp4",
+ "./assets/videos/video-16-bangun-dan-putuskan-ikatan-malas.mp4",
+ "./assets/videos/video-17-jaga-adab-ketika-menguap.mp4",
+ "./assets/videos/video-18-pilih-kata-yang-baik.mp4",
+ "./assets/videos/video-19-amina-memilih-yang-lebih-baik.mp4",
+ "./assets/videos/video-20-doa-masuk-rumah.mp4",
+ "./assets/videos/video-21-membantu-rakan-yang-jatuh.mp4",
+ "./assets/videos/video-22-adam-belajar-membuat-pilihan.mp4",
+ "./assets/videos/video-23-pilihan-yang-menggembirakan-allah.mp4",
+ "./assets/videos/video-24-jujur-adil-berdisiplin.mp4",
+ "./assets/videos/video-25-enam-bisikan-enam-pilihan.mp4",
+ "./assets/videos/video-26-kebaikan-kepada-haiwan.mp4",
  "./index.html",
  "./manifest.webmanifest",
  "./src/app.js",
@@ -263,7 +316,7 @@ self.addEventListener("fetch", e => {
   if (e.request.method === "HEAD") return;
   if (e.request.method !== "GET") return;
   const url = new URL(e.request.url);
-  const kodAtauHtml = e.request.mode === "navigate" || /\.(?:js|css|html|mp3)$/.test(url.pathname);
+  const kodAtauHtml = e.request.mode === "navigate" || /\.(?:js|css|html|mp3|mp4)$/.test(url.pathname);
   if (kodAtauHtml) {
     // Kod & HTML: utamakan rangkaian supaya versi TERKINI sentiasa dimuat; cache hanya sandaran luar talian
     e.respondWith(fetch(e.request).then(res => { const copy = res.clone(); if (res.ok && url.origin === location.origin) caches.open(CACHE).then(c => c.put(e.request, copy)); return res; }).catch(() => caches.match(e.request, { ignoreSearch: true }).then(hit => hit || caches.match("./index.html"))));

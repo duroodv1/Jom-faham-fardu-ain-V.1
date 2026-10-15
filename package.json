@@ -40,5 +40,10 @@
       "allowToChangeInstallationDirectory": true,
       "shortcutName": "Jom Faham Fardu Ain V.1"
     }
+  },
+  "dependencies": {
+    "@capacitor/android": "^8.5.3",
+    "@capacitor/cli": "^7.6.9",
+    "@capacitor/core": "^8.5.3"
   }
 }

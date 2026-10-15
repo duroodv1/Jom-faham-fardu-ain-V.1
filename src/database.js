@@ -13,6 +13,7 @@ const DB_DEFAULT = {
   gamesPlayed: {},        // {gameId: count}
   gameBest: {},           // {gameId: bestScore}
   reviewList: [],         // tajuk untuk diulang
+  watchedVideos: [],      // Koleksi Video Pendidikan (berasingan daripada modul)
   lastRoute: "",
   settings: { sound: true, kadarSuara: 1, fonBesar: false, Dyslexia: false, kontras: false },
   createdAt: null
