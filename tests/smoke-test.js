@@ -20,7 +20,7 @@ for (const m of APP_DATA.modules) {
     continue;
   }
   ok(m.pelajaran.length >= 3, `${m.id}: >=3 pelajaran (${m.pelajaran.length})`);
-  ok(m.kuiz.length >= 5, `${m.id}: >=5 soalan kuiz (${m.kuiz.length})`);
+  ok(m.kuiz.length >= 35 && m.kuiz.length <= 50, `${m.id}: bank soalan kuiz 35-50 (${m.kuiz.length})`);
   ok(fs.existsSync(path.join(root, m.cover)), `${m.id}: cover wujud (${m.cover})`);
   for (const q of m.kuiz) ok(q.j >= 0 && q.j < q.pilih.length && q.terang, `${m.id}: jawapan kuiz sah - ${q.q.slice(0, 30)}...`);
   for (const l of m.pelajaran) ok(l.tajuk && l.intro && l.isi.length >= 3, `${m.id}/${l.id}: kandungan pelajaran lengkap`);
