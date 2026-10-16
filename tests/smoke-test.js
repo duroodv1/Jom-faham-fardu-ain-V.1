@@ -4,12 +4,21 @@ const root = path.join(__dirname, "..");
 const APP_DATA = require(path.join(root, "src/data.js"));
 let pass = 0, fail = 0;
 const ok = (c, m) => { if (c) { pass++; console.log("PASS:", m); } else { fail++; console.log("FAIL:", m); } };
-ok(APP_DATA.modules.length === 6, "6 modul wujud");
+ok(APP_DATA.modules.length === 7, "7 modul wujud");
+const kn = APP_DATA.modules.find(m => m.id === "kisahnabi");
+ok(!!kn && kn.pelajaran.length === 0 && kn.kuiz.length === 0, "Modul Kisah Para Nabi: kandungan dalaman dibuang");
+ok(kn.pautan === "https://duroodv1.github.io/Kenali-25-Rasul/#/utama" && !!kn.pautanLabel, "Kisah Nabi: pautan luar KENALI 25 RASUL ditetapkan");
+ok(!["nabiNuh","nabiYusuf","nabiMusa","nabiYunus"].some(k => APP_DATA.orderSets[k]), "Kisah Nabi: set Susun Peristiwa dibuang");
 ok(JSON.parse(fs.readFileSync(path.join(root, "package.json"), "utf8")).version === "1.4.0", "Versi keluaran ialah 1.4.0");
 ok(!APP_DATA.modules.find(m => m.id === "solat").pelajaran.some(l => l.id === "s4"), "Pelajaran Bacaan al-Fatihah & Adab Masjid telah dibuang");
 ok(!APP_DATA.modules.some(m => m.id === "doa"), "Modul Hafalan Doa telah dipadam");
 ok(!APP_DATA.modules.some(m => m.id === "alquran"), "Modul Al-Quran telah dipadam");
 for (const m of APP_DATA.modules) {
+  if (m.pautan) {
+    ok(m.pelajaran.length === 0 && m.kuiz.length === 0, `${m.id}: modul pautan luar tanpa pelajaran/kuiz tempatan`);
+    ok(fs.existsSync(path.join(root, m.cover)), `${m.id}: cover wujud (${m.cover})`);
+    continue;
+  }
   ok(m.pelajaran.length >= 3, `${m.id}: >=3 pelajaran (${m.pelajaran.length})`);
   ok(m.kuiz.length >= 5, `${m.id}: >=5 soalan kuiz (${m.kuiz.length})`);
   ok(fs.existsSync(path.join(root, m.cover)), `${m.id}: cover wujud (${m.cover})`);

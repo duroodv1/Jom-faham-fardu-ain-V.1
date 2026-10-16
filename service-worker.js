@@ -1,5 +1,5 @@
 /* Service Worker - JOM FAHAM FARDU AIN V.1 (cache-first, luar talian selepas caching) */
-const CACHE = "jffa-v1.4.0-v55";
+const CACHE = "jffa-v1.4.0-v56";
 const ASSETS = [
  "./",
  "./assets/audio/akidah/selawat.mp3",
@@ -108,15 +108,6 @@ const ASSETS = [
  "./assets/audio/instructions/pelajaran-sirah-h1.mp3",
  "./assets/audio/instructions/pelajaran-sirah-h2.mp3",
  "./assets/audio/instructions/pelajaran-sirah-h3.mp3",
- "./assets/audio/instructions/modul-kisahnabi.mp3",
- "./assets/audio/instructions/pelajaran-kisahnabi-n1.mp3",
- "./assets/audio/instructions/pelajaran-kisahnabi-n2.mp3",
- "./assets/audio/instructions/pelajaran-kisahnabi-n3.mp3",
- "./assets/audio/instructions/pelajaran-kisahnabi-n4.mp3",
- "./assets/audio/instructions/pelajaran-kisahnabi-n5.mp3",
- "./assets/audio/instructions/pelajaran-kisahnabi-n6.mp3",
- "./assets/audio/instructions/pelajaran-kisahnabi-n7.mp3",
- "./assets/audio/instructions/pelajaran-kisahnabi-n8.mp3",
  "./assets/audio/instructions/pelajaran-solat-s1.mp3",
  "./assets/audio/instructions/pelajaran-solat-s2.mp3",
  "./assets/audio/instructions/pelajaran-solat-s3.mp3",
@@ -203,23 +194,6 @@ const ASSETS = [
  "./assets/images/logo/logo-app.png",
  "./assets/images/sirah/cover-sirah.svg",
  "./assets/images/kisahnabi/cover-kisahnabi.svg",
- "./assets/images/kisahnabi/cover-kisahnabi.jpg",
- "./assets/images/kisahnabi/kisah-adam.svg",
- "./assets/images/kisahnabi/kisah-adam.jpg",
- "./assets/images/kisahnabi/kisah-nuh.svg",
- "./assets/images/kisahnabi/kisah-nuh.jpg",
- "./assets/images/kisahnabi/kisah-ibrahim.svg",
- "./assets/images/kisahnabi/kisah-ibrahim.jpg",
- "./assets/images/kisahnabi/kisah-yusuf.svg",
- "./assets/images/kisahnabi/kisah-yusuf.jpg",
- "./assets/images/kisahnabi/kisah-musa.svg",
- "./assets/images/kisahnabi/kisah-musa.jpg",
- "./assets/images/kisahnabi/kisah-yunus.svg",
- "./assets/images/kisahnabi/kisah-yunus.jpg",
- "./assets/images/kisahnabi/kisah-nabi-lain-1.svg",
- "./assets/images/kisahnabi/kisah-nabi-lain-1.jpg",
- "./assets/images/kisahnabi/kisah-nabi-lain-2.svg",
- "./assets/images/kisahnabi/kisah-nabi-lain-2.jpg",
  "./assets/images/solat/aturan-solat.jpg",
  "./assets/images/solat/baca-ringkas-solat.jpg",
  "./assets/images/solat/batal-bercakap.jpg",
@@ -347,7 +321,7 @@ self.addEventListener("fetch", e => {
   const kodAtauHtml = e.request.mode === "navigate" || /\.(?:js|css|html|mp3|mp4)$/.test(url.pathname);
   if (kodAtauHtml) {
     // Kod & HTML: utamakan rangkaian supaya versi TERKINI sentiasa dimuat; cache hanya sandaran luar talian
-    e.respondWith(fetch(e.request).then(res => { const copy = res.clone(); if (res.ok && url.origin === location.origin) caches.open(CACHE).then(c => c.put(e.request, copy)); return res; }).catch(() => caches.match(e.request, { ignoreSearch: true }).then(hit => hit || caches.match("./index.html"))));
+    e.respondWith(fetch(e.request, { cache: "no-store" }).then(res => { const copy = res.clone(); if (res.ok && url.origin === location.origin) caches.open(CACHE).then(c => c.put(e.request, copy)); return res; }).catch(() => caches.match(e.request, { ignoreSearch: true }).then(hit => hit || caches.match("./index.html"))));
     return;
   }
   e.respondWith(caches.match(e.request, { ignoreSearch: true }).then(hit => hit || fetch(e.request).then(res => { const copy = res.clone(); if (res.ok && url.origin === location.origin) caches.open(CACHE).then(c => c.put(e.request, copy)); return res; }).catch(() => caches.match("./index.html"))));
