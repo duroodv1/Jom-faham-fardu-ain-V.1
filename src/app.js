@@ -6,8 +6,11 @@ if (!Array.isArray(STATE.adventure)) STATE.adventure = [];
 {
   const sah = APP_DATA.modules.map(m => m.id);
   [STATE.completedLessons, STATE.quizScores, STATE.quizDone].forEach(obj => { Object.keys(obj || {}).forEach(k => { if (!sah.includes(k)) delete obj[k]; }); });
-  STATE.adventure = (STATE.adventure || []).filter(id => sah.includes(id));
-  STATE.badges = (STATE.badges || []).filter(id => !["sahabat-quran", "penghafal-doa"].includes(id));
+  const pautanIds = APP_DATA.modules.filter(m => m.pautan).map(m => m.id);
+  const pautanBadges = APP_DATA.modules.filter(m => m.pautan && m.lencana).map(m => m.lencana.id);
+  pautanIds.forEach(id => { delete (STATE.completedLessons || {})[id]; delete (STATE.quizScores || {})[id]; delete (STATE.quizDone || {})[id]; });
+  STATE.adventure = (STATE.adventure || []).filter(id => sah.includes(id) && !pautanIds.includes(id));
+  STATE.badges = (STATE.badges || []).filter(id => !["sahabat-quran", "penghafal-doa", ...pautanBadges].includes(id));
   STATE.memorizedDoa = [];
 }
 window.JFFA_STATE = STATE.settings;
@@ -15,6 +18,8 @@ const $app = document.getElementById("app");
 const esc = s => String(s == null ? "" : s).replace(/[&<>"']/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
 const shuffle = a => { const x = [...a]; for (let i = x.length - 1; i > 0; i--) { const j = Math.floor(Math.random() * (i + 1));[x[i], x[j]] = [x[j], x[i]]; } return x; };
 const modById = id => APP_DATA.modules.find(m => m.id === id);
+function isExternalModule(mod) { return !!(mod && mod.pautan); }
+function modulBelajar() { return APP_DATA.modules.filter(m => !isExternalModule(m)); }
 function save() { window.JFFA_STATE = STATE.settings; DB.save(STATE); }
 function applySettings() {
   document.body.classList.toggle("font-besar", !!STATE.settings.fonBesar);
@@ -22,18 +27,20 @@ function applySettings() {
   document.body.classList.toggle("kontras", !!STATE.settings.kontras);
 }
 function moduleProgress(mod) {
-  const done = (STATE.completedLessons[mod.id] || []).length;
+  if (isExternalModule(mod)) return { done: 0, total: 0, pct: 100, external: true };
+  const sahIds = mod.pelajaran.map(l => l.id);
+  const done = (STATE.completedLessons[mod.id] || []).filter(id => sahIds.includes(id)).length;
   return { done, total: mod.pelajaran.length, pct: mod.pelajaran.length ? Math.round(done / mod.pelajaran.length * 100) : 0 };
 }
 function totalStarsDisplay() { return STATE.stars || 0; }
 function awardStars(n) { if (n > 0) { STATE.stars = (STATE.stars || 0) + n; } }
 function checkBadges() {
   const baru = [];
-  APP_DATA.modules.forEach(m => {
+  modulBelajar().forEach(m => {
     const p = moduleProgress(m);
     if (p.pct === 100 && (STATE.quizScores[m.id] || 0) >= 70 && !STATE.badges.includes(m.lencana.id)) { STATE.badges.push(m.lencana.id); baru.push(m.lencana.nama); awardStars(3); }
   });
-  const semuaModul = APP_DATA.modules.every(m => moduleProgress(m).pct === 100);
+  const semuaModul = modulBelajar().every(m => moduleProgress(m).pct === 100);
   if (semuaModul && !STATE.badges.includes("juara-fardu-ain")) { STATE.badges.push("juara-fardu-ain"); baru.push("Juara Fardu Ain"); awardStars(5); }
   if (Object.keys(STATE.gamesPlayed).filter(k => k.startsWith("g")).length >= 10 && !STATE.badges.includes("pemain-hebat")) { STATE.badges.push("pemain-hebat"); baru.push("Pemain Hebat"); awardStars(3); }
   save();
@@ -104,8 +111,9 @@ window.addEventListener("hashchange", router);
 let tipIdx = Math.floor(Math.random() * APP_DATA.tipsWatak.length);
 function viewHome() {
   const sambung = STATE.lastRoute && STATE.lastRoute !== "#/" ? `<a class="btn-besar b-gold" href="${esc(STATE.lastRoute)}"><span class="ic">▶️</span> Sambung Belajar Terakhir</a>` : "";
-  const belum = APP_DATA.modules.map(m => ({ m, p: moduleProgress(m) })).find(x => x.p.pct < 100);
-  const mulaHref = belum ? `#/belajar/${belum.m.id}/${belum.m.pelajaran[belum.p.done] ? belum.m.pelajaran[belum.p.done].id : belum.m.pelajaran[0].id}` : "#/modul";
+  const belum = APP_DATA.modules.filter(m => m.pelajaran.length).map(m => ({ m, p: moduleProgress(m) })).find(x => x.p.pct < 100);
+  const mulaPelajaran = belum ? (belum.m.pelajaran[belum.p.done] || belum.m.pelajaran[0]) : null;
+  const mulaHref = mulaPelajaran ? `#/belajar/${belum.m.id}/${mulaPelajaran.id}` : "#/modul";
   $app.innerHTML = `
   <section class="hero">
     <img class="logo-besar" src="assets/images/logo/logo-app.png" alt="Logo Jom Faham Fardu Ain — buku terbuka di bawah bulan sabit dan bintang">
@@ -127,21 +135,32 @@ function viewHome() {
     ${sambung}
   </div>
   <div class="kad"><h2 style="margin-top:0">📚 Pilih Modul (tekan kad untuk belajar)</h2><div class="modul-grid">
-  ${APP_DATA.modules.map(m => { const p = moduleProgress(m); return `<article class="modul-kad"><img src="${m.cover}" onerror="this.onerror=null;this.src='assets/images/logo/logo-app.png'" alt="Ilustrasi modul ${esc(m.tajuk)}"><div class="isi"><h3>${m.emoji} ${esc(m.tajuk)}</h3><p>${esc(m.ringkas)}</p><div class="bar-kemajuan" role="progressbar" aria-valuenow="${p.pct}" aria-valuemin="0" aria-valuemax="100"><div style="width:${p.pct}%"></div></div><small><strong>${p.done}/${p.total} pelajaran</strong> • Kuiz terbaik: ${STATE.quizScores[m.id] || 0}%</small><a class="btn btn-teal" href="#/modul/${m.id}">Buka Modul ➜</a></div></article>`; }).join("")}
+  ${APP_DATA.modules.map(m => { const p = moduleProgress(m); const luar = isExternalModule(m); return `<article class="modul-kad"><img src="${m.cover}" onerror="this.onerror=null;this.src='assets/images/logo/logo-app.png'" alt="Ilustrasi modul ${esc(m.tajuk)}"><div class="isi"><h3>${m.emoji} ${esc(m.tajuk)}</h3><p>${esc(m.ringkas)}</p>${luar ? `<div class="maklum" style="text-align:left">🌐 <strong>Pautan luar:</strong> memerlukan internet.</div><small><strong>Kandungan dalam app telah dibuang.</strong> Kisah dibuka di laman KENALI 25 RASUL.</small><a class="btn btn-teal" href="${esc(m.pautan)}" target="_blank" rel="noopener noreferrer">🌐 Layari Kisah ➜</a>` : `<div class="bar-kemajuan" role="progressbar" aria-valuenow="${p.pct}" aria-valuemin="0" aria-valuemax="100"><div style="width:${p.pct}%"></div></div><small><strong>${p.done}/${p.total} pelajaran</strong> • Kuiz terbaik: ${STATE.quizScores[m.id] || 0}%</small><a class="btn btn-teal" href="#/modul/${m.id}">Buka Modul ➜</a>`}</div></article>`; }).join("")}
   </div></div>
-  <div class="kad"><h3>ℹ️ Untuk Ibu Bapa & Guru</h3><p>Aplikasi ini 100% luar talian selepas dibuka/dipasang. Tiada iklan, tiada pembelian dalam app dan tiada pautan luar untuk kanak-kanak. Kandungan agama perlu disemak guru berkelayakan — lihat <a href="#/rujukan">Rujukan & Status Semakan</a>. Tiada had masa wajib dalam kuiz dan permainan.</p></div>`;
+  <div class="kad"><h3>ℹ️ Untuk Ibu Bapa & Guru</h3><p>Modul tempatan aplikasi ini berfungsi luar talian selepas dibuka/dipasang. Khusus bahagian Kisah Para Nabi & Rasul, kandungan dalam app telah digantikan dengan pautan ke laman KENALI 25 RASUL dan memerlukan internet serta bimbingan ibu bapa/guru. Tiada iklan dan tiada pembelian dalam app. Kandungan agama perlu disemak guru berkelayakan — lihat <a href="#/rujukan">Rujukan & Status Semakan</a>. Tiada had masa wajib dalam kuiz dan permainan.</p></div>`;
   window.scrollTo(0, 0);
 }
 function tipBaru() { tipIdx = (tipIdx + 1) % APP_DATA.tipsWatak.length; const el = document.getElementById("tipWatak"); if (el) el.textContent = "💬 " + APP_DATA.tipsWatak[tipIdx]; }
 function viewModules() {
   $app.innerHTML = `<button class="btn btn-kelabu" onclick="location.hash='#/'">⬅️ Kembali</button><h1>📚 Semua Modul</h1><p>Pilih modul. Setiap modul ada pelajaran bergambar, audio, permainan dan kuiz. Boleh ulang tanpa penalti.</p><div class="modul-grid">
-  ${APP_DATA.modules.map(m => { const p = moduleProgress(m); return `<article class="modul-kad"><img src="${m.cover}" onerror="this.onerror=null;this.src='assets/images/logo/logo-app.png'" alt="Ilustrasi ${esc(m.tajuk)}"><div class="isi"><h3>${m.emoji} ${esc(m.tajuk)}</h3><p>${esc(m.ringkas)}</p><div class="bar-kemajuan"><div style="width:${p.pct}%"></div></div><small>${p.pct}% siap • ${p.done}/${p.total} pelajaran</small><div class="aksi-row"><a class="btn btn-teal" href="#/modul/${m.id}">📖 Belajar</a><a class="btn btn-blue" href="#/kuiz/${m.id}">📝 Kuiz</a></div></div></article>`; }).join("")}</div>`;
+  ${APP_DATA.modules.map(m => { const p = moduleProgress(m); const luar = isExternalModule(m); return `<article class="modul-kad"><img src="${m.cover}" onerror="this.onerror=null;this.src='assets/images/logo/logo-app.png'" alt="Ilustrasi ${esc(m.tajuk)}"><div class="isi"><h3>${m.emoji} ${esc(m.tajuk)}</h3><p>${esc(m.ringkas)}</p>${luar ? `<small><strong>Pautan luar</strong> • kandungan kisah dibuka di tab baharu (internet diperlukan)</small><div class="aksi-row"><a class="btn btn-teal" href="${esc(m.pautan)}" target="_blank" rel="noopener noreferrer">🌐 Layari Kisah</a><a class="btn btn-blue" href="#/modul/${m.id}">ℹ️ Penerangan</a></div>` : `<div class="bar-kemajuan"><div style="width:${p.pct}%"></div></div><small>${p.pct}% siap • ${p.done}/${p.total} pelajaran</small><div class="aksi-row"><a class="btn btn-teal" href="#/modul/${m.id}">📖 Belajar</a><a class="btn btn-blue" href="#/kuiz/${m.id}">📝 Kuiz</a></div>`}</div></article>`; }).join("")}</div>`;
   window.scrollTo(0, 0);
 }
 const MOD_GAME = { akidah: "g4", taharah: "g3", solat: "g3", akhlak: "g7", ibadah: "g4", sirah: "g3" };
 function viewModule(id) {
   const m = modById(id); if (!m) return viewModules();
   const p = moduleProgress(m);
+  if (isExternalModule(m)) {
+    $app.innerHTML = `<button class="btn btn-kelabu" onclick="location.hash='#/modul'">⬅️ Semua Modul</button>
+  <div class="kad" style="padding:0;overflow:hidden"><img src="${m.cover}" onerror="this.onerror=null;this.src='assets/images/logo/logo-app.png'" alt="Gambar muka depan ${esc(m.tajuk)}" style="width:100%;height:220px;object-fit:cover;display:block"><div style="padding:18px"><h1 style="margin:4px 0">${m.emoji} ${esc(m.tajuk)}</h1><p>${esc(m.ringkas)}</p>
+  <div class="maklum">🌐 <strong>Kandungan dalam aplikasi telah dibuang.</strong> Untuk melayari Kisah Para Nabi & Rasul, tekan butang di bawah. Ia akan membuka <strong>${esc(m.pautanLabel || "KENALI 25 RASUL")}</strong> sebagai laman berasingan. Sambungan internet diperlukan dan kanak-kanak perlu dibimbing oleh ibu bapa/guru.</div>
+  <a class="btn btn-teal" style="display:block;text-align:center;font-size:1.2rem;padding:16px" href="${esc(m.pautan)}" target="_blank" rel="noopener noreferrer">🌐 ${esc(m.pautanLabel || "Layari Kisah Para Nabi & Rasul")} ➜</a>
+  <p><small>Pautan: ${esc(m.pautan)}</small></p>
+  <div class="aksi-row"><a class="btn btn-kelabu" href="#/modul">⬅️ Kembali ke Semua Modul</a><a class="btn btn-blue" href="#/">🏠 Laman Utama</a></div>
+  </div></div>`;
+    window.scrollTo(0, 0);
+    return;
+  }
   const jenisKad = id === "taharah" ? `<div class="kad"><h2>🖼️ Kad Gambar: Jenis-Jenis Air</h2>
   <img src="assets/images/taharah/jenis-air.jpg" alt="Ilustrasi Ahmad bersongkok dan Aisyah bertudung di tepi telaga, sungai dan laut dengan hujan, gunung bersalji dan embun pada daun" style="width:100%;border-radius:18px">
   <p>Ada <strong>4 jenis air</strong> yang perlu kita kenal supaya wuduk dan mandi kita sah. Tekan <strong>Dengar</strong> untuk penerangan penuh poster ini.</p>
@@ -161,7 +180,7 @@ function viewModule(id) {
   <div class="maklum betul">🤲 <strong>Ingat:</strong> Terbatal wuduk bukan dosa dan bukan perkara memalukan. Basuh tangan, ambil wuduk semula dan kita sedia untuk solat.</div></div>` : "";
   const waktuSolatKad = id === "solat" ? `<div class="kad"><h2>🕐 Kad Gambar: Solat Lima Waktu</h2><p>Setiap solat fardu ada waktu dan bilangan rakaatnya. <strong>Ingat urutan rakaat: 2 – 4 – 4 – 3 – 4.</strong></p>
   ${audioBar("Solat Lima Waktu. " + APP_DATA.solatWaktu.map(w => `${w.t}, ${w.rakaat} rakaat. ${w.masa}. ${w.d}`).join(" ") + " Ingat urutan bilangan rakaat: Subuh 2, Zuhur 4, Asar 4, Maghrib 3 dan Isyak 4.", null, null, "instr-solat-waktu")}
-  <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:12px">${APP_DATA.solatWaktu.map(w => `<div style="border:3px solid #7e57c2;border-radius:18px;overflow:hidden;background:#fff"><img src="${w.img}" alt="Ilustrasi solat ${esc(w.t)} mengikut suasana waktunya" style="width:100%;height:150px;object-fit:cover;object-position:center top"><div style="padding:12px"><h3 style="margin:4px 0">${w.emo} ${esc(w.t)}</h3><span class="pill pill-gold">${w.rakaat} Rakaat</span> <span class="pill pill-teal">${esc(w.masa)}</span><p>${esc(w.d)}</p><div style="border-top:2px dashed #ce93d8;margin-top:10px;padding-top:10px"><strong>🤲 Niat Solat ${esc(w.t)}:</strong><div class="arab" lang="ar" dir="rtl" style="font-size:1.3rem;line-height:2">${esc(w.niatArab)}</div><p class="rumi">${esc(w.niatRumi)}</p><p class="maksud"><strong>Maksud:</strong> ${esc(w.niatMaksud)}</p>${audioBar("Niat solat " + w.t + ". " + w.niatMaksud, w.niatArab, "niat-" + w.t.toLowerCase(), "niat-" + w.t.toLowerCase() + "-maksud")}</div></div></div>`).join("")}</div></div>` : "";
+  <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:12px">${APP_DATA.solatWaktu.map(w => `<div style="border:3px solid #7e57c2;border-radius:18px;overflow:hidden;background:#fff"><img src="${w.img}" alt="Ilustrasi solat ${esc(w.t)} mengikut suasana waktunya" style="width:100%;height:150px;object-fit:cover;object-position:center top"><div style="padding:12px"><h3 styl${w.emo} ${esc(w.t)}</h3><span class="pill pill-gold">${w.rakaat} Rakaat</span> <span class="pill pill-teal">${esc(w.masa)}</span><p>${esc(w.d)}</p><div style="border-top:2px dashed #ce93d8;margin-top:10px;padding-top:10px"><strong>🤲 Niat Solat ${esc(w.t)}:</strong><div class="arab" lang="ar" dir="rtl" style="font-size:1.3rem;line-height:2">${esc(w.niatArab)}</div><p class="rumi">${esc(w.niatRumi)}</p><p class="maksud"><strong>Maksud:</strong> ${esc(w.niatMaksud)}</p>${audioBar("Niat solat " + w.t + ". " + w.niatMaksud, w.niatArab, "niat-" + w.t.toLowerCase(), "niat-" + w.t.toLowerCase() + "-maksud")}</div></div></div>`).join("")}</div></div>` : "";
   const batalSolatKad = id === "solat" ? `<div class="kad"><h2>⚠️ Perkara yang Membatalkan Solat</h2><p>Semasa solat, kita menjaga adab dan tumpuan. Perkara berikut boleh membatalkan solat — jika berlaku, jangan panik; betulkan dan mulakan semula mengikut bimbingan guru.</p>
   ${audioBar("Perkara yang Membatalkan Solat. " + APP_DATA.batalSolat.map((b, i) => `${i + 1}. ${b.t}. ${b.d}`).join(" "), null, null, "instr-batal-solat")}
   ${gridKad(APP_DATA.batalSolat)}</div>` : "";
@@ -206,6 +225,7 @@ function viewLesson(modId, lessonId) {
   ${audioBar(teksDengar, l.arab || null, ARAB_KEY_BY_LESSON[m.id + "-" + l.id], "pelajaran-" + m.id + "-" + l.id)}
   ${l.arab ? `<div class="arab" lang="ar" dir="rtl">${esc(l.arab)}</div><p class="rumi">${esc(l.rumi || "")}</p><p class="maksud"><strong>Maksud:</strong> ${esc(l.maksud || "")}</p>` : ""}
   <h2>📌 Perkara Penting</h2><ul>${l.isi.map(x => `<li style="margin:8px 0">${esc(x)}</li>`).join("")}</ul>
+  ${l.sumber ? `<div class="maklum">📚 <strong>Sumber kisah:</strong> ${esc(l.sumber)}. Fakta kisah ini diambil daripada Al-Quran; penceritaannya diringkaskan dan dipermudahkan untuk kanak-kanak — semak bersama guru Pendidikan Islam untuk pembelajaran lanjut. (Tiada gambaran rupa fizikal para nabi dalam aplikasi ini.)</div>` : ""}
   ${l.tip ? `<div class="maklum betul">💡 <strong>Tip Ahmad & Aisyah:</strong> ${esc(l.tip)}</div>` : ""}
   <div class="aksi-row"><button class="btn btn-gold" onclick="siapPelajaran('${m.id}','${l.id}')">${siap ? "✅ Sudah Ditandakan Siap" : "⭐ Tandakan Pelajaran Siap (+1 bintang)"}</button>
   <a class="btn btn-pink" href="#/kuiz/${m.id}">📝 Jawab Kuiz Modul</a><a class="btn btn-blue" href="#/permainan/${MOD_GAME[m.id]}">🎮 Main Permainan Berkaitan</a></div>
@@ -268,6 +288,7 @@ function nextQuiz() {
 }
 function viewQuiz(modId) {
   const m = modById(modId); if (!m) return viewModules();
+  if (isExternalModule(m) || !m.kuiz || !m.kuiz.length) return viewModule(modId);
   const qs = m.kuiz.filter(q => (q.tahap || 1) <= Math.max(1, STATE.tahap) + 1);
   startQuizRunner(qs.length ? qs : m.kuiz, `📝 Kuiz ${m.tajuk}`, (pct) => {
     const sebelum = STATE.quizScores[modId] || 0;
@@ -377,17 +398,19 @@ function matchKanan(i) {
 }
 /* Misi pengembaraan */
 function gameAdventure() {
-  const done = STATE.adventure || [];
-  $app.innerHTML = `<button class="btn btn-kelabu" onclick="location.hash='#/permainan'">⬅️ Pusat Permainan</button><div class="kad"><h1>🗺️ Misi Pengembaraan Islam</h1><p>Merentas 8 perhentian ilmu! Setiap misi mengandungi 3 soalan daripada modul tersebut. Misi boleh diulang — tiada misi terkunci selama-lamanya.</p>
-  <p>Kemajuan misi: <strong>${done.length} / ${APP_DATA.modules.length}</strong></p>
-  ${APP_DATA.modules.map((m, i) => `<div class="pelajaran-item"><span class="emo">${done.includes(m.id) ? "🏁" : "📍"}</span><span style="flex:1"><strong>Perhentian ${i + 1}: ${esc(m.tajuk)}</strong><br><small>${done.includes(m.id) ? "✅ Misi selesai — boleh ulang untuk latihan" : "Misi: jawab 3 soalan " + esc(m.tajuk)}</small></span><button class="btn ${done.includes(m.id) ? "btn-kelabu" : "btn-teal"}" onclick="missionStart('${m.id}')">${done.includes(m.id) ? "🔁 Ulang Misi" : "🚀 Mula Misi"}</button></div>`).join("")}
-  <div id="misiDone">${done.length >= APP_DATA.modules.length ? `<div class="maklum betul">👑 <strong>Pengembaraan Lengkap!</strong> Kamu telah menyelesaikan semua misi. Syabas, Juara Fardu Ain!</div>` : ""}</div></div>`;
+  const modulMisi = modulBelajar();
+  const done = (STATE.adventure || []).filter(id => modulMisi.some(m => m.id === id));
+  $app.innerHTML = `<button class="btn btn-kelabu" onclick="location.hash='#/permainan'">⬅️ Pusat Permainan</button><div class="kad"><h1>🗺️ Misi Pengembaraan Islam</h1><p>Merentas ${modulMisi.length} perhentian ilmu tempatan! Setiap misi mengandungi 3 soalan daripada modul tersebut. Bahagian Kisah Para Nabi & Rasul tidak termasuk kerana ia dibuka melalui pautan luar.</p>
+  <p>Kemajuan misi: <strong>${done.length} / ${modulMisi.length}</strong></p>
+  ${modulMisi.map((m, i) => `<div class="pelajaran-item"><span class="emo">${done.includes(m.id) ? "🏁" : "📍"}</span><span style="flex:1"><strong>Perhentian ${i + 1}: ${esc(m.tajuk)}</strong><br><small>${done.includes(m.id) ? "✅ Misi selesai — boleh ulang untuk latihan" : "Misi: jawab 3 soalan " + esc(m.tajuk)}</small></span><button class="btn ${done.includes(m.id) ? "btn-kelabu" : "btn-teal"}" onclick="missionStart('${m.id}')">${done.includes(m.id) ? "🔁 Ulang Misi" : "🚀 Mula Misi"}</button></div>`).join("")}
+  <div id="misiDone">${done.length >= modulMisi.length ? `<div class="maklum betul">👑 <strong>Pengembaraan Lengkap!</strong> Kamu telah menyelesaikan semua misi tempatan. Syabas, Juara Fardu Ain!</div>` : ""}</div></div>`;
 }
 function missionStart(modId) {
   const m = modById(modId);
+  if (!m || isExternalModule(m) || !m.kuiz || !m.kuiz.length) return gameAdventure();
   startQuizRunner(shuffle(m.kuiz).slice(0, 3), `🗺️ Misi: ${m.tajuk}`, (pct) => {
     if (pct >= 60 && !STATE.adventure.includes(modId)) { STATE.adventure.push(modId); }
-    if (STATE.adventure.length >= APP_DATA.modules.length) recordGame("g9", 100); else recordGame("g9", pct);
+    if ((STATE.adventure || []).filter(id => modulBelajar().some(mm => mm.id === id)).length >= modulBelajar().length) recordGame("g9", 100); else recordGame("g9", pct);
   }, "g9");
   // Selepas tamat, butang kembali khusus: pengguna boleh guna Pusat Permainan; misi dikemas kini apabila melawat semula Misi.
 }
@@ -511,11 +534,12 @@ function viewReview() {
 function clearReview() { STATE.reviewList = []; save(); viewReview(); }
 /* ---------- KEMAJUAN ---------- */
 function viewProgress() {
-  const allBadges = [...APP_DATA.modules.map(m => m.lencana), ...APP_DATA.badgesExtra];
-  const layakSijil = APP_DATA.modules.every(m => moduleProgress(m).pct === 100);
+  const allBadges = [...modulBelajar().map(m => m.lencana), ...APP_DATA.badgesExtra];
+  const layakSijil = modulBelajar().every(m => moduleProgress(m).pct === 100);
   $app.innerHTML = `<button class="btn btn-kelabu" onclick="location.hash='#/'">⬅️ Kembali</button><h1>⭐ Kemajuan Saya — ${esc(STATE.nickname)}</h1>
   <div class="kad"><p class="bintang">⭐ ${STATE.stars} bintang &nbsp; 🏅 ${STATE.badges.length} lencana &nbsp; <span class="pill pill-teal">Tahap ${STATE.tahap}</span></p>
-  ${APP_DATA.modules.map(m => { const p = moduleProgress(m); return `<p><strong>${m.emoji} ${esc(m.tajuk)}</strong> — ${p.done}/${p.total} pelajaran • Kuiz terbaik ${STATE.quizScores[m.id] || 0}%</p><div class="bar-kemajuan"><div style="width:${p.pct}%"></div></div>`; }).join("")}
+  ${modulBelajar().map(m => { const p = moduleProgress(m); return `<p><strong>${m.emoji} ${esc(m.tajuk)}</strong> — ${p.done}/${p.total} pelajaran • Kuiz terbaik ${STATE.quizScores[m.id] || 0}%</p><div class="bar-kemajuan"><div style="width:${p.pct}%"></div></div>`; }).join("")}
+  <p>📖 <strong>Kisah Para Nabi & Rasul:</strong> kandungan dalam aplikasi telah dibuang dan digantikan dengan pautan luar KENALI 25 RASUL; ia tidak dikira dalam kemajuan tempatan.</p>
   <div class="aksi-row">${STATE.lastRoute ? `<a class="btn btn-teal" href="${esc(STATE.lastRoute)}">▶️ Sambung Pembelajaran Terakhir</a>` : ""}<a class="btn btn-gold" href="#/sijil">🎓 ${layakSijil ? "Lihat Sijil Digital Saya" : "Sijil Digital (siapkan semua modul untuk membuka)"}</a></div></div>
   <div class="kad"><h2>🏅 Lencana Pencapaian</h2><p>Ganjaran menggalakkan usaha belajar — bukan mengukur nilai diri atau tahap keimanan seseorang.</p><div class="lencana-grid">${allBadges.map(b => `<div class="lencana ${STATE.badges.includes(b.id) ? "dapat" : ""}"><div class="emo">${b.emoji}</div><strong>${esc(b.nama)}</strong><br><small>${STATE.badges.includes(b.id) ? "✅ Diperoleh" : "🔒 " + esc(b.syarat || "Siapkan modul + kuiz ≥70%")}</small></div>`).join("")}</div></div>
   <div class="kad"><h2>🎮 Rekod Permainan</h2>${GAMES.map(g => `<p>${g.emo} <strong>${esc(g.nama)}</strong> — dimain ${STATE.gamesPlayed[g.id] || 0} kali • terbaik ${STATE.gameBest[g.id] || 0}%</p>`).join("")}</div>
@@ -539,8 +563,8 @@ function resetProgress() {
   DB.reset(); STATE = DB.load(); STATE.createdAt = new Date().toISOString(); STATE.adventure = []; save(); alert("Kemajuan telah ditetapkan semula. Selamat belajar semula!"); location.hash = "#/"; router();
 }
 function viewCert() {
-  const layak = APP_DATA.modules.every(m => moduleProgress(m).pct === 100);
-  if (!layak) { $app.innerHTML = `<button class="btn btn-kelabu" onclick="location.hash='#/kemajuan'">⬅️ Kemajuan</button><div class="kad"><h1>🎓 Sijil Digital</h1><p>Sijil akan dibuka apabila <strong>semua pelajaran dalam semua modul</strong> ditandakan siap. Teruskan belajar — kamu boleh melakukannya!</p><ul>${APP_DATA.modules.map(m => { const p = moduleProgress(m); return `<li>${m.emoji} ${esc(m.tajuk)}: ${p.done}/${p.total} ${p.pct === 100 ? "✅" : ""}</li>`; }).join("")}</ul><a class="btn btn-teal" href="#/modul">📚 Teruskan Belajar</a></div>`; return; }
+  const layak = modulBelajar().every(m => moduleProgress(m).pct === 100);
+  if (!layak) { $app.innerHTML = `<button class="btn btn-kelabu" onclick="location.hash='#/kemajuan'">⬅️ Kemajuan</button><div class="kad"><h1>🎓 Sijil Digital</h1><p>Sijil akan dibuka apabila <strong>semua pelajaran dalam modul tempatan</strong> ditandakan siap. Bahagian Kisah Para Nabi & Rasul ialah pautan luar dan tidak dikira untuk sijil tempatan. Teruskan belajar — kamu boleh melakukannya!</p><ul>${modulBelajar().map(m => { const p = moduleProgress(m); return `<li>${m.emoji} ${esc(m.tajuk)}: ${p.done}/${p.total} ${p.pct === 100 ? "✅" : ""}</li>`; }).join("")}</ul><a class="btn btn-teal" href="#/modul">📚 Teruskan Belajar</a></div>`; return; }
   const tarikh = new Date().toLocaleDateString("ms-MY", { day: "numeric", month: "long", year: "numeric" });
   $app.innerHTML = `<button class="btn btn-kelabu no-print" onclick="location.hash='#/kemajuan'">⬅️ Kemajuan</button><div class="sijil"><img src="assets/images/logo/logo-app.png" alt="Logo aplikasi" style="width:110px;border-radius:20px"><h1 style="color:#00796b">SIJIL PENCAPAIAN</h1><p>Dengan bangga disampaikan kepada</p><h2 style="font-size:2rem;color:#1e88e5">${esc(STATE.nickname)}</h2><p>kerana telah menyiapkan semua modul pembelajaran</p><h3>JOM FAHAM FARDU AIN V.1<br><small>“Belajar, Faham dan Amalkan”</small></h3><p>⭐ ${STATE.stars} bintang • 🏅 ${STATE.badges.length} lencana • Tahap ${STATE.tahap}</p><p>Tarikh: ${esc(tarikh)}</p><p><small>Sijil digital galakan pembelajaran (bukan sijil rasmi). Teruskan beramal dan belajar bersama guru serta ibu bapa.</small></p></div><div class="aksi-row no-print"><button class="btn btn-gold" onclick="window.print()">🖨️ Cetak / Simpan Sijil (PDF)</button></div>`;
   window.scrollTo(0, 0);
@@ -557,8 +581,8 @@ function viewSettings() {
   <label><input type="checkbox" id="setDis" style="width:auto" ${s.Dyslexia ? "checked" : ""}> 📖 Mod mesra disleksia (jarak huruf & ayat lebih luas)</label>
   <label><input type="checkbox" id="setKontras" style="width:auto" ${s.kontras ? "checked" : ""}> 🎨 Kontras tinggi</label>
   <div class="aksi-row"><button class="btn btn-teal" onclick="saveSettings()">💾 Simpan Tetapan</button><button class="btn btn-merah" onclick="resetProgress()">🗑️ Tetapkan Semula Kemajuan</button></div>
-  <p id="setMsg"></p><hr><p><strong>Status luar talian:</strong> <span id="offStat">${navigator.onLine ? "🌐 Dalam talian (app tetap boleh digunakan tanpa internet selepas caching)" : "📴 Luar talian — app berfungsi sepenuhnya"}</span></p>
-  <p><small>Versi aplikasi: <strong>1.4.0</strong> (JOM FAHAM FARDU AIN V.1) • 6 modul • Data hanya pada peranti ini • Tiada iklan / pembelian dalam app.</small></p></div>`;
+  <p id="setMsg"></p><hr><p><strong>Status luar talian:</strong> <span id="offStat">${navigator.onLine ? "🌐 Dalam talian (modul tempatan tetap boleh digunakan tanpa internet selepas caching)" : "📴 Luar talian — modul tempatan berfungsi; pautan Kisah Para Nabi & Rasul memerlukan internet"}</span></p>
+  <p><small>Versi aplikasi: <strong>1.4.0</strong> (JOM FAHAM FARDU AIN V.1) • 6 modul tempatan + 1 pautan luar Kisah Para Nabi & Rasul • Data kemajuan hanya pada peranti ini • Tiada iklan / pembelian dalam app.</small></p></div>`;
   window.scrollTo(0, 0);
 }
 function saveSettings() {
@@ -585,6 +609,6 @@ function viewRefs() {
   window.scrollTo(0, 0);
 }
 /* Online/offline banner */
-function updateOnline() { const el = document.getElementById("netStatus"); if (!el) return; if (navigator.onLine) { el.className = "status-dalam"; el.textContent = "🌐 Dalam talian — aplikasi juga berfungsi 100% luar talian selepas caching selesai."; } else { el.className = "status-luar"; el.textContent = "📴 Kamu kini LUAR TALIAN — jangan risau, semua pelajaran, gambar, permainan dan kemajuan berfungsi seperti biasa."; } }
+function updateOnline() { const el = document.getElementById("netStatus"); if (!el) return; if (navigator.onLine) { el.className = "status-dalam"; el.textContent = "🌐 Dalam talian — modul tempatan juga berfungsi luar talian selepas caching; pautan Kisah Para Nabi & Rasul boleh dibuka."; } else { el.className = "status-luar"; el.textContent = "📴 Kamu kini LUAR TALIAN — semua pelajaran tempatan, gambar, permainan dan kemajuan berfungsi; pautan Kisah Para Nabi & Rasul memerlukan internet."; } }
 window.addEventListener("online", updateOnline); window.addEventListener("offline", updateOnline);
 applySettings(); router(); updateOnline();
