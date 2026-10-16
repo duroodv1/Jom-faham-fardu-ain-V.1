@@ -116,7 +116,70 @@ const APP_DATA = {
         { q: "Gelaran Nabi SAW kerana kejujuran Baginda ialah…", pilih: ["Al-Amin", "Al-Faruq", "As-Siddiq"], j: 0, terang: "Baginda digelar al-Amin (yang dipercayai).", tahap: 2, emo: "💛" },
         { q: "Pengajaran utama daripada sirah untuk kanak-kanak ialah…", pilih: ["Menjadi terkenal", "Berakhlak mulia, jujur dan sabar", "Mengumpul harta"], j: 1, terang: "Sirah mengajar kita berakhlak mulia, jujur, sabar dan penyayang.", tahap: 3, emo: "🌟" }
       ]
+    },
+    {
+      id: "kisahnabi", tajuk: "Kisah Para Nabi & Rasul", emoji: "📖", warna: "#00897b",
+      cover: "assets/images/kisahnabi/cover-kisahnabi.svg",
+      ringkas: "Cerita bergambar Nabi Adam, Nuh, Ibrahim, Yusuf, Musa, Yunus dan para nabi lain — dengan aktiviti susun peristiwa, kuiz pengajaran dan padanan sifat terpuji. (Tiada gambaran rupa fizikal para nabi.)",
+      lencana: { id: "pencinta-kisah-nabi", nama: "Pencinta Kisah Nabi", emoji: "📖" },
+      pelajaran: [
+        { id: "n1", tajuk: "Kisah Nabi Adam AS", emoji: "🌳", gambar: "assets/images/kisahnabi/kisah-adam.jpg",
+          intro: "Nabi Adam AS ialah manusia pertama yang diciptakan oleh Allah SWT dan bapa kepada seluruh manusia.",
+          isi: ["Allah menciptakan Nabi Adam AS daripada tanah, kemudian mengajarnya nama-nama segala benda.", "Allah memerintahkan para malaikat supaya sujud hormat kepada Adam. Malaikat taat, tetapi Iblis enggan kerana sombong.", "Nabi Adam AS dan isterinya Hawa tinggal di syurga. Allah melarang mereka mendekati satu pokok.", "Syaitan membisikkan tipu daya sehingga mereka termakan buah larangan itu. Mereka sangat menyesal dan segera bertaubat.", "Allah menerima taubat mereka, lalu mereka turun ke bumi. Kita semua ialah keturunan Nabi Adam AS."],
+          tip: "Jika kita tersilap buat salah, jangan sombong — cepat-cepat menyesal, bertaubat dan minta maaf, seperti Nabi Adam AS.",
+          sumber: "Surah Al-Baqarah (ayat 30–39) & Surah Al-A'raf (ayat 19–25)" },
+        { id: "n2", tajuk: "Kisah Nabi Nuh AS", emoji: "🚢", gambar: "assets/images/kisahnabi/kisah-nuh.jpg",
+          intro: "Nabi Nuh AS berdakwah kepada kaumnya mengajak menyembah Allah selama 950 tahun dengan penuh sabar.",
+          isi: ["Kaum Nabi Nuh AS menyembah berhala dan enggan mendengar dakwah walaupun diajak siang dan malam.", "Allah memerintahkan Nabi Nuh AS membina sebuah bahtera (kapal) besar di daratan.", "Orang-orang mentertawakan Baginda kerana membina kapal jauh dari laut, tetapi Baginda terus taat.", "Apabila banjir besar tiba, Nabi Nuh AS, keluarganya yang beriman dan sepasang daripada setiap haiwan menaiki bahtera.", "Bahtera berlayar dengan selamat dan berlabuh selepas air surut. Orang yang enggan dan sombong telah tenggelam."],
+          tip: "Kita belajar erti sabar dan tidak mudah putus asa daripada Nabi Nuh AS — terus buat baik walaupun ada orang mengejek.",
+          sumber: "Surah Hud (ayat 25–49) & Surah Nuh" },
+        { id: "n3", tajuk: "Kisah Nabi Ibrahim AS", emoji: "🕋", gambar: "assets/images/kisahnabi/kisah-ibrahim.jpg",
+          intro: "Nabi Ibrahim AS ialah bapa para nabi yang sangat yakin dan taat kepada Allah.",
+          isi: ["Sejak remaja, Nabi Ibrahim AS mencari Tuhan yang sebenar. Baginda melihat bintang, bulan dan matahari terbenam, lalu yakin Penciptanya ialah Allah.", "Kaumnya menyembah berhala. Nabi Ibrahim AS memecahkan berhala-berhala itu supaya mereka berfikir.", "Raja yang marah mencampakkan Baginda ke dalam api, tetapi Allah memerintahkan api menjadi sejuk dan sejahtera.", "Bersama anaknya Nabi Ismail AS, Baginda membina Kaabah di Makkah dan berdoa untuk penduduknya.", "Baginda juga diuji dengan perintah menyembelih anaknya; kerana ketaatan mereka, Allah menggantikannya dengan seekor kibas."],
+          tip: "Berani berkata benar dan yakin kepada Allah seperti Nabi Ibrahim AS.",
+          sumber: "Surah Al-An'am (ayat 76–79), Surah Al-Anbiya' (ayat 57–69), Surah Al-Baqarah (ayat 127) & Surah As-Saffat (ayat 102–107)" },
+        { id: "n4", tajuk: "Kisah Nabi Yusuf AS", emoji: "⭐", gambar: "assets/images/kisahnabi/kisah-yusuf.jpg",
+          intro: "Nabi Yusuf AS ialah nabi yang sangat sabar dan pemaaf. Kisahnya diceritakan khas dalam Surah Yusuf.",
+          isi: ["Semasa kecil, Nabi Yusuf AS bermimpi 11 bintang, matahari dan bulan sujud kepadanya.", "Abang-abangnya yang cemburu membuangnya ke dalam telaga. Baginda kemudian dibawa ke Mesir dan dijual.", "Baginda difitnah dan dipenjarakan walaupun tidak bersalah, namun Baginda tetap sabar dan menjaga maruah.", "Allah mengajarnya mentafsir mimpi. Baginda mentafsir mimpi raja Mesir tentang 7 tahun subur dan 7 tahun kemarau.", "Baginda dilantik menjadi pembesar Mesir dan menyimpan makanan dengan amanah untuk menghadapi kemarau.", "Apabila abang-abangnya datang, Baginda memaafkan mereka dan tidak berdendam."],
+          tip: "Memaafkan orang yang pernah menyakiti kita ialah akhlak mulia Nabi Yusuf AS.",
+          sumber: "Surah Yusuf (keseluruhan surah ke-12, terutama ayat 4, 43–49 & 92)" },
+        { id: "n5", tajuk: "Kisah Nabi Musa AS", emoji: "🌊", gambar: "assets/images/kisahnabi/kisah-musa.jpg",
+          intro: "Nabi Musa AS ialah nabi yang berani menghadapi raja yang zalim, Firaun, dengan pertolongan Allah.",
+          isi: ["Nabi Musa AS lahir pada zaman Firaun yang kejam. Ibunya menghanyutkannya di Sungai Nil mengikut ilham Allah, dan Baginda dipelihara di istana Firaun.", "Setelah dewasa, Baginda berhijrah ke Madyan dan membantu dua orang perempuan memberi minum ternakan mereka.", "Di Bukit Tursina, Allah bercakap dengan Nabi Musa AS dan memilihnya sebagai rasul.", "Allah memberinya mukjizat: tongkat menjadi ular dan tangan bercahaya. Baginda kembali menghadapi Firaun dengan berani.", "Apabila Firaun mengejar, Allah membelah laut untuk Nabi Musa AS dan pengikutnya; Firaun dan tenteranya tenggelam."],
+          tip: "Apabila takut atau buntu, ingatlah pertolongan Allah sangat dekat — seperti Nabi Musa AS di tepi laut.",
+          sumber: "Surah Al-Qasas (ayat 7–13), Surah Taha (ayat 11–24) & Surah Asy-Syu'ara' (ayat 52–66)" },
+        { id: "n6", tajuk: "Kisah Nabi Yunus AS", emoji: "🐋", gambar: "assets/images/kisahnabi/kisah-yunus.jpg",
+          intro: "Nabi Yunus AS ialah nabi yang bertaubat di dalam perut ikan besar dan doanya sangat mustajab.",
+          isi: ["Nabi Yunus AS berdakwah kepada penduduk Ninawa, tetapi mereka enggan. Baginda meninggalkan mereka sebelum mendapat izin Allah.", "Baginda menaiki kapal. Apabila kapal hampir karam, undian dibuat dan nama Baginda terpilih.", "Baginda terjun ke laut dan ditelan oleh seekor ikan yang sangat besar.", "Di dalam kegelapan perut ikan, Baginda berdoa: Lā ilāha illā anta, subḥānaka innī kuntu minaẓ-ẓālimīn (Tiada Tuhan selain Engkau, Maha Suci Engkau, sesungguhnya aku termasuk orang yang zalim).", "Allah menerima taubatnya. Ikan itu memuntahkannya ke pantai dan Baginda kembali kepada kaumnya; akhirnya mereka beriman."],
+          tip: "Jika kita kesusahan, jangan putus asa — berdoa dan bertaubatlah seperti Nabi Yunus AS.",
+          sumber: "Surah As-Saffat (ayat 139–148), Surah Al-Anbiya' (ayat 87) & Surah Yunus (ayat 98)" },
+        { id: "n7", tajuk: "Para Nabi Lain (1): Idris, Hud, Saleh, Luth AS", emoji: "🏜️", gambar: "assets/images/kisahnabi/kisah-nabi-lain-1.jpg",
+          intro: "Ramai lagi nabi diutuskan kepada kaum masing-masing. Kita kenali empat orang lagi.",
+          isi: ["Nabi Idris AS: nabi yang sangat benar dan sabar; Allah mengangkatnya ke tempat yang tinggi.", "Nabi Hud AS: diutus kepada kaum Ad yang kuat tetapi sombong. Mereka menolak dakwah lalu dibinasakan oleh angin yang sangat kencang.", "Nabi Saleh AS: diutus kepada kaum Tsamud. Allah memberinya mukjizat seekor unta betina, tetapi kaum yang degil menyembelih unta itu lalu mereka menerima azab.", "Nabi Luth AS: diutus kepada kaumnya yang melakukan perbuatan keji. Baginda mengajak mereka bertaubat tetapi mereka menolak.", "Pengajaran: setiap kaum yang sombong dan menolak kebenaran akhirnya binasa — kita pilih untuk taat."],
+          tip: "Allah sayang orang yang taat dan jujur. Jauhi sikap sombong seperti kaum Ad dan Tsamud.",
+          sumber: "Surah Maryam (ayat 56–57), Surah Hud (ayat 50–60 & 77–83) & Surah Al-A'raf (ayat 73–79)" },
+        { id: "n8", tajuk: "Para Nabi Lain (2): Ismail, Ayub, Syuaib AS & 25 Nabi", emoji: "🌙", gambar: "assets/images/kisahnabi/kisah-nabi-lain-2.jpg",
+          intro: "Kita kenali lagi para nabi mulia dan senarai 25 nabi yang wajib diketahui.",
+          isi: ["Nabi Ismail AS: anak Nabi Ibrahim AS yang sangat sabar dan menepati janji; membantu ayahnya membina Kaabah.", "Nabi Ayub AS: sangat sabar ketika diuji dengan sakit dan kehilangan harta serta keluarga, tetap bersyukur dan berdoa.", "Nabi Syuaib AS: mengajak kaumnya berlaku adil dalam timbangan dan jual beli, jangan menipu sukatan.", "Umat Islam hendaklah mengetahui 25 nabi yang disebut dalam Al-Quran: Adam, Idris, Nuh, Hud, Saleh, Ibrahim, Luth, Ismail, Ishak, Yaakub, Yusuf, Ayub, Syuaib, Musa, Harun, Zulkifli, Daud, Sulaiman, Ilyas, Ilyasa', Yunus, Zakaria, Yahya, Isa dan Muhammad SAW — penutup segala nabi.",
+          "Susunan 25 nabi ini ialah susunan zaman (kronologi) yang masyhur menurut ulama sirah, berdasarkan petunjuk Al-Quran dan kitab Qasas al-Anbiya'. Al-Quran menyebut nama-nama mereka, tetapi tidak menetapkan satu urutan rasmi.",
+          "Ada beberapa kedudukan yang tidak dapat dipastikan sepenuhnya — contohnya zaman Nabi Zulkifli AS tidak dijelaskan dalam Al-Quran, dan ulama juga berbeza pandangan tentang susunan sebahagian kecil nabi. Yang penting, kita mengenali nama mereka dan mengambil pengajaran daripada kisah mereka."],
+          tip: "Jujur dalam timbangan dan sabar dalam ujian — teladan para nabi untuk hidup harian kita.",
+          sumber: "Surah Maryam (ayat 54), Surah Al-Anbiya' (ayat 83) & Surah Hud (ayat 84–85)" }
+      ],
+      kuiz: [
+        { q: "Siapakah manusia dan nabi pertama?", pilih: ["Nabi Nuh AS", "Nabi Adam AS", "Nabi Ibrahim AS"], j: 1, terang: "Nabi Adam AS ialah manusia pertama ciptaan Allah.", tahap: 1, emo: "🌳" },
+        { q: "Nabi manakah yang membina bahtera besar kerana perintah Allah?", pilih: ["Nabi Nuh AS", "Nabi Yunus AS", "Nabi Musa AS"], j: 0, terang: "Nabi Nuh AS membina bahtera sebelum banjir besar.", tahap: 1, emo: "🚢" },
+        { q: "Api menjadi sejuk untuk nabi yang mana?", pilih: ["Nabi Yusuf AS", "Nabi Ibrahim AS", "Nabi Adam AS"], j: 1, terang: "Allah memerintahkan api menjadi sejuk untuk Nabi Ibrahim AS.", tahap: 1, emo: "🔥" },
+        { q: "Siapakah nabi yang memaafkan abang-abangnya di Mesir?", pilih: ["Nabi Yusuf AS", "Nabi Musa AS", "Nabi Hud AS"], j: 0, terang: "Nabi Yusuf AS memaafkan abang-abangnya dan tidak berdendam.", tahap: 1, emo: "⭐" },
+        { q: "Laut terbelah untuk menyelamatkan nabi yang mana?", pilih: ["Nabi Yunus AS", "Nabi Nuh AS", "Nabi Musa AS"], j: 2, terang: "Allah membelah laut untuk Nabi Musa AS dan pengikutnya.", tahap: 1, emo: "🌊" },
+        { q: "Nabi manakah yang ditelan ikan besar lalu berdoa di dalam perutnya?", pilih: ["Nabi Yunus AS", "Nabi Saleh AS", "Nabi Idris AS"], j: 0, terang: "Nabi Yunus AS berdoa dan bertaubat di dalam perut ikan.", tahap: 1, emo: "🐋" },
+        { q: "Pilih pengajaran kisah Nabi Nuh AS.", pilih: ["Cepat putus asa", "Sabar dan tidak mudah putus asa", "Suka mentertawakan orang"], j: 1, terang: "Nabi Nuh AS berdakwah 950 tahun dengan sabar.", tahap: 1, emo: "💪" },
+        { q: "Pilih pengajaran kisah Nabi Yusuf AS.", pilih: ["Berdendam", "Cemburu", "Memaafkan orang lain"], j: 2, terang: "Nabi Yusuf AS memaafkan abang-abangnya.", tahap: 1, emo: "❤️" },
+        { q: "Pilih pengajaran kisah Nabi Adam AS apabila kita tersilap.", pilih: ["Sombong dan lari", "Segera bertaubat dan minta maaf", "Menyalahkan orang lain"], j: 1, terang: "Nabi Adam AS segera bertaubat dan Allah menerimanya.", tahap: 2, emo: "🤲" },
+        { q: "Pilih pengajaran kisah Nabi Ayub AS.", pilih: ["Merungut ketika sakit", "Sabar dan tetap berdoa ketika diuji", "Berhenti berdoa"], j: 1, terang: "Nabi Ayub AS sangat sabar ketika diuji dengan sakit.", tahap: 2, emo: "🌿" }
+      ]
     }
+
   ],
   doaList: [
     { id: "doa1", nama: "Doa Sebelum Makan", situasi: "Sebelum makan dan minum", emo: "🍽️", arab: "بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ، اللَّهُمَّ بَارِكْ لَنَا فِيمَا رَزَقْتَنَا وَقِنَا عَذَابَ النَّارِ", rumi: "Bismillahir-rahmanir-rahim. Allahumma barik lana fima razaqtana wa qina ‘azaban-nar.", maksud: "Dengan nama Allah Yang Maha Pengasih lagi Maha Penyayang. Ya Allah, berkatilah rezeki yang Engkau kurniakan kepada kami dan peliharalah kami daripada azab neraka." },
@@ -183,7 +246,8 @@ const APP_DATA = {
     { nama: "Najis Mughallazah (Berat)", emo: "🐾", img: "assets/images/taharah/najis-mughallazah.jpg", contoh: "Najis yang berkaitan dengan anjing dan babi (khinzir), contohnya bekas jilatan atau air liur anjing.", cara: "Cara menyucikan (samak/sertu): basuh sebanyak 7 kali, dan satu daripadanya menggunakan air bercampur tanah yang Wahyu. Mesti dibimbing oleh guru atau orang dewasa." }
   ],
   langkahSucikan: ["Buang najis dahulu (gunakan tisu atau sarung tangan)", "Basuh dengan air mutlak (air paip yang bersih)", "Semak sehingga hilang bau, warna dan rasa kekotoran", "Basuh tangan dengan sabun selepas membersih", "Jika ragu-ragu, tanya guru atau ibu bapa"],
-  sumberMutlak: ["🌧️ Air Hujan", "🌊 Air Laut", "🏞️ Air Sungai", "🕳️ Air Telaga / Perigi", "⛲ Air Mata Air", "❄️ Air Salji yang Cair", "🍃 Air Embun"],
+  sumberMutlak: ["🌧️ Air Hujan", "🌊 Air Laut", "🏞️ Air Sungai", "🕳️ Air Telaga / Perigi", "⛲ Air Mata Air", "❄️ Air Salji yang Cair", "🍃 Air Embun",
+  ],
   surahPendek: [
     { id: "alfatihah", no: 1, tajuk: "Surah Al-Fatihah", emo: "📖", info: "Surah ke-1 • 7 ayat • Dibaca pada setiap rakaat", arab: "بِسْمِ ٱللَّهِ ٱلرَّحْمَـٰنِ ٱلرَّحِيمِ ١ ٱلْحَمْدُ لِلَّهِ رَبِّ ٱلْعَـٰلَمِينَ ٢ ٱلرَّحْمَـٰنِ ٱلرَّحِيمِ ٣ مَـٰلِكِ يَوْمِ ٱلدِّينِ ٤ إِيَّاكَ نَعْبُدُ وَإِيَّاكَ نَسْتَعِينُ ٥ ٱهْدِنَا ٱلصِّرَٰطَ ٱلْمُسْتَقِيمَ ٦ صِرَٰطَ ٱلَّذِينَ أَنْعَمْتَ عَلَيْهِمْ غَيْرِ ٱلْمَغْضُوبِ عَلَيْهِمْ وَلَا ٱلضَّآلِّينَ ٧", audioArab: "بِسْمِ ٱللَّهِ ٱلرَّحْمَـٰنِ ٱلرَّحِيمِ ١ ٱلْحَمْدُ لِلَّهِ رَبِّ ٱلْعَـٰلَمِينَ ٢ ٱلرَّحْمَـٰنِ ٱلرَّحِيمِ ٣ مَـٰلِكِ يَوْمِ ٱلدِّينِ ٤ إِيَّاكَ نَعْبُدُ وَإِيَّاكَ نَسْتَعِينُ ٥ ٱهْدِنَا ٱلصِّرَٰطَ ٱلْمُسْتَقِيمَ ٦ صِرَٰطَ ٱلَّذِينَ أَنْعَمْتَ عَلَيْهِمْ غَيْرِ ٱلْمَغْضُوبِ عَلَيْهِمْ وَلَا ٱلضَّآلِّينَ ٧", rumi: "Bismillahir-rahmanir-rahim. Alhamdu lillahi Rabbil-‘alamin. Ar-Rahmanir-Rahim. Maliki yawmid-din. Iyyaka na‘budu wa iyyaka nasta‘in. Ihdinas-siratal-mustaqim. Siratal-ladhina an‘amta ‘alayhim, ghayril-maghdubi ‘alayhim wa lad-dallin.", maksud: "Dengan nama Allah Yang Maha Pemurah lagi Maha Mengasihani. Segala puji bagi Allah, Tuhan sekalian alam. Yang Maha Pemurah lagi Maha Mengasihani. Yang menguasai hari pembalasan. Hanya Engkaulah yang kami sembah dan hanya kepada Engkaulah kami meminta pertolongan. Tunjukilah kami jalan yang lurus. Iaitu jalan orang-orang yang Engkau kurniakan nikmat kepada mereka, bukan jalan mereka yang dimurkai dan bukan pula jalan mereka yang sesat." },
     { id: "alikhlas", no: 112, tajuk: "Surah Al-Ikhlas", emo: "☝️", info: "Surah ke-112 • 4 ayat", arab: "قُلْ هُوَ ٱللَّهُ أَحَدٌ ۝١ ٱللَّهُ ٱلصَّمَدُ ۝٢ لَمْ يَلِدْ وَلَمْ يُولَدْ ۝٣ وَلَمْ يَكُن لَّهُۥ كُفُوًا أَحَدٌۢ ۝٤", audioArab: "بِسْمِ ٱللَّهِ ٱلرَّحْمَٰنِ ٱلرَّحِيمِ. قُلْ هُوَ ٱللَّهُ أَحَدٌ. ٱللَّهُ ٱلصَّمَدُ. لَمْ يَلِدْ وَلَمْ يُولَدْ. وَلَمْ يَكُن لَّهُۥ كُفُوًا أَحَدٌۢ", rumi: "Qul huwallaahu ahad. Allaahus-samad. Lam Maha Suci wa lam yuulad. Wa lam yakul lahuu kufuwan ahad.", maksud: "Katakanlah (wahai Muhammad): Dialah Allah, Yang Maha Esa. Allah ialah Tuhan yang bergantung kepada-Nya segala sesuatu. Dia tidak beranak dan tidak pula diperanakkan. Dan tidak ada sesuatupun yang setara dengan-Nya." },
@@ -205,13 +269,26 @@ const APP_DATA = {
     solat: { tajuk: "Susun Pergerakan Solat", arahan: "Susun pergerakan solat mengikut urutan satu rakaat ringkas.", items: ["Berdiri & Takbir", "Baca al-Fatihah", "Rukuk", "Iktidal", "Sujud Pertama", "Duduk Antara Dua Sujud", "Sujud Kedua"] },
     rukunIslam: { tajuk: "Susun Rukun Islam", arahan: "Susun Lima Rukun Islam mengikut urutan.", items: ["Syahadah", "Solat", "Puasa", "Zakat", "Haji"] },
     ramadan: { tajuk: "Susun Aktiviti Hari Ramadan", arahan: "Susun aktiviti sehari dalam bulan Ramadan.", items: ["Bersahur", "Solat Subuh & Berpuasa", "Belajar / Beribadat Siang Hari", "Berbuka Puasa (Maghrib)", "Solat Tarawih"] },
-    sirah: { tajuk: "Garis Masa Sirah", arahan: "Susun peristiwa sirah mengikut urutan masa.", items: ["Kelahiran Nabi SAW di Makkah", "Baginda digelar al-Amin", "Wahyu Pertama di Gua Hira", "Dakwah di Makkah", "Hijrah ke Madinah", "Membina Masyarakat Madinah"] }
+    sirah: { tajuk: "Garis Masa Sirah", arahan: "Susun peristiwa sirah mengikut urutan masa.", items: ["Kelahiran Nabi SAW di Makkah", "Baginda digelar al-Amin", "Wahyu Pertama di Gua Hira", "Dakwah di Makkah", "Hijrah ke Madinah", "Membina Masyarakat Madinah"] },
+    nabiNuh: { tajuk: "Susun Peristiwa: Kisah Nabi Nuh AS", arahan: "Tekan peristiwa mengikut urutan cerita yang betul.", items: ["Berdakwah kepada kaum yang menyembah berhala", "Kaum enggan berubah", "Allah perintahkan membina bahtera", "Banjir besar tiba", "Bahtera berlayar dan berlabuh selamat", "Umat beriman memulakan hidup baharu"] },
+    nabiYusuf: { tajuk: "Susun Peristiwa: Kisah Nabi Yusuf AS", arahan: "Tekan peristiwa mengikut urutan cerita yang betul.", items: ["Bermimpi 11 bintang, matahari dan bulan sujud", "Dibuang ke dalam telaga oleh abang-abang", "Dibawa ke Mesir", "Dipenjarakan kerana fitnah", "Mentafsir mimpi raja Mesir", "Menjadi pembesar Mesir", "Memaafkan abang-abang"] },
+    nabiMusa: { tajuk: "Susun Peristiwa: Kisah Nabi Musa AS", arahan: "Tekan peristiwa mengikut urutan cerita yang betul.", items: ["Dihanyutkan di Sungai Nil", "Dipilihara dalam istana Firaun", "Berhijrah ke Madyan", "Bercakap dengan Allah di Bukit Tursina", "Kembali menghadapi Firaun", "Laut terbelah dan selamat"] },
+    nabiYunus: { tajuk: "Susun Peristiwa: Kisah Nabi Yunus AS", arahan: "Tekan peristiwa mengikut urutan cerita yang betul.", items: ["Meninggalkan kaumnya", "Menaiki kapal dan undian dibuat", "Ditelan ikan besar", "Berdoa dan bertaubat dalam perut ikan", "Dimuntahkan ke pantai", "Kembali berdakwah dan kaumnya beriman"] }
   },
   matchPairs: [
     { a: "Rukun Iman", b: "6 perkara" }, { a: "Rukun Islam", b: "5 perkara" }, { a: "Taharah", b: "Bersuci" },
     { a: "Tayamum", b: "Bersuci dengan debu tanah yang suci" }, { a: "Al-Amin", b: "Gelaran Nabi SAW yang dipercayai" },
     { a: "Gua Hira", b: "Tempat wahyu pertama" }, { a: "Kaabah", b: "Kiblat di Makkah" }, { a: "Sahur", b: "Makan sebelum fajar" },
     { a: "Ghufaranaka", b: "Doa keluar tandas" }, { a: "Tuma‘ninah", b: "Berhenti sebentar dengan tenang dalam solat" }
+  ,
+    { a: "Sabar ketika sakit (Nabi Ayub AS)", b: "Tidak merungut dan tetap berdoa semasa demam" },
+    { a: "Memaafkan (Nabi Yusuf AS)", b: "Memaafkan kawan yang pernah mengejek kita" },
+    { a: "Berani berkata benar (Nabi Ibrahim AS)", b: "Mengaku kepada guru jika tersilap buat" },
+    { a: "Tidak putus asa (Nabi Nuh AS)", b: "Terus mencuba walaupun latihan sukar" },
+    { a: "Cepat bertaubat (Nabi Adam AS)", b: "Minta maaf segera selepas menyakiti adik" },
+    { a: "Berdoa ketika susah (Nabi Yunus AS)", b: "Berdoa kepada Allah apabila berasa takut" },
+    { a: "Jujur timbangan (Nabi Syuaib AS)", b: "Tidak menipu semasa bermain dan berjual beli" },
+    { a: "Yakin pertolongan Allah (Nabi Musa AS)", b: "Tenang dan berdoa sebelum pertandingan" }
   ],
   trueFalse: [
     { s: "Rukun Iman ada lima perkara.", j: false, terang: "Rukun Iman ada ENAM. Rukun Islam yang ada lima." },
@@ -222,6 +299,11 @@ const APP_DATA = {
     { s: "Nabi Muhammad SAW ialah nabi yang terakhir.", j: true, terang: "Betul! Baginda ialah Khatam an-Nabiyyin (penutup para nabi)." },
     { s: "Makan dengan sengaja tidak membatalkan puasa.", j: false, terang: "Makan atau minum dengan sengaja membatalkan puasa." },
     { s: "Al-Quran ialah kitab Allah yang terakhir.", j: true, terang: "Betul! Al-Quran diturunkan kepada Nabi Muhammad SAW." }
+  ,
+    { s: "Nabi Nuh AS membina bahtera kerana perintah Allah.", j: true, terang: "Betul. Allah memerintahkan Nabi Nuh AS membina bahtera sebelum banjir besar." },
+    { s: "Iblis sujud kepada Nabi Adam AS kerana taat.", j: false, terang: "Salah. Iblis enggan sujud kerana sombong." },
+    { s: "Nabi Yusuf AS membalas dendam kepada abang-abangnya.", j: false, terang: "Salah. Nabi Yusuf AS memaafkan abang-abangnya." },
+    { s: "Nabi Yunus AS berdoa di dalam perut ikan besar.", j: true, terang: "Betul. Baginda berdoa dan bertaubat lalu Allah menyelamatkannya." }
   ],
   fillBlank: [
     { s: "Rukun Iman ada ___ perkara.", pilih: ["lima", "enam", "tujuh"], j: 1 },
@@ -230,6 +312,10 @@ const APP_DATA = {
     { s: "Doa keluar tandas ialah “___”.", pilih: ["Ghufaranaka", "Alhamdulillah", "Bismillah"], j: 0 },
     { s: "Kita menghadap ___ ketika solat.", pilih: ["Matahari", "Kiblat (Kaabah)", "Bulan"], j: 1 },
     { s: "Makan sebelum fajar untuk berpuasa disebut ___.", pilih: ["Berbuka", "Sahur", "Tarawih"], j: 1 }
+  ,
+    { s: "Nabi ___ AS membina bahtera sebelum banjir besar.", pilih: ["Nuh", "Yunus", "Hud"], j: 0 },
+    { s: "Nabi ___ AS sangat sabar ketika diuji dengan sakit.", pilih: ["Ayub", "Saleh", "Luth"], j: 0 },
+    { s: "Laut terbelah untuk menyelamatkan Nabi ___ AS.", pilih: ["Yusuf", "Musa", "Adam"], j: 1 }
   ],
   listenBank: [
     { bunyi: "Allahu Akbar", fail: "solat-takbir", tanya: "Apakah maksud lafaz yang kamu dengar?", pilih: ["Allah Maha Besar", "Segala puji bagi Allah", "Maha Suci Allah"], j: 0 },
@@ -242,7 +328,10 @@ const APP_DATA = {
     { emo: "🕋🧎🤲", q: "Apakah ibadat yang ditunjukkan?", pilih: ["Solat menghadap kiblat", "Bersukan", "Bermain"], j: 0, terang: "Kita solat menghadap Kaabah sebagai kiblat." },
     { emo: "🌙🍲🌅", q: "Aktiviti apakah ini dalam bulan Ramadan?", pilih: ["Bersahur sebelum fajar", "Berbuka tengah hari", "Tidur sepanjang hari"], j: 0, terang: "Bersahur ialah makan sebelum fajar untuk berpuasa." },
     { emo: "📖🔤 ب ت ث", q: "Apakah yang sedang dipelajari?", pilih: ["Huruf hijaiyah", "Nombor", "Warna"], j: 0, terang: "Huruf ب ت ث ialah huruf hijaiyah." },
-    { emo: "📱🙂❓", q: "Orang asing meminta gambar kamu melalui internet. Apakah tindakan yang selamat?", pilih: ["Hantar gambar", "Jangan hantar dan beritahu ibu bapa/guru", "Berikan alamat rumah"], j: 1, terang: "Jangan kongsi gambar atau maklumat peribadi. Beritahu orang dewasa." }
+    { emo: "📱🙂❓", q: "Orang asing meminta gambar kamu melalui internet. Apakah tindakan yang selamat?", pilih: ["Hantar gambar", "Jangan hantar dan beritahu ibu bapa/guru", "Berikan alamat rumah"], j: 1, terang: "Jangan kongsi gambar atau maklumat peribadi. Beritahu orang dewasa." },
+    { emo: "🚢🌊🏔️", q: "Ikon ini (bahtera, laut, gunung) berkaitan kisah nabi yang mana?", pilih: ["Nabi Nuh AS", "Nabi Yunus AS", "Nabi Adam AS"], j: 0, terang: "Bahtera besar ialah kisah Nabi Nuh AS." },
+    { emo: "🐋🌊🤲", q: "Ikon ini (ikan besar, laut, doa) berkaitan kisah nabi yang mana?", pilih: ["Nabi Ibrahim AS", "Nabi Yunus AS", "Nabi Musa AS"], j: 1, terang: "Ikan besar menelan Nabi Yunus AS." },
+    { emo: "⭐🌙💤", q: "Mimpi 11 bintang dan bulan sujud ialah kisah nabi yang mana?", pilih: ["Nabi Yusuf AS", "Nabi Nuh AS", "Nabi Hud AS"], j: 0, terang: "Itu mimpi Nabi Yusuf AS semasa kecil." }
   ],
   solatWaktu: [
     { t: "Subuh", emo: "🌅", img: "assets/images/solat/waktu-subuh.jpg", rakaat: 2, masa: "Waktu fajar, sebelum matahari terbit", d: "Mulakan hari dengan mengingati Allah. Bangun awal dan solat Subuh berjemaah di rumah atau masjid bersama keluarga.", niatArab: "أُصَلِّي فَرْضَ الصُّبْحِ رَكْعَتَيْنِ أَدَاءً لِلَّهِ تَعَالَى", niatRumi: "Usolli fardos-Subhi rak'ataini ada'an lillahi ta'ala.", niatMaksud: "Sahaja aku solat fardu Subuh dua rakaat tunai kerana Allah Ta'ala." },
@@ -616,6 +705,7 @@ const APP_DATA = {
     "ringkas": "Ibu Amina berkongsi pengajaran hadis tentang berbuat baik kepada haiwan yang kehausan."
   }
 ],
+  videoPautan: [],
   tipsWatak: [
     "Assalamualaikum! Saya Ahmad & saya Aisyah. Jom belajar bersama-sama — tekan butang Dengar untuk mendengar penerangan!",
     "Tip: Siapkan satu pelajaran, jawab kuiz dan kumpul bintang. Boleh ulang tanpa penalti!",
