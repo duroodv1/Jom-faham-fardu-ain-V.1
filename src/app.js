@@ -206,7 +206,7 @@ function viewModule(id) {
   $app.innerHTML = `<button class="btn btn-kelabu" onclick="location.hash='#/modul'">⬅️ Semua Modul</button>
   <div class="kad" style="padding:0;overflow:hidden"><img src="${m.cover}" onerror="this.onerror=null;this.src='assets/images/logo/logo-app.png'" alt="Gambar muka depan modul ${esc(m.tajuk)}" style="width:100%;height:220px;object-fit:cover;display:block"><div style="padding:18px"><h1 style="margin:4px 0">${m.emoji} ${esc(m.tajuk)}</h1><p>${esc(m.ringkas)}</p>
   <div class="bar-kemajuan"><div style="width:${p.pct}%"></div></div><p><strong>Status kemajuan: ${p.pct}%</strong> (${p.done}/${p.total} pelajaran) • Kuiz terbaik: ${STATE.quizScores[m.id] || 0}% • Lencana: ${esc(m.lencana.emoji)} ${esc(m.lencana.nama)} ${STATE.badges.includes(m.lencana.id) ? "✅ Sudah diperoleh" : "(siapkan semua pelajaran + kuiz ≥70%)"}</p>
-  <div class="aksi-row"><a class="btn btn-teal" href="#/belajar/${m.id}/${m.pelajaran[0].id}">📖 Mula Belajar</a><button class="btn btn-blue" onclick='speak(${jsArg(m.tajuk + ". " + m.ringkas)}, "ms-MY", "modul-" + m.id)'>🎧 Dengar Penerangan</button><a class="btn btn-pink" href="#/permainan/${MOD_GAME[m.id]}">🎮 Main</a><a class="btn btn-gold" href="#/kuiz/${m.id}">📝 Kuiz Modul</a></div></div></div>
+  <div class="aksi-row"><a class="btn btn-teal" href="#/belajar/${m.id}/${m.pelajaran[0].id}">📖 Mula Belajar</a><button class="btn btn-blue" onclick='speak(${jsArg(m.tajuk + ". " + m.ringkas)}, "ms-MY", "modul-" + m.id)'>🎧 Dengar Penerangan</button><a class="btn btn-pink" href="#/permainan/${MOD_GAME[m.id]}">🎮 Main</a><a class="btn btn-gold" href="#/kuiz/${m.id}">📝 Kuiz Modul${m.kuiz.length > 15 ? ` (bank ${m.kuiz.length} soalan)` : ""}</a></div></div></div>
   <h2>📖 Senarai Pelajaran</h2>
   ${m.pelajaran.map((l, i) => `<a class="pelajaran-item" href="#/belajar/${m.id}/${l.id}"><span class="emo" aria-hidden="true">${l.emoji}</span><span style="flex:1"><strong>${i + 1}. ${esc(l.tajuk)}</strong><br><small>${esc(l.intro.slice(0, 90))}…</small></span><span>${(STATE.completedLessons[m.id] || []).includes(l.id) ? "✅ Siap" : "▶️ Belajar"}</span></a>`).join("")}
   ${jenisKad}${najisKad}${extra}${batalKad}${waktuSolatKad}${extraSolat}${aturanKad}${bacaRingkasKad}${surahPendekKad}${bacaSolatKad}${batalSolatKad}${akhlakKadSection}${ibadahKadSection}`;
@@ -289,8 +289,10 @@ function nextQuiz() {
 function viewQuiz(modId) {
   const m = modById(modId); if (!m) return viewModules();
   if (isExternalModule(m) || !m.kuiz || !m.kuiz.length) return viewModule(modId);
-  const qs = m.kuiz.filter(q => (q.tahap || 1) <= Math.max(1, STATE.tahap) + 1);
-  startQuizRunner(qs.length ? qs : m.kuiz, `📝 Kuiz ${m.tajuk}`, (pct) => {
+  const bankMengikutTahap = m.kuiz.filter(q => (q.tahap || 1) <= Math.max(1, STATE.tahap) + 1);
+  const bank = bankMengikutTahap.length ? bankMengikutTahap : m.kuiz;
+  const qs = shuffle(bank).slice(0, Math.min(15, bank.length));
+  startQuizRunner(qs, `📝 Kuiz ${m.tajuk} — ${qs.length} soalan rawak daripada bank ${m.kuiz.length}`, (pct) => {
     const sebelum = STATE.quizScores[modId] || 0;
     if (pct > sebelum) STATE.quizScores[modId] = pct;
     STATE.quizDone[modId] = true; checkBadges();
