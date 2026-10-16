@@ -1,5 +1,5 @@
 /* Service Worker - JOM FAHAM FARDU AIN V.1 (cache-first, luar talian selepas caching) */
-const CACHE = "jffa-v1.4.0-v52";
+const CACHE = "jffa-v1.4.0-v54";
 const ASSETS = [
  "./",
  "./assets/audio/akidah/selawat.mp3",
