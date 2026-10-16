@@ -1,7 +1,7 @@
 {
   "dijana": "Skrip scripts/generate_audio.py (gTTS)",
-  "status": "Sintesis suara bantuan latihan — perlu semakan guru/qari berkelayakan",
-  "bilangan": 159,
+  "status": "Sintesis suara bantuan latihan — perlu semakan guru/qari berkelayakan | Kemas kini v56: entri audio Kisah Para Nabi dibuang kerana bahagian tersebut digantikan dengan pautan luar KENALI 25 RASUL.",
+  "bilangan": 150,
   "fail": [
     {
       "kunci": "akidah-selawat",
@@ -1380,96 +1380,6 @@
       "saiz_kb": 287,
       "saiz": 294144,
       "teks": "Bacaan Tahiyat Awal. Maksud bacaan tahiyat awal."
-    },
-    {
-      "kunci": "modul-kisahnabi",
-      "fail": "assets/audio/instructions/modul-kisahnabi.mp3",
-      "bahasa": "ms",
-      "suara": "Sintesis suara gTTS (ms) — BUKAN rakaman manusia",
-      "tempoh_saat": 21.8,
-      "saiz_kb": 171,
-      "teks": "Kisah Para Nabi & Rasul. Cerita bergambar Nabi Adam, Nuh, Ibrahim, Yusuf, Musa, Yunus dan para nabi lain — dengan aktiviti susun peristiwa, kuiz pengajaran dan padanan sifat terpuji. Tiada gambaran rupa fizikal para nabi.",
-      "saiz": 174720
-    },
-    {
-      "kunci": "pelajaran-kisahnabi-n1",
-      "fail": "assets/audio/instructions/pelajaran-kisahnabi-n1.mp3",
-      "bahasa": "ms",
-      "suara": "Narasi gTTS (ms) menyebut \"Alaihis Salam\" bagi setiap AS; paparan kekal \"AS\"",
-      "tempoh_saat": 72.4,
-      "saiz_kb": 566,
-      "teks": "Kisah Nabi Adam Alaihis Salam. Nabi Adam Alaihis Salam ialah manusia pertama yang diciptakan oleh Allah Subhanahu wa Taala dan bapa kepada seluruh manusia. Allah menciptakan Nabi Adam Alaihis Salam daripada tanah, kemudian mengajarnya nama-nama segala benda. Allah memerintahkan para malaikat supaya sujud hormat kepada Adam. Malaikat taat, tetapi Iblis enggan kerana sombong. Nabi Adam Alaihis Salam dan isterinya Hawa tinggal di syurga. Allah melarang mereka mendekati satu pokok. Syaitan membisikkan tipu daya sehingga mereka termakan buah larangan itu. Mereka sangat menyesal dan segera bertaubat. Allah menerima taubat mereka, lalu mereka turun ke bumi. Kita semua ialah keturunan Nabi Adam Alaihis Salam. Jika kita tersilap buat salah, jangan sombong — cepat-cepat menyesal, bertaubat dan minta maaf, seperti Nabi Adam Alaihis Salam.",
-      "saiz": 579456
-    },
-    {
-      "kunci": "pelajaran-kisahnabi-n2",
-      "fail": "assets/audio/instructions/pelajaran-kisahnabi-n2.mp3",
-      "bahasa": "ms",
-      "suara": "Narasi gTTS (ms) menyebut \"Alaihis Salam\" bagi setiap AS; paparan kekal \"AS\"",
-      "tempoh_saat": 67.2,
-      "saiz_kb": 525,
-      "teks": "Kisah Nabi Nuh Alaihis Salam. Nabi Nuh Alaihis Salam berdakwah kepada kaumnya mengajak menyembah Allah selama 950 tahun dengan penuh sabar. Kaum Nabi Nuh Alaihis Salam menyembah berhala dan enggan mendengar dakwah walaupun diajak siang dan malam. Allah memerintahkan Nabi Nuh Alaihis Salam membina sebuah bahtera kapal besar di daratan. Orang-orang mentertawakan Baginda kerana membina kapal jauh dari laut, tetapi Baginda terus taat. Apabila banjir besar tiba, Nabi Nuh Alaihis Salam, keluarganya yang beriman dan sepasang daripada setiap haiwan menaiki bahtera. Bahtera berlayar dengan selamat dan berlabuh selepas air surut. Orang yang enggan dan sombong telah tenggelam. Kita belajar erti sabar dan tidak mudah putus asa daripada Nabi Nuh Alaihis Salam — terus buat baik walaupun ada orang mengejek.",
-      "saiz": 537216
-    },
-    {
-      "kunci": "pelajaran-kisahnabi-n3",
-      "fail": "assets/audio/instructions/pelajaran-kisahnabi-n3.mp3",
-      "bahasa": "ms",
-      "suara": "Narasi gTTS (ms) menyebut \"Alaihis Salam\" bagi setiap AS; paparan kekal \"AS\"",
-      "tempoh_saat": 69.2,
-      "saiz_kb": 540,
-      "teks": "Kisah Nabi Ibrahim Alaihis Salam. Nabi Ibrahim Alaihis Salam ialah bapa para nabi yang sangat yakin dan taat kepada Allah. Sejak remaja, Nabi Ibrahim Alaihis Salam mencari Tuhan yang sebenar. Baginda melihat bintang, bulan dan matahari terbenam, lalu yakin Penciptanya ialah Allah. Kaumnya menyembah berhala. Nabi Ibrahim Alaihis Salam memecahkan berhala-berhala itu supaya mereka berfikir. Raja yang marah mencampakkan Baginda ke dalam api, tetapi Allah memerintahkan api menjadi sejuk dan sejahtera. Bersama anaknya Nabi Ismail Alaihis Salam, Baginda membina Kaabah di Makkah dan berdoa untuk penduduknya. Baginda juga diuji dengan perintah menyembelih anaknya; kerana ketaatan mereka, Allah menggantikannya dengan seekor kibas. Berani berkata benar dan yakin kepada Allah seperti Nabi Ibrahim Alaihis Salam.",
-      "saiz": 553344
-    },
-    {
-      "kunci": "pelajaran-kisahnabi-n4",
-      "fail": "assets/audio/instructions/pelajaran-kisahnabi-n4.mp3",
-      "bahasa": "ms",
-      "suara": "Narasi gTTS (ms) menyebut \"Alaihis Salam\" bagi setiap AS; paparan kekal \"AS\"",
-      "tempoh_saat": 70.1,
-      "saiz_kb": 548,
-      "teks": "Kisah Nabi Yusuf Alaihis Salam. Nabi Yusuf Alaihis Salam ialah nabi yang sangat sabar dan pemaaf. Kisahnya diceritakan khas dalam Surah Yusuf. Semasa kecil, Nabi Yusuf Alaihis Salam bermimpi 11 bintang, matahari dan bulan sujud kepadanya. Abang-abangnya yang cemburu membuangnya ke dalam telaga. Baginda kemudian dibawa ke Mesir dan dijual. Baginda difitnah dan dipenjarakan walaupun tidak bersalah, namun Baginda tetap sabar dan menjaga maruah. Allah mengajarnya mentafsir mimpi. Baginda mentafsir mimpi raja Mesir tentang 7 tahun subur dan 7 tahun kemarau. Baginda dilantik menjadi pembesar Mesir dan menyimpan makanan dengan amanah untuk menghadapi kemarau. Apabila abang-abangnya datang, Baginda memaafkan mereka dan tidak berdendam. Memaafkan orang yang pernah menyakiti kita ialah akhlak mulia Nabi Yusuf Alaihis Salam.",
-      "saiz": 561024
-    },
-    {
-      "kunci": "pelajaran-kisahnabi-n5",
-      "fail": "assets/audio/instructions/pelajaran-kisahnabi-n5.mp3",
-      "bahasa": "ms",
-      "suara": "Narasi gTTS (ms) menyebut \"Alaihis Salam\" bagi setiap AS; paparan kekal \"AS\"",
-      "tempoh_saat": 72.4,
-      "saiz_kb": 566,
-      "teks": "Kisah Nabi Musa Alaihis Salam. Nabi Musa Alaihis Salam ialah nabi yang berani menghadapi raja yang zalim, Firaun, dengan pertolongan Allah. Nabi Musa Alaihis Salam lahir pada zaman Firaun yang kejam. Ibunya menghanyutkannya di Sungai Nil mengikut ilham Allah, dan Baginda dipelihara di istana Firaun. Setelah dewasa, Baginda berhijrah ke Madyan dan membantu dua orang perempuan memberi minum ternakan mereka. Di Bukit Tursina, Allah bercakap dengan Nabi Musa Alaihis Salam dan memilihnya sebagai rasul. Allah memberinya mukjizat: tongkat menjadi ular dan tangan bercahaya. Baginda kembali menghadapi Firaun dengan berani. Apabila Firaun mengejar, Allah membelah laut untuk Nabi Musa Alaihis Salam dan pengikutnya; Firaun dan tenteranya tenggelam. Apabila takut atau buntu, ingatlah pertolongan Allah sangat dekat — seperti Nabi Musa Alaihis Salam di tepi laut.",
-      "saiz": 579072
-    },
-    {
-      "kunci": "pelajaran-kisahnabi-n6",
-      "fail": "assets/audio/instructions/pelajaran-kisahnabi-n6.mp3",
-      "bahasa": "ms",
-      "suara": "Narasi gTTS (ms) menyebut \"Alaihis Salam\" bagi setiap AS; paparan kekal \"AS\"; lafaz doa suara saraf Bahasa Arab ar-SA",
-      "tempoh_saat": 79.0,
-      "saiz_kb": 617,
-      "teks": "Kisah Nabi Yunus Alaihis Salam. Nabi Yunus Alaihis Salam ialah nabi yang bertaubat di dalam perut ikan besar dan doanya sangat mustajab. Nabi Yunus Alaihis Salam berdakwah kepada penduduk Ninawa, tetapi mereka enggan. Baginda meninggalkan mereka sebelum mendapat izin Allah. Baginda menaiki kapal. Apabila kapal hampir karam, undian dibuat dan nama Baginda terpilih. Baginda terjun ke laut dan ditelan oleh seekor ikan yang sangat besar. Di dalam kegelapan perut ikan, Baginda berdoa: لَا إِلَٰهَ إِلَّا أَنْتَ سُبْحَانَكَ إِنِّي كُنْتُ مِنَ الظَّالِمِينَ Lā ilāha illā anta, subḥānaka innī kuntu minaẓ-ẓālimīn — Tiada Tuhan selain Engkau, Maha Suci Engkau, sesungguhnya aku termasuk orang yang zalim. Allah menerima taubatnya. Ikan itu memuntahkannya ke pantai dan Baginda kembali kepada kaumnya; akhirnya mereka beriman. Jika kita kesusahan, jangan putus asa — berdoa dan bertaubatlah seperti Nabi Yunus Alaihis Salam.",
-      "saiz": 631916
-    },
-    {
-      "kunci": "pelajaran-kisahnabi-n7",
-      "fail": "assets/audio/instructions/pelajaran-kisahnabi-n7.mp3",
-      "bahasa": "ms",
-      "suara": "Narasi gTTS (ms) menyebut \"Alaihis Salam\" bagi setiap AS; paparan kekal \"AS\"",
-      "tempoh_saat": 75.8,
-      "saiz_kb": 592,
-      "teks": "Para Nabi Lain 1 : Idris, Hud, Saleh, Luth Alaihis Salam. Ramai lagi nabi diutuskan kepada kaum masing-masing. Kita kenali empat orang lagi. Nabi Idris Alaihis Salam: nabi yang sangat benar dan sabar; Allah mengangkatnya ke tempat yang tinggi. Nabi Hud Alaihis Salam: diutus kepada kaum Ad yang kuat tetapi sombong. Mereka menolak dakwah lalu dibinasakan oleh angin yang sangat kencang. Nabi Saleh Alaihis Salam: diutus kepada kaum Tsamud. Allah memberinya mukjizat seekor unta betina, tetapi kaum yang degil menyembelih unta itu lalu mereka menerima azab. Nabi Luth Alaihis Salam: diutus kepada kaumnya yang melakukan perbuatan keji. Baginda mengajak mereka bertaubat tetapi mereka menolak. Pengajaran: setiap kaum yang sombong dan menolak kebenaran akhirnya binasa — kita pilih untuk taat. Allah sayang orang yang taat dan jujur. Jauhi sikap sombong seperti kaum Ad dan Tsamud.",
-      "saiz": 606144
-    },
-    {
-      "kunci": "pelajaran-kisahnabi-n8",
-      "fail": "assets/audio/instructions/pelajaran-kisahnabi-n8.mp3",
-      "bahasa": "ms",
-      "suara": "Narasi gTTS (ms) menyebut \"Alaihis Salam\" bagi setiap AS; paparan kekal \"AS\"",
-      "tempoh_saat": 134.5,
-      "saiz_kb": 1051,
-      "teks": "Para Nabi Lain 2 : Ismail, Ayub, Syuaib Alaihis Salam & 25 Nabi. Kita kenali lagi para nabi mulia dan senarai 25 nabi yang wajib diketahui. Nabi Ismail Alaihis Salam: anak Nabi Ibrahim Alaihis Salam yang sangat sabar dan menepati janji; membantu ayahnya membina Kaabah. Nabi Ayub Alaihis Salam: sangat sabar ketika diuji dengan sakit dan kehilangan harta serta keluarga, tetap bersyukur dan berdoa. Nabi Syuaib Alaihis Salam: mengajak kaumnya berlaku adil dalam timbangan dan jual beli, jangan menipu sukatan. Umat Islam hendaklah mengetahui 25 nabi yang disebut dalam Al-Quran: Adam, Idris, Nuh, Hud, Saleh, Ibrahim, Luth, Ismail, Ishak, Yaakub, Yusuf, Ayub, Syuaib, Musa, Harun, Zulkifli, Daud, Sulaiman, Ilyas, Ilyasa', Yunus, Zakaria, Yahya, Isa dan Muhammad Sallallahu Alaihi Wasallam — penutup segala nabi. Susunan 25 nabi ini ialah susunan zaman kronologi yang masyhur menurut ulama sirah, berdasarkan petunjuk Al-Quran dan kitab Qasas al-Anbiya'. Al-Quran menyebut nama-nama mereka, tetapi tidak menetapkan satu urutan rasmi. Ada beberapa kedudukan yang tidak dapat dipastikan sepenuhnya — contohnya zaman Nabi Zulkifli Alaihis Salam tidak dijelaskan dalam Al-Quran, dan ulama juga berbeza pandangan tentang susunan sebahagian kecil nabi. Yang penting, kita mengenali nama mereka dan mengambil pengajaran daripada kisah mereka. Jujur dalam timbangan dan sabar dalam ujian — teladan para nabi untuk hidup harian kita.",
-      "saiz": 1075776
     }
   ]
 }
