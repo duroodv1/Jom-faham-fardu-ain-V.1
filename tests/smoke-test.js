@@ -26,6 +26,9 @@ for (const m of APP_DATA.modules) {
   for (const l of m.pelajaran) ok(l.tajuk && l.intro && l.isi.length >= 3, `${m.id}/${l.id}: kandungan pelajaran lengkap`);
 }
 ok(APP_DATA.doaList.length >= 11, `Doa harian >=11 (${APP_DATA.doaList.length})`);
+const a1Sifat = APP_DATA.modules.find(m => m.id === "akidah").pelajaran.find(l => l.id === "a1");
+ok(a1Sifat.gambar === "assets/images/akidah/sifat-20.jpg" && fs.existsSync(path.join(root, a1Sifat.gambar)) && fs.statSync(path.join(root, a1Sifat.gambar)).size > 50000, "Poster Sifat 20 dipaparkan dalam pelajaran Mengenal Allah SWT");
+ok(fs.readFileSync(path.join(root, "service-worker.js"), "utf8").includes("./assets/images/akidah/sifat-20.jpg"), "SW precache Poster Sifat 20");
 for (const d of APP_DATA.doaList) ok(d.arab && d.rumi && d.maksud, `Doa lengkap Arab/Rumi/Maksud: ${d.nama}`);
 ok(APP_DATA.hijaiyah.length === 28, `Hijaiyah 28 huruf (${APP_DATA.hijaiyah.length})`);
 ok(APP_DATA.wudukLangkah.length === 10 && APP_DATA.solatGerak.length === 8, "Carta wuduk (10) & solat (8) wujud");

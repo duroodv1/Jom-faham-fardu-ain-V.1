@@ -1,5 +1,5 @@
 /* Service Worker - JOM FAHAM FARDU AIN V.1 (cache-first, luar talian selepas caching) */
-const CACHE = "jffa-v1.4.0-v57";
+const CACHE = "jffa-v1.4.0-v58";
 const ASSETS = [
  "./",
  "./assets/audio/akidah/selawat.mp3",
@@ -180,6 +180,7 @@ const ASSETS = [
  "./assets/images/akhlak/telefon-internet.jpg",
  "./assets/images/akhlak/urus-marah.jpg",
  "./assets/images/akidah/cover-akidah.svg",
+ "./assets/images/akidah/sifat-20.jpg",
  "./assets/images/al-quran/cover-quran.svg",
  "./assets/images/characters/watak-utama.jpg",
  "./assets/images/characters/watak-utama.svg",
